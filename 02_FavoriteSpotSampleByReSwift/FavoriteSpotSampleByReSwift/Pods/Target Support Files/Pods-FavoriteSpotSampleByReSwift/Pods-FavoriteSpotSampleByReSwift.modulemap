@@ -1,6 +1,0 @@
-framework module Pods_FavoriteSpotSampleByReSwift {
-  umbrella header "Pods-FavoriteSpotSampleByReSwift-umbrella.h"
-
-  export *
-  module * { export * }
-}

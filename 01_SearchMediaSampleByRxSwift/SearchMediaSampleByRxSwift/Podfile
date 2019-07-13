@@ -2,22 +2,19 @@
 # platform :ios, '9.0'
 
 target 'SearchMediaSampleByRxSwift' do
+  # Comment the next line if you don't want to use dynamic frameworks
   use_frameworks!
-  
-  # 1. アーキテクチャの基盤ライブラリ
-  pod 'RxSwift'
-  
-  # 2. 非同期処理や画像キャッシュ等の用途で利用するライブラリ
-  pod 'APIKit'
-  pod 'Nuke'
 
-  # 3. UI関連処理で利用するライブラリ
-  pod 'DynamicButton'
-  pod 'SwiftyAttributes'
-  pod 'BetterSegmentedControl'
-  pod 'PKHUD'
-  pod 'AnimatedCollectionViewLayout'
-  pod 'Toast-Swift'
-  pod 'TagListView'
-  pod 'BouncyLayout'
+  # Pods for SearchMediaSampleByRxSwift
+
+  target 'SearchMediaSampleByRxSwiftTests' do
+    inherit! :search_paths
+    # Pods for testing
+  end
+
+  target 'SearchMediaSampleByRxSwiftUITests' do
+    inherit! :search_paths
+    # Pods for testing
+  end
+
 end

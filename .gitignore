@@ -23,7 +23,7 @@ DerivedData
 
 # CocoaPod
 /01_SearchMediaSampleByRxSwift/SearchMediaSampleByRxSwift/Pods/*
-/02_FavoriteSpotSampleByReSwift/MediaStyleAnimationContents/Pods/*
+/02_FavoriteSpotSampleByReSwift/FavoriteSpotSampleByReSwift/Pods/*
 
 # Server
 /01_SearchMediaSampleByRxSwift/server_mock/*

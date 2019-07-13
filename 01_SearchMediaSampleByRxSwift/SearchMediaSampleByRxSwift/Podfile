@@ -1,20 +1,20 @@
-# Uncomment the next line to define a global platform for your project
-# platform :ios, '9.0'
-
 target 'SearchMediaSampleByRxSwift' do
-  # Comment the next line if you don't want to use dynamic frameworks
   use_frameworks!
 
-  # Pods for SearchMediaSampleByRxSwift
+  # 1. アーキテクチャの基盤ライブラリ
+  pod 'RxSwift'
 
-  target 'SearchMediaSampleByRxSwiftTests' do
-    inherit! :search_paths
-    # Pods for testing
-  end
+  # 2. 非同期処理や画像キャッシュ等の用途で利用するライブラリ
+  pod 'APIKit'
+  pod 'Nuke'
 
-  target 'SearchMediaSampleByRxSwiftUITests' do
-    inherit! :search_paths
-    # Pods for testing
-  end
-
+  # 3. UI関連処理で利用するライブラリ
+  pod 'DynamicButton'
+  pod 'SwiftyAttributes'
+  pod 'BetterSegmentedControl'
+  pod 'PKHUD'
+  pod 'AnimatedCollectionViewLayout'
+  pod 'Toast-Swift'
+  pod 'TagListView'
+  pod 'BouncyLayout'
 end

@@ -1,0 +1,12 @@
+ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES
+FRAMEWORK_SEARCH_PATHS = $(inherited) "${PODS_CONFIGURATION_BUILD_DIR}/Alamofire" "${PODS_CONFIGURATION_BUILD_DIR}/CalculateCalendarLogic" "${PODS_CONFIGURATION_BUILD_DIR}/Gemini" "${PODS_CONFIGURATION_BUILD_DIR}/GrowingTextView" "${PODS_CONFIGURATION_BUILD_DIR}/Kingfisher" "${PODS_CONFIGURATION_BUILD_DIR}/NVActivityIndicatorView" "${PODS_CONFIGURATION_BUILD_DIR}/PanModal" "${PODS_CONFIGURATION_BUILD_DIR}/PromiseKit" "${PODS_CONFIGURATION_BUILD_DIR}/ReSwift" "${PODS_CONFIGURATION_BUILD_DIR}/Realm" "${PODS_CONFIGURATION_BUILD_DIR}/RealmSwift" "${PODS_CONFIGURATION_BUILD_DIR}/SwipeCellKit"
+GCC_PREPROCESSOR_DEFINITIONS = $(inherited) COCOAPODS=1
+HEADER_SEARCH_PATHS = $(inherited) "${PODS_CONFIGURATION_BUILD_DIR}/Alamofire/Alamofire.framework/Headers" "${PODS_CONFIGURATION_BUILD_DIR}/CalculateCalendarLogic/CalculateCalendarLogic.framework/Headers" "${PODS_CONFIGURATION_BUILD_DIR}/Gemini/Gemini.framework/Headers" "${PODS_CONFIGURATION_BUILD_DIR}/GrowingTextView/GrowingTextView.framework/Headers" "${PODS_CONFIGURATION_BUILD_DIR}/Kingfisher/Kingfisher.framework/Headers" "${PODS_CONFIGURATION_BUILD_DIR}/NVActivityIndicatorView/NVActivityIndicatorView.framework/Headers" "${PODS_CONFIGURATION_BUILD_DIR}/PanModal/PanModal.framework/Headers" "${PODS_CONFIGURATION_BUILD_DIR}/PromiseKit/PromiseKit.framework/Headers" "${PODS_CONFIGURATION_BUILD_DIR}/ReSwift/ReSwift.framework/Headers" "${PODS_CONFIGURATION_BUILD_DIR}/Realm/Realm.framework/Headers" "${PODS_CONFIGURATION_BUILD_DIR}/RealmSwift/RealmSwift.framework/Headers" "${PODS_CONFIGURATION_BUILD_DIR}/SwipeCellKit/SwipeCellKit.framework/Headers"
+LD_RUNPATH_SEARCH_PATHS = $(inherited) '@executable_path/Frameworks' '@loader_path/Frameworks'
+LIBRARY_SEARCH_PATHS = $(inherited) "${PODS_ROOT}/Realm/core"
+OTHER_LDFLAGS = $(inherited) -ObjC -l"c++" -l"z" -framework "Accelerate" -framework "Alamofire" -framework "CFNetwork" -framework "CalculateCalendarLogic" -framework "Foundation" -framework "Gemini" -framework "GrowingTextView" -framework "Kingfisher" -framework "NVActivityIndicatorView" -framework "PanModal" -framework "PromiseKit" -framework "QuartzCore" -framework "ReSwift" -framework "Realm" -framework "RealmSwift" -framework "Security" -framework "SwipeCellKit" -framework "UIKit"
+OTHER_SWIFT_FLAGS = $(inherited) -D COCOAPODS
+PODS_BUILD_DIR = ${BUILD_DIR}
+PODS_CONFIGURATION_BUILD_DIR = ${PODS_BUILD_DIR}/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)
+PODS_PODFILE_DIR_PATH = ${SRCROOT}/.
+PODS_ROOT = ${SRCROOT}/Pods

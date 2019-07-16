@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -15,6 +15,13 @@
 		DE705FF122D9812300281033 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DE705FEF22D9812300281033 /* LaunchScreen.storyboard */; };
 		DE705FFC22D9812300281033 /* SearchMediaSampleByRxSwiftTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE705FFB22D9812300281033 /* SearchMediaSampleByRxSwiftTests.swift */; };
 		DE70600722D9812300281033 /* SearchMediaSampleByRxSwiftUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE70600622D9812300281033 /* SearchMediaSampleByRxSwiftUITests.swift */; };
+		DE70605822DC519800281033 /* NSObjectProtocolExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE70605722DC519800281033 /* NSObjectProtocolExtension.swift */; };
+		DE70605A22DC51BA00281033 /* UICollectionViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE70605922DC51BA00281033 /* UICollectionViewExtension.swift */; };
+		DE70605C22DC51F000281033 /* UIColorExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE70605B22DC51F000281033 /* UIColorExtension.swift */; };
+		DE70605E22DC521E00281033 /* UITableViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE70605D22DC521E00281033 /* UITableViewExtension.swift */; };
+		DE70606022DC524000281033 /* UIViewControllerExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE70605F22DC524000281033 /* UIViewControllerExtension.swift */; };
+		DE70606222DC526900281033 /* StoryboardInstantiatable.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE70606122DC526900281033 /* StoryboardInstantiatable.swift */; };
+		DE70606422DC533D00281033 /* CustomViewBase.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE70606322DC533D00281033 /* CustomViewBase.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +58,13 @@
 		DE70600222D9812300281033 /* SearchMediaSampleByRxSwiftUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SearchMediaSampleByRxSwiftUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		DE70600622D9812300281033 /* SearchMediaSampleByRxSwiftUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchMediaSampleByRxSwiftUITests.swift; sourceTree = "<group>"; };
 		DE70600822D9812300281033 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DE70605722DC519800281033 /* NSObjectProtocolExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NSObjectProtocolExtension.swift; sourceTree = "<group>"; };
+		DE70605922DC51BA00281033 /* UICollectionViewExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UICollectionViewExtension.swift; sourceTree = "<group>"; };
+		DE70605B22DC51F000281033 /* UIColorExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIColorExtension.swift; sourceTree = "<group>"; };
+		DE70605D22DC521E00281033 /* UITableViewExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UITableViewExtension.swift; sourceTree = "<group>"; };
+		DE70605F22DC524000281033 /* UIViewControllerExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewControllerExtension.swift; sourceTree = "<group>"; };
+		DE70606122DC526900281033 /* StoryboardInstantiatable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoryboardInstantiatable.swift; sourceTree = "<group>"; };
+		DE70606322DC533D00281033 /* CustomViewBase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomViewBase.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -85,7 +99,6 @@
 				762E4E2910DF2BC21727617D /* Pods-SearchMediaSampleByRxSwift.debug.xcconfig */,
 				0753EF4346BE937BEE9D3E27 /* Pods-SearchMediaSampleByRxSwift.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -122,12 +135,18 @@
 		DE705FE522D9812100281033 /* SearchMediaSampleByRxSwift */ = {
 			isa = PBXGroup;
 			children = (
-				DE705FE622D9812100281033 /* AppDelegate.swift */,
-				DE705FE822D9812100281033 /* ViewController.swift */,
-				DE705FEA22D9812100281033 /* Main.storyboard */,
-				DE705FED22D9812300281033 /* Assets.xcassets */,
-				DE705FEF22D9812300281033 /* LaunchScreen.storyboard */,
 				DE705FF222D9812300281033 /* Info.plist */,
+				DE705FE622D9812100281033 /* AppDelegate.swift */,
+				DE705FED22D9812300281033 /* Assets.xcassets */,
+				DE70605022DC506600281033 /* APIRequest */,
+				DE70605622DC50BC00281033 /* Classes */,
+				DE70604E22DC504E00281033 /* Extension */,
+				DE70605522DC50A800281033 /* Model */,
+				DE70604F22DC505D00281033 /* Modules */,
+				DE70605122DC507400281033 /* Storyboard */,
+				DE70605422DC50A000281033 /* View */,
+				DE70605322DC508D00281033 /* ViewController */,
+				DE70605222DC507D00281033 /* ViewModel */,
 			);
 			path = SearchMediaSampleByRxSwift;
 			sourceTree = "<group>";
@@ -148,6 +167,79 @@
 				DE70600822D9812300281033 /* Info.plist */,
 			);
 			path = SearchMediaSampleByRxSwiftUITests;
+			sourceTree = "<group>";
+		};
+		DE70604E22DC504E00281033 /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				DE70605722DC519800281033 /* NSObjectProtocolExtension.swift */,
+				DE70606122DC526900281033 /* StoryboardInstantiatable.swift */,
+				DE70605922DC51BA00281033 /* UICollectionViewExtension.swift */,
+				DE70605B22DC51F000281033 /* UIColorExtension.swift */,
+				DE70605D22DC521E00281033 /* UITableViewExtension.swift */,
+				DE70605F22DC524000281033 /* UIViewControllerExtension.swift */,
+			);
+			path = Extension;
+			sourceTree = "<group>";
+		};
+		DE70604F22DC505D00281033 /* Modules */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Modules;
+			sourceTree = "<group>";
+		};
+		DE70605022DC506600281033 /* APIRequest */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = APIRequest;
+			sourceTree = "<group>";
+		};
+		DE70605122DC507400281033 /* Storyboard */ = {
+			isa = PBXGroup;
+			children = (
+				DE705FEF22D9812300281033 /* LaunchScreen.storyboard */,
+				DE705FEA22D9812100281033 /* Main.storyboard */,
+			);
+			path = Storyboard;
+			sourceTree = "<group>";
+		};
+		DE70605222DC507D00281033 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		DE70605322DC508D00281033 /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				DE705FE822D9812100281033 /* ViewController.swift */,
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
+		DE70605422DC50A000281033 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		DE70605522DC50A800281033 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		DE70605622DC50BC00281033 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				DE70606322DC533D00281033 /* CustomViewBase.swift */,
+			);
+			path = Classes;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -325,7 +417,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DE70605A22DC51BA00281033 /* UICollectionViewExtension.swift in Sources */,
+				DE70605822DC519800281033 /* NSObjectProtocolExtension.swift in Sources */,
+				DE70605C22DC51F000281033 /* UIColorExtension.swift in Sources */,
+				DE70605E22DC521E00281033 /* UITableViewExtension.swift in Sources */,
 				DE705FE922D9812100281033 /* ViewController.swift in Sources */,
+				DE70606222DC526900281033 /* StoryboardInstantiatable.swift in Sources */,
+				DE70606022DC524000281033 /* UIViewControllerExtension.swift in Sources */,
+				DE70606422DC533D00281033 /* CustomViewBase.swift in Sources */,
 				DE705FE722D9812100281033 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -17,4 +17,5 @@ target 'FavoriteSpotSampleByReSwift' do
   pod 'GrowingTextView'
   pod 'NVActivityIndicatorView'
   pod 'CalculateCalendarLogic'
+  pod 'Blueprints'
 end

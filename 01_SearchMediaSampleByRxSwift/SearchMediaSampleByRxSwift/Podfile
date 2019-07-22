@@ -17,4 +17,5 @@ target 'SearchMediaSampleByRxSwift' do
   pod 'Toast-Swift'
   pod 'TagListView'
   pod 'BouncyLayout'
+  pod 'SkeletonView'
 end

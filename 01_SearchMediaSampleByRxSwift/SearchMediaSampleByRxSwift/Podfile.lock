@@ -7,6 +7,7 @@ PODS:
   - Nuke (7.6.3)
   - PKHUD (5.3.0)
   - RxSwift (5.0.0)
+  - SkeletonView (1.7)
   - SwiftyAttributes (5.1.1)
   - TagListView (1.4.0)
   - Toast-Swift (5.0.0)
@@ -20,6 +21,7 @@ DEPENDENCIES:
   - Nuke
   - PKHUD
   - RxSwift
+  - SkeletonView
   - SwiftyAttributes
   - TagListView
   - Toast-Swift
@@ -34,6 +36,7 @@ SPEC REPOS:
     - Nuke
     - PKHUD
     - RxSwift
+    - SkeletonView
     - SwiftyAttributes
     - TagListView
     - Toast-Swift
@@ -47,10 +50,11 @@ SPEC CHECKSUMS:
   Nuke: 44130e95e09463f8773ae4b96b90de1eba6b3350
   PKHUD: 98f3e4bc904b9c916f1c5bb6d765365b5357291b
   RxSwift: 8b0671caa829a763bbce7271095859121cbd895f
+  SkeletonView: 7d7378731b708f8a6e6b1ffefb68cc3903f10a03
   SwiftyAttributes: e3e13891ddac3c62b3d7798d5c3969cea88e62bb
   TagListView: 987b0bdbb16cd9d9e7c0e2ec32aff37ecba8b173
   Toast-Swift: 36f4720243c8582c2be243a60a51e193c761f541
 
-PODFILE CHECKSUM: 624a18194effd33b5719dd78df48051776e3b260
+PODFILE CHECKSUM: 38199e304e67471906b2eeae50d4b6325a83b49c
 
 COCOAPODS: 1.7.2

@@ -18,19 +18,8 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="tutorial_background" translatesAutoresizingMaskIntoConstraints="NO" id="bXe-s4-yLP">
-                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
-                            </imageView>
-                            <visualEffectView opaque="NO" alpha="0.59999999999999998" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="hxL-4q-s0m">
-                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
-                                <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="O9K-aE-qWJ">
-                                    <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
-                                    <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                                </view>
-                                <blurEffect style="dark"/>
-                            </visualEffectView>
                             <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="Igm-VY-pbO">
-                                <rect key="frame" x="52.5" y="93.5" width="270" height="480"/>
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="vcJ-hT-rXs">
                                     <size key="itemSize" width="50" height="50"/>
@@ -40,40 +29,13 @@
                                 </collectionViewFlowLayout>
                                 <cells/>
                             </collectionView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Contents Sample" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="i3H-uj-Xgx">
-                                <rect key="frame" x="52.5" y="57.5" width="270" height="24"/>
-                                <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="20"/>
-                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="mgZ-AY-cQ0" customClass="TutorialDescriptionView" customModule="SearchMediaSampleByRxSwift" customModuleProvider="target">
-                                <rect key="frame" x="52.5" y="581" width="270" height="54"/>
-                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="54" id="za3-we-2hy"/>
-                                </constraints>
-                            </view>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
-                            <constraint firstItem="mgZ-AY-cQ0" firstAttribute="centerX" secondItem="KiD-Ge-VKt" secondAttribute="centerX" id="24B-8D-LCV"/>
-                            <constraint firstItem="Igm-VY-pbO" firstAttribute="top" secondItem="i3H-uj-Xgx" secondAttribute="bottom" constant="12" id="5dR-gR-uV8"/>
-                            <constraint firstItem="Igm-VY-pbO" firstAttribute="centerX" secondItem="KiD-Ge-VKt" secondAttribute="centerX" id="C6j-zA-Iem"/>
-                            <constraint firstItem="pIa-5V-Ikh" firstAttribute="trailing" secondItem="bXe-s4-yLP" secondAttribute="trailing" id="E8L-aS-GAD"/>
-                            <constraint firstItem="i3H-uj-Xgx" firstAttribute="width" secondItem="Igm-VY-pbO" secondAttribute="width" id="FCV-fD-QaR"/>
-                            <constraint firstItem="mgZ-AY-cQ0" firstAttribute="top" secondItem="Igm-VY-pbO" secondAttribute="bottom" constant="7.5" id="FaY-S1-5uo"/>
-                            <constraint firstItem="mgZ-AY-cQ0" firstAttribute="width" secondItem="Igm-VY-pbO" secondAttribute="width" id="IZd-Vg-KCm"/>
-                            <constraint firstItem="bXe-s4-yLP" firstAttribute="top" secondItem="KiD-Ge-VKt" secondAttribute="top" id="JYS-OL-LWQ"/>
-                            <constraint firstItem="i3H-uj-Xgx" firstAttribute="centerX" secondItem="KiD-Ge-VKt" secondAttribute="centerX" id="Osp-0P-4pO"/>
-                            <constraint firstItem="Igm-VY-pbO" firstAttribute="height" secondItem="KiD-Ge-VKt" secondAttribute="height" multiplier="0.72" id="QDQ-lg-qkQ"/>
-                            <constraint firstItem="Igm-VY-pbO" firstAttribute="centerY" secondItem="KiD-Ge-VKt" secondAttribute="centerY" id="aWQ-L2-W64"/>
-                            <constraint firstItem="bXe-s4-yLP" firstAttribute="leading" secondItem="KiD-Ge-VKt" secondAttribute="leading" id="g8M-Vn-CC4"/>
-                            <constraint firstItem="hxL-4q-s0m" firstAttribute="trailing" secondItem="pIa-5V-Ikh" secondAttribute="trailing" id="iZn-sz-gJf"/>
-                            <constraint firstItem="Igm-VY-pbO" firstAttribute="width" secondItem="KiD-Ge-VKt" secondAttribute="width" multiplier="0.72" id="lZx-d7-hAi"/>
-                            <constraint firstItem="bXe-s4-yLP" firstAttribute="bottom" secondItem="KiD-Ge-VKt" secondAttribute="bottom" id="qCz-oB-O3y"/>
-                            <constraint firstItem="hxL-4q-s0m" firstAttribute="leading" secondItem="pIa-5V-Ikh" secondAttribute="leading" id="shr-Gs-wvq"/>
-                            <constraint firstItem="hxL-4q-s0m" firstAttribute="bottom" secondItem="KiD-Ge-VKt" secondAttribute="bottom" id="uvq-jg-kmy"/>
-                            <constraint firstItem="hxL-4q-s0m" firstAttribute="top" secondItem="KiD-Ge-VKt" secondAttribute="top" id="xTP-LS-LIA"/>
+                            <constraint firstItem="Igm-VY-pbO" firstAttribute="trailing" secondItem="pIa-5V-Ikh" secondAttribute="trailing" id="GH5-7J-QPG"/>
+                            <constraint firstItem="Igm-VY-pbO" firstAttribute="bottom" secondItem="KiD-Ge-VKt" secondAttribute="bottom" id="ZAM-ar-LJy"/>
+                            <constraint firstItem="Igm-VY-pbO" firstAttribute="top" secondItem="KiD-Ge-VKt" secondAttribute="top" id="hJ1-wc-Obi"/>
+                            <constraint firstItem="Igm-VY-pbO" firstAttribute="leading" secondItem="pIa-5V-Ikh" secondAttribute="leading" id="wKk-Us-OCi"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="pIa-5V-Ikh"/>
                     </view>
@@ -86,7 +48,4 @@
             <point key="canvasLocation" x="-10.4" y="53.523238380809602"/>
         </scene>
     </scenes>
-    <resources>
-        <image name="tutorial_background" width="1920" height="1440"/>
-    </resources>
 </document>

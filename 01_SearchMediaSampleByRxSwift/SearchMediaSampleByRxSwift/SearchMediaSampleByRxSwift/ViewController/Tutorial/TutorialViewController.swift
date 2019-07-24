@@ -38,7 +38,7 @@ final class TutorialViewController: UIViewController {
 
         // UICollectionViewに付与するアニメーションに関する設定
         let layout = AnimatedCollectionViewLayout()
-        layout.animator = PageAttributesAnimator()
+        layout.animator = ParallaxAttributesAnimator()
         layout.scrollDirection = .horizontal
         tutorialCollectionView.collectionViewLayout = layout
     }
@@ -81,8 +81,8 @@ extension TutorialViewController: UICollectionViewDelegateFlowLayout {
     // セルのサイズを設定する
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
 
-        let cellWidth = UIScreen.main.bounds.width * 0.72
-        let cellHeight = UIScreen.main.bounds.height * 0.72
+        let cellWidth = UIScreen.main.bounds.width
+        let cellHeight = UIScreen.main.bounds.height
         return CGSize(width:cellWidth, height: cellHeight)
     }
 

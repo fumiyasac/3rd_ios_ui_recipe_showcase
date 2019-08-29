@@ -18,4 +18,5 @@ target 'FavoriteSpotSampleByReSwift' do
   pod 'NVActivityIndicatorView'
   pod 'CalculateCalendarLogic'
   pod 'Blueprints'
+  pod 'DropDown'
 end

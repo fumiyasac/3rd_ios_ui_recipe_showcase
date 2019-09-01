@@ -3,18 +3,25 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
 		CF270CBC8E3B8B0CFD09C294 /* Pods_FavoriteSpotSampleByReSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 36C07275E43D63D368CA751C /* Pods_FavoriteSpotSampleByReSwift.framework */; };
 		DE70602122D9815F00281033 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE70602022D9815F00281033 /* AppDelegate.swift */; };
-		DE70602322D9815F00281033 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE70602222D9815F00281033 /* ViewController.swift */; };
+		DE70602322D9815F00281033 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE70602222D9815F00281033 /* MainViewController.swift */; };
 		DE70602622D9815F00281033 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DE70602422D9815F00281033 /* Main.storyboard */; };
 		DE70602822D9816000281033 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DE70602722D9816000281033 /* Assets.xcassets */; };
 		DE70602B22D9816000281033 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DE70602922D9816000281033 /* LaunchScreen.storyboard */; };
 		DE70603622D9816000281033 /* FavoriteSpotSampleByReSwiftTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE70603522D9816000281033 /* FavoriteSpotSampleByReSwiftTests.swift */; };
 		DE70604122D9816000281033 /* FavoriteSpotSampleByReSwiftUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE70604022D9816000281033 /* FavoriteSpotSampleByReSwiftUITests.swift */; };
+		DEB90769231BAEFD00B9DF17 /* CustomViewBase.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEB90768231BAEFD00B9DF17 /* CustomViewBase.swift */; };
+		DEB9076B231BAF4A00B9DF17 /* NSObjectProtocolExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEB9076A231BAF4A00B9DF17 /* NSObjectProtocolExtension.swift */; };
+		DEB9076D231BAF6B00B9DF17 /* StoryboardInstantiatable.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEB9076C231BAF6B00B9DF17 /* StoryboardInstantiatable.swift */; };
+		DEB9076F231BB04700B9DF17 /* UICollectionViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEB9076E231BB04700B9DF17 /* UICollectionViewExtension.swift */; };
+		DEB90772231BB52F00B9DF17 /* UITableViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEB90771231BB52F00B9DF17 /* UITableViewExtension.swift */; };
+		DEB90774231BB57B00B9DF17 /* UIColorExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEB90773231BB57B00B9DF17 /* UIColorExtension.swift */; };
+		DEB90776231BB59800B9DF17 /* UIViewControllerExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEB90775231BB59800B9DF17 /* UIViewControllerExtension.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,7 +47,7 @@
 		B256AB498284D3A93F28474C /* Pods-FavoriteSpotSampleByReSwift.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FavoriteSpotSampleByReSwift.debug.xcconfig"; path = "Target Support Files/Pods-FavoriteSpotSampleByReSwift/Pods-FavoriteSpotSampleByReSwift.debug.xcconfig"; sourceTree = "<group>"; };
 		DE70601D22D9815F00281033 /* FavoriteSpotSampleByReSwift.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FavoriteSpotSampleByReSwift.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DE70602022D9815F00281033 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		DE70602222D9815F00281033 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		DE70602222D9815F00281033 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		DE70602522D9815F00281033 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		DE70602722D9816000281033 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		DE70602A22D9816000281033 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -51,6 +58,13 @@
 		DE70603C22D9816000281033 /* FavoriteSpotSampleByReSwiftUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FavoriteSpotSampleByReSwiftUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		DE70604022D9816000281033 /* FavoriteSpotSampleByReSwiftUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoriteSpotSampleByReSwiftUITests.swift; sourceTree = "<group>"; };
 		DE70604222D9816000281033 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DEB90768231BAEFD00B9DF17 /* CustomViewBase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomViewBase.swift; sourceTree = "<group>"; };
+		DEB9076A231BAF4A00B9DF17 /* NSObjectProtocolExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NSObjectProtocolExtension.swift; sourceTree = "<group>"; };
+		DEB9076C231BAF6B00B9DF17 /* StoryboardInstantiatable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoryboardInstantiatable.swift; sourceTree = "<group>"; };
+		DEB9076E231BB04700B9DF17 /* UICollectionViewExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UICollectionViewExtension.swift; sourceTree = "<group>"; };
+		DEB90771231BB52F00B9DF17 /* UITableViewExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UITableViewExtension.swift; sourceTree = "<group>"; };
+		DEB90773231BB57B00B9DF17 /* UIColorExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIColorExtension.swift; sourceTree = "<group>"; };
+		DEB90775231BB59800B9DF17 /* UIViewControllerExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewControllerExtension.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -85,7 +99,6 @@
 				B256AB498284D3A93F28474C /* Pods-FavoriteSpotSampleByReSwift.debug.xcconfig */,
 				6ED489249495C4C39E73C7B3 /* Pods-FavoriteSpotSampleByReSwift.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -114,12 +127,18 @@
 		DE70601F22D9815F00281033 /* FavoriteSpotSampleByReSwift */ = {
 			isa = PBXGroup;
 			children = (
-				DE70602022D9815F00281033 /* AppDelegate.swift */,
-				DE70602222D9815F00281033 /* ViewController.swift */,
-				DE70602422D9815F00281033 /* Main.storyboard */,
-				DE70602722D9816000281033 /* Assets.xcassets */,
-				DE70602922D9816000281033 /* LaunchScreen.storyboard */,
 				DE70602C22D9816000281033 /* Info.plist */,
+				DE70602022D9815F00281033 /* AppDelegate.swift */,
+				DE70602722D9816000281033 /* Assets.xcassets */,
+				DEB9075F231B9D5700B9DF17 /* APIRequest */,
+				DEB90760231B9D6400B9DF17 /* Classes */,
+				DEB90761231B9D6C00B9DF17 /* Extension */,
+				DEB90762231B9D8200B9DF17 /* Model */,
+				DEB90763231B9D8900B9DF17 /* Modules */,
+				DEB90766231BA05E00B9DF17 /* Redux */,
+				DEB90767231BA06D00B9DF17 /* Storyboard */,
+				DEB90764231B9D9E00B9DF17 /* View */,
+				DEB90765231BA05600B9DF17 /* ViewController */,
 			);
 			path = FavoriteSpotSampleByReSwift;
 			sourceTree = "<group>";
@@ -140,6 +159,79 @@
 				DE70604222D9816000281033 /* Info.plist */,
 			);
 			path = FavoriteSpotSampleByReSwiftUITests;
+			sourceTree = "<group>";
+		};
+		DEB9075F231B9D5700B9DF17 /* APIRequest */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = APIRequest;
+			sourceTree = "<group>";
+		};
+		DEB90760231B9D6400B9DF17 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				DEB90768231BAEFD00B9DF17 /* CustomViewBase.swift */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		DEB90761231B9D6C00B9DF17 /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				DEB9076A231BAF4A00B9DF17 /* NSObjectProtocolExtension.swift */,
+				DEB9076C231BAF6B00B9DF17 /* StoryboardInstantiatable.swift */,
+				DEB9076E231BB04700B9DF17 /* UICollectionViewExtension.swift */,
+				DEB90773231BB57B00B9DF17 /* UIColorExtension.swift */,
+				DEB90771231BB52F00B9DF17 /* UITableViewExtension.swift */,
+				DEB90775231BB59800B9DF17 /* UIViewControllerExtension.swift */,
+			);
+			path = Extension;
+			sourceTree = "<group>";
+		};
+		DEB90762231B9D8200B9DF17 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		DEB90763231B9D8900B9DF17 /* Modules */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Modules;
+			sourceTree = "<group>";
+		};
+		DEB90764231B9D9E00B9DF17 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		DEB90765231BA05600B9DF17 /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				DE70602222D9815F00281033 /* MainViewController.swift */,
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
+		DEB90766231BA05E00B9DF17 /* Redux */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Redux;
+			sourceTree = "<group>";
+		};
+		DEB90767231BA06D00B9DF17 /* Storyboard */ = {
+			isa = PBXGroup;
+			children = (
+				DE70602922D9816000281033 /* LaunchScreen.storyboard */,
+				DE70602422D9815F00281033 /* Main.storyboard */,
+			);
+			path = Storyboard;
 			sourceTree = "<group>";
 		};
 		E699BE06A413B68EF7E55308 /* Frameworks */ = {
@@ -325,8 +417,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DE70602322D9815F00281033 /* ViewController.swift in Sources */,
+				DEB9076D231BAF6B00B9DF17 /* StoryboardInstantiatable.swift in Sources */,
+				DE70602322D9815F00281033 /* MainViewController.swift in Sources */,
+				DEB90776231BB59800B9DF17 /* UIViewControllerExtension.swift in Sources */,
+				DEB9076B231BAF4A00B9DF17 /* NSObjectProtocolExtension.swift in Sources */,
+				DEB90774231BB57B00B9DF17 /* UIColorExtension.swift in Sources */,
+				DEB9076F231BB04700B9DF17 /* UICollectionViewExtension.swift in Sources */,
+				DEB90769231BAEFD00B9DF17 /* CustomViewBase.swift in Sources */,
 				DE70602122D9815F00281033 /* AppDelegate.swift in Sources */,
+				DEB90772231BB52F00B9DF17 /* UITableViewExtension.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

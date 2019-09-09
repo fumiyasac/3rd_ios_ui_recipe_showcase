@@ -24,7 +24,9 @@ DerivedData
 # CocoaPod
 /01_SearchMediaSampleByRxSwift/SearchMediaSampleByRxSwift/Pods/*
 /02_FavoriteSpotSampleByReSwift/FavoriteSpotSampleByReSwift/Pods/*
+/03_PhotoGalleryContentsByReSwiftAndRxSwift/PhotoGalleryContentsByReSwiftAndRxSwift/Pods/*
 
 # Server
 /01_SearchMediaSampleByRxSwift/server_mock/*
 /02_FavoriteSpotSampleByReSwift/server_mock/*
+/03_PhotoGalleryContentsByReSwiftAndRxSwift/server_mock/*

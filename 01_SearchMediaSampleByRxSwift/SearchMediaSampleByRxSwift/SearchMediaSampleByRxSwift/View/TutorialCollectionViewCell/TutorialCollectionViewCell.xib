@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
-    <device id="retina6_1" orientation="portrait">
+    <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
@@ -30,20 +30,23 @@
                         <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     </view>
                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="CS6-kn-tBH">
-                        <rect key="frame" x="52.5" y="93.5" width="270" height="480"/>
+                        <rect key="frame" x="48.5" y="167" width="278" height="333.5"/>
+                        <constraints>
+                            <constraint firstAttribute="width" secondItem="CS6-kn-tBH" secondAttribute="height" multiplier="5:6" id="5a5-1Z-AIn"/>
+                        </constraints>
                         <userDefinedRuntimeAttributes>
                             <userDefinedRuntimeAttribute type="boolean" keyPath="isSkeletonable" value="NO"/>
                         </userDefinedRuntimeAttributes>
                     </imageView>
                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ViY-aq-FMk" customClass="TutorialDescriptionView" customModule="SearchMediaSampleByRxSwift" customModuleProvider="target">
-                        <rect key="frame" x="52.5" y="579.5" width="270" height="54"/>
+                        <rect key="frame" x="48.5" y="548.5" width="278" height="54"/>
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstAttribute="height" constant="54" id="Oix-eU-7JE"/>
                         </constraints>
                     </view>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Title Article Samples" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Wcw-3h-QbM">
-                        <rect key="frame" x="52.5" y="59.5" width="270" height="24"/>
+                        <rect key="frame" x="48.5" y="95" width="278" height="24"/>
                         <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="20"/>
                         <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <nil key="highlightedColor"/>
@@ -54,7 +57,7 @@
                 <constraint firstItem="CS6-kn-tBH" firstAttribute="centerX" secondItem="gTV-IL-0wX" secondAttribute="centerX" id="Alc-z3-08Z"/>
                 <constraint firstItem="CS6-kn-tBH" firstAttribute="centerY" secondItem="gTV-IL-0wX" secondAttribute="centerY" id="CHD-ig-5VC"/>
                 <constraint firstItem="Jtq-Wf-A4P" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="GLV-1C-ulG"/>
-                <constraint firstItem="Wcw-3h-QbM" firstAttribute="width" secondItem="CS6-kn-tBH" secondAttribute="width" id="LK1-fi-1pf"/>
+                <constraint firstItem="CS6-kn-tBH" firstAttribute="width" secondItem="Wcw-3h-QbM" secondAttribute="width" id="J0z-UC-bJz"/>
                 <constraint firstItem="Wcw-3h-QbM" firstAttribute="centerX" secondItem="gTV-IL-0wX" secondAttribute="centerX" id="S9R-My-1Po"/>
                 <constraint firstItem="Jtq-Wf-A4P" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="WdM-Bb-cLD"/>
                 <constraint firstItem="EVq-Kg-vUd" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="Xth-wW-3O7"/>
@@ -62,13 +65,12 @@
                 <constraint firstItem="ViY-aq-FMk" firstAttribute="centerX" secondItem="gTV-IL-0wX" secondAttribute="centerX" id="eMq-A6-Ccw"/>
                 <constraint firstAttribute="bottom" secondItem="EVq-Kg-vUd" secondAttribute="bottom" id="gS9-9v-RZB"/>
                 <constraint firstAttribute="trailing" secondItem="EVq-Kg-vUd" secondAttribute="trailing" id="hZK-k3-pOV"/>
-                <constraint firstItem="CS6-kn-tBH" firstAttribute="top" secondItem="Wcw-3h-QbM" secondAttribute="bottom" constant="10" id="igX-EN-kiC"/>
-                <constraint firstItem="ViY-aq-FMk" firstAttribute="width" secondItem="CS6-kn-tBH" secondAttribute="width" id="jNs-vH-2Bx"/>
                 <constraint firstItem="EVq-Kg-vUd" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="lQc-FH-t4F"/>
-                <constraint firstItem="CS6-kn-tBH" firstAttribute="width" secondItem="Jtq-Wf-A4P" secondAttribute="width" multiplier="0.72" id="nPs-Az-DBO"/>
-                <constraint firstItem="CS6-kn-tBH" firstAttribute="height" secondItem="Jtq-Wf-A4P" secondAttribute="height" multiplier="0.72" id="od6-18-rOk"/>
+                <constraint firstItem="ViY-aq-FMk" firstAttribute="width" secondItem="CS6-kn-tBH" secondAttribute="width" id="lS2-RM-36k"/>
+                <constraint firstItem="CS6-kn-tBH" firstAttribute="height" secondItem="Jtq-Wf-A4P" secondAttribute="height" multiplier="0.5" id="od6-18-rOk"/>
                 <constraint firstAttribute="trailing" secondItem="Jtq-Wf-A4P" secondAttribute="trailing" id="rGf-rP-gUV"/>
-                <constraint firstItem="ViY-aq-FMk" firstAttribute="top" secondItem="CS6-kn-tBH" secondAttribute="bottom" constant="6" id="sP0-jX-Qj8"/>
+                <constraint firstItem="ViY-aq-FMk" firstAttribute="top" secondItem="CS6-kn-tBH" secondAttribute="bottom" constant="48" id="sP0-jX-Qj8"/>
+                <constraint firstItem="CS6-kn-tBH" firstAttribute="top" secondItem="Wcw-3h-QbM" secondAttribute="bottom" constant="48" id="zVn-bR-sEd"/>
             </constraints>
             <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
             <point key="canvasLocation" x="126.81159420289856" y="111.49553571428571"/>

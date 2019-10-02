@@ -9,7 +9,6 @@ target 'SearchMediaSampleByRxSwift' do
   pod 'Nuke'
 
   # 3. UI関連処理で利用するライブラリ
-  pod 'Pastel'
   pod 'DynamicButton'
   pod 'SwiftyAttributes'
   pod 'BetterSegmentedControl'
@@ -19,4 +18,5 @@ target 'SearchMediaSampleByRxSwift' do
   pod 'TagListView'
   pod 'BouncyLayout'
   pod 'SkeletonView'
+  pod 'Parchment'
 end

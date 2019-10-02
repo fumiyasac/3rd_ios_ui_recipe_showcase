@@ -11,6 +11,7 @@ target 'FavoriteSpotSampleByReSwift' do
   pod 'RealmSwift'
 
   # 3. UI関連処理で利用するライブラリ
+  pod 'Pastel' 
   pod 'PanModal'
   pod 'SwipeCellKit'
   pod 'Gemini'

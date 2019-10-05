@@ -25,6 +25,6 @@ final class TutorialCollectionViewCell: UICollectionViewCell {
     // MARK: - Function
 
     private func setupTutorialCollectionViewCell() {
-        self.backgroundColor = .red
+
     }
 }

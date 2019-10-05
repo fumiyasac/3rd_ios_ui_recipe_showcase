@@ -18,6 +18,7 @@ final class TutorialViewController: UIViewController {
     // このViewControllerで利用するViewModel
     private let viewModel = TutorialViewModel()
 
+    @IBOutlet private weak var nextContentsButton: UIButton!
     @IBOutlet private weak var tutorialCollectionView: UICollectionView!
 
     // MARK: -  Override
@@ -27,6 +28,7 @@ final class TutorialViewController: UIViewController {
         
         setupTutorialCollectionView()
         bindTutorialCollectionToRxSwift()
+        bindNextButtonToRxSwift()
     }
 
     // MARK: -  Private Function
@@ -62,18 +64,22 @@ final class TutorialViewController: UIViewController {
             }
             .disposed(by: disposeBag)
 
-        // RxSwiftを利用した該当のセルをタップした場合にタップ時のindexPathを返す
+        // RxSwiftを利用して該当のセルをタップした場合にタップ時のindexPathを返す
         tutorialCollectionView.rx.itemSelected
             .asSignal()
             .emit(
                 onNext: { [weak self] indexPath in
-                   print(indexPath.section)
-                   print(indexPath.row)
+                    let cell = self?.tutorialCollectionView.cellForItem(at: indexPath) as! TutorialCollectionViewCell
+
+                    print(indexPath.section)
+                    print(indexPath.row)
+                    print(cell)
                 }
             )
             .disposed(by: disposeBag)
-        /*
+
         // 参考: タップ時にセルに紐づいているModelを返す場合の記述例
+        /*
         tutorialCollectionView.rx.modelSelected(TutorialModel.self)
             .asSignal()
             .emit(
@@ -83,6 +89,79 @@ final class TutorialViewController: UIViewController {
             )
             .disposed(by: disposeBag)
         */
+
+        // RxSwiftを利用してUICollectionViewのオフセット値が変化した場合に見える範囲内のセルのindexPathを取得する
+        // MEMO: UIScrollViewDelegateのScrollViewDidScrollを利用しても同様な表現が可能です。
+        tutorialCollectionView.rx.contentOffset
+            .subscribe(
+                onNext: { [weak self] currentPoint in
+                    guard let collectionView = self?.tutorialCollectionView else {
+                        return
+                    }
+                    let visibleRect = CGRect(origin: currentPoint, size: collectionView.bounds.size)
+                    let visiblePoint = CGPoint(x: visibleRect.midX, y: visibleRect.midY)
+                    if let visibleIndexPath = collectionView.indexPathForItem(at: visiblePoint) {
+                        self?.viewModel.changeIndexTrigger.onNext(visibleIndexPath.row)
+                    }
+                }
+            )
+            .disposed(by: disposeBag)
+    }
+
+    private func bindNextButtonToRxSwift() {
+        viewModel.changeIndexTrigger.onNext(0)
+        viewModel.isLastIndex
+            .subscribe(
+                onNext: { [weak self] result in
+                    self?.shouldDisplayNextButton(result)
+                }
+            )
+            .disposed(by: disposeBag)
+        nextContentsButton.rx.controlEvent(.touchDown)
+            .asObservable()
+            .subscribe(
+                onNext: { [weak self] _ in
+                    self?.executeNextButtonAnimationOfTouchDown()
+                }
+            )
+            .disposed(by: disposeBag)
+        nextContentsButton.rx.controlEvent(.touchUpInside)
+            .asObservable()
+            .subscribe(
+                onNext: { [weak self] _ in
+                    self?.executeNextButtonAnimationOfTouchUpInside()
+                }
+            )
+            .disposed(by: disposeBag)
+    }
+
+    // コンテンツ表示ボタンの状態を決定する
+    private func shouldDisplayNextButton(_ result: Bool) {
+        nextContentsButton.isUserInteractionEnabled = result
+        UIView.animate(withDuration: 0.18, animations: {
+            self.nextContentsButton.superview?.alpha = result ? 1 : 0
+        })
+    }
+
+    // コンテンツ表示ボタンの.touchDown時のAnimationを付与する
+    private func executeNextButtonAnimationOfTouchDown() {
+        UIView.animate(withDuration: 0.16, animations: {
+            self.nextContentsButton.superview?.transform = CGAffineTransform(scaleX: 0.94, y: 0.94)
+        }, completion: nil)
+    }
+
+    // コンテンツ表示ボタンの.touchUpInside時のAnimationを付与する
+    private func executeNextButtonAnimationOfTouchUpInside() {
+        UIView.animate(withDuration: 0.16, animations: {
+            self.nextContentsButton.superview?.transform = CGAffineTransform.identity
+        }, completion: { finished in
+            self.goMainContents()
+        })
+    }
+
+    // コンテンツ表示画面へ遷移する
+    private func goMainContents() {
+        print("コンテンツ表示画面へ遷移する")
     }
 }
 
@@ -92,7 +171,6 @@ extension TutorialViewController: UICollectionViewDelegateFlowLayout {
 
     // セルのサイズを設定する
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
-
         let cellWidth = UIScreen.main.bounds.width
         let cellHeight = UIScreen.main.bounds.height
         return CGSize(width:cellWidth, height: cellHeight)

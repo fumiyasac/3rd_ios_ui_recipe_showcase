@@ -34,14 +34,14 @@
                         </userDefinedRuntimeAttributes>
                     </imageView>
                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ViY-aq-FMk" customClass="TutorialDescriptionView" customModule="SearchMediaSampleByRxSwift" customModuleProvider="target">
-                        <rect key="frame" x="59.5" y="511" width="256" height="54"/>
+                        <rect key="frame" x="59.5" y="507" width="256" height="54"/>
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstAttribute="height" constant="54" id="Oix-eU-7JE"/>
                         </constraints>
                     </view>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Title Article Samples" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Wcw-3h-QbM">
-                        <rect key="frame" x="59.5" y="132" width="256" height="24"/>
+                        <rect key="frame" x="59.5" y="136" width="256" height="24"/>
                         <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="20"/>
                         <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <nil key="highlightedColor"/>
@@ -60,8 +60,8 @@
                 <constraint firstItem="ViY-aq-FMk" firstAttribute="width" secondItem="CS6-kn-tBH" secondAttribute="width" id="lS2-RM-36k"/>
                 <constraint firstItem="CS6-kn-tBH" firstAttribute="height" secondItem="Jtq-Wf-A4P" secondAttribute="height" multiplier="0.46" id="od6-18-rOk"/>
                 <constraint firstAttribute="trailing" secondItem="Jtq-Wf-A4P" secondAttribute="trailing" id="rGf-rP-gUV"/>
-                <constraint firstItem="ViY-aq-FMk" firstAttribute="top" secondItem="CS6-kn-tBH" secondAttribute="bottom" constant="24" id="sP0-jX-Qj8"/>
-                <constraint firstItem="CS6-kn-tBH" firstAttribute="top" secondItem="Wcw-3h-QbM" secondAttribute="bottom" constant="24" id="zVn-bR-sEd"/>
+                <constraint firstItem="ViY-aq-FMk" firstAttribute="top" secondItem="CS6-kn-tBH" secondAttribute="bottom" constant="20" id="sP0-jX-Qj8"/>
+                <constraint firstItem="CS6-kn-tBH" firstAttribute="top" secondItem="Wcw-3h-QbM" secondAttribute="bottom" constant="20" id="zVn-bR-sEd"/>
             </constraints>
             <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
             <point key="canvasLocation" x="126.81159420289856" y="111.49553571428571"/>

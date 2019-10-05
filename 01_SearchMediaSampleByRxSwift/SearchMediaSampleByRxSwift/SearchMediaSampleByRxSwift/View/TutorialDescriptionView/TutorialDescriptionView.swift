@@ -9,4 +9,5 @@
 import Foundation
 import UIKit
 
+@IBDesignable
 final class TutorialDescriptionView: CustomViewBase {}

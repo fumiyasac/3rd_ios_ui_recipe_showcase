@@ -10,7 +10,7 @@ target 'SearchMediaSampleByRxSwift' do
   pod 'Nuke'
 
   # 3. UI関連処理で利用するライブラリ
-  pod 'DynamicButton'
+  pod 'SideMenu'
   pod 'SwiftyAttributes'
   pod 'BetterSegmentedControl'
   pod 'PKHUD'

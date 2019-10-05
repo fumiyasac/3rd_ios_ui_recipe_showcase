@@ -3,7 +3,8 @@ target 'SearchMediaSampleByRxSwift' do
 
   # 1. アーキテクチャの基盤ライブラリ
   pod 'RxSwift'
-
+  pod 'RxCocoa'
+ 
   # 2. 非同期処理や画像キャッシュ等の用途で利用するライブラリ
   pod 'APIKit'
   pod 'Nuke'

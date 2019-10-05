@@ -28,6 +28,9 @@
 		DECDB96422E448420057185C /* TutorialCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = DECDB96222E448420057185C /* TutorialCollectionViewCell.xib */; };
 		DECDB96822E4599F0057185C /* TutorialDescriptionView.xib in Resources */ = {isa = PBXBuildFile; fileRef = DECDB96722E4599F0057185C /* TutorialDescriptionView.xib */; };
 		DECDB96A22E459EF0057185C /* TutorialDescriptionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DECDB96922E459EF0057185C /* TutorialDescriptionView.swift */; };
+		DEFEF14E23486745001CBDBF /* tutorial_datasources.json in Resources */ = {isa = PBXBuildFile; fileRef = DEFEF14D23486745001CBDBF /* tutorial_datasources.json */; };
+		DEFEF151234867C2001CBDBF /* TutorialModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEFEF150234867C2001CBDBF /* TutorialModel.swift */; };
+		DEFEF153234868BE001CBDBF /* TutorialViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEFEF152234868BE001CBDBF /* TutorialViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -77,6 +80,9 @@
 		DECDB96222E448420057185C /* TutorialCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TutorialCollectionViewCell.xib; sourceTree = "<group>"; };
 		DECDB96722E4599F0057185C /* TutorialDescriptionView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TutorialDescriptionView.xib; sourceTree = "<group>"; };
 		DECDB96922E459EF0057185C /* TutorialDescriptionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TutorialDescriptionView.swift; sourceTree = "<group>"; };
+		DEFEF14D23486745001CBDBF /* tutorial_datasources.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = tutorial_datasources.json; sourceTree = "<group>"; };
+		DEFEF150234867C2001CBDBF /* TutorialModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TutorialModel.swift; sourceTree = "<group>"; };
+		DEFEF152234868BE001CBDBF /* TutorialViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TutorialViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -152,6 +158,7 @@
 				DE705FED22D9812300281033 /* Assets.xcassets */,
 				DE70605022DC506600281033 /* APIRequest */,
 				DE70605622DC50BC00281033 /* Classes */,
+				DEFEF14F2348678A001CBDBF /* Data */,
 				DE70604E22DC504E00281033 /* Extension */,
 				DE70605522DC50A800281033 /* Model */,
 				DE70604F22DC505D00281033 /* Modules */,
@@ -221,6 +228,7 @@
 		DE70605222DC507D00281033 /* ViewModel */ = {
 			isa = PBXGroup;
 			children = (
+				DEFEF152234868BE001CBDBF /* TutorialViewModel.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -246,6 +254,7 @@
 		DE70605522DC50A800281033 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				DEFEF150234867C2001CBDBF /* TutorialModel.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -290,6 +299,14 @@
 				DECDB96722E4599F0057185C /* TutorialDescriptionView.xib */,
 			);
 			path = TutorialDescriptionView;
+			sourceTree = "<group>";
+		};
+		DEFEF14F2348678A001CBDBF /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				DEFEF14D23486745001CBDBF /* tutorial_datasources.json */,
+			);
+			path = Data;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -402,6 +419,7 @@
 				DECDB96822E4599F0057185C /* TutorialDescriptionView.xib in Resources */,
 				DE705FEE22D9812300281033 /* Assets.xcassets in Resources */,
 				DECDB95722E445CD0057185C /* Tutorial.storyboard in Resources */,
+				DEFEF14E23486745001CBDBF /* tutorial_datasources.json in Resources */,
 				DE705FEC22D9812100281033 /* Main.storyboard in Resources */,
 				DECDB96422E448420057185C /* TutorialCollectionViewCell.xib in Resources */,
 			);
@@ -470,10 +488,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DEFEF153234868BE001CBDBF /* TutorialViewModel.swift in Sources */,
 				DECDB96322E448420057185C /* TutorialCollectionViewCell.swift in Sources */,
 				DE70605A22DC51BA00281033 /* UICollectionViewExtension.swift in Sources */,
 				DE70605822DC519800281033 /* NSObjectProtocolExtension.swift in Sources */,
 				DECDB96A22E459EF0057185C /* TutorialDescriptionView.swift in Sources */,
+				DEFEF151234867C2001CBDBF /* TutorialModel.swift in Sources */,
 				DECDB95922E446100057185C /* TutorialViewController.swift in Sources */,
 				DE70605C22DC51F000281033 /* UIColorExtension.swift in Sources */,
 				DE70605E22DC521E00281033 /* UITableViewExtension.swift in Sources */,

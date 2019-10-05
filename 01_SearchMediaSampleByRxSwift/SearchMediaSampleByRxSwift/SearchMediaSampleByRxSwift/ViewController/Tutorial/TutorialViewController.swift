@@ -7,33 +7,37 @@
 //
 
 import UIKit
+import RxSwift
+import RxCocoa
 import AnimatedCollectionViewLayout
 
 final class TutorialViewController: UIViewController {
 
-    @IBOutlet weak var tutorialCollectionView: UICollectionView!
-    
+    private let disposeBag = DisposeBag()
+
+    // このViewControllerで利用するViewModel
+    private let viewModel = TutorialViewModel()
+
+    @IBOutlet private weak var tutorialCollectionView: UICollectionView!
+
     // MARK: -  Override
 
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        setupGalleryCollectionView()
+        
+        setupTutorialCollectionView()
+        bindTutorialCollectionToRxSwift()
     }
 
     // MARK: -  Private Function
 
-    private func setupGalleryCollectionView() {
+    private func setupTutorialCollectionView() {
 
         // UICollectionViewに関する初期設定
         tutorialCollectionView.isPagingEnabled = true
         tutorialCollectionView.isScrollEnabled = true
         tutorialCollectionView.showsHorizontalScrollIndicator = false
         tutorialCollectionView.showsVerticalScrollIndicator = false
-
-        // UICollectionViewDelegate & UICollectionViewDataSourceに関する初期設定
-        tutorialCollectionView.delegate = self
-        tutorialCollectionView.dataSource = self
         tutorialCollectionView.registerCustomCell(TutorialCollectionViewCell.self)
 
         // UICollectionViewに付与するアニメーションに関する設定
@@ -42,42 +46,50 @@ final class TutorialViewController: UIViewController {
         layout.scrollDirection = .horizontal
         tutorialCollectionView.collectionViewLayout = layout
     }
-}
 
-// MARK: - UICollectionViewDataSource
+    private func bindTutorialCollectionToRxSwift() {
 
-extension TutorialViewController: UICollectionViewDelegate {
-    
-    // MEMO: 利用しないかもしれませんが一応準備をしておく
-    
-    func collectionView(_ collectionView: UICollectionView, willDisplay cell: UICollectionViewCell, forItemAt indexPath: IndexPath) {}
-    
-    func collectionView(_ collectionView: UICollectionView, didEndDisplaying cell: UICollectionViewCell, forItemAt indexPath: IndexPath) {}
-}
+        // RxSwiftを利用してUICollectionViewDelegateを適用する
+        // MEMO: RxSwiftを利用した方法で組み立てる場合でもUICollectionViewDelegate等を利用する場合は記載が必要です。
+        tutorialCollectionView.rx.setDelegate(self).disposed(by: disposeBag)
+        
+        // RxSwiftを利用して一覧データをUICollectionViewに適用する
+        // MEMO: UICollectionViewのHeader・Footerのレイアウト調整等が絡んで取り扱いにくい場合もあるので、状況に合わせて使い分けていくと良いかと思います。
+        viewModel.tutorialItems.bind(to: tutorialCollectionView.rx.items) { (collectionView, row, model) in
+                let cell = collectionView.dequeueReusableCustomCell(with: TutorialCollectionViewCell.self, indexPath: IndexPath(row: row, section: 0))
+                cell.setCell()
+                return cell
+            }
+            .disposed(by: disposeBag)
 
-// MARK: - UICollectionViewDataSource
-
-extension TutorialViewController: UICollectionViewDataSource {
-
-    func numberOfSections(in collectionView: UICollectionView) -> Int {
-        return 1
-    }
-
-    func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return 6
-    }
-
-    func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-
-        let cell = collectionView.dequeueReusableCustomCell(with: TutorialCollectionViewCell.self, indexPath: indexPath)
-        return cell
+        // RxSwiftを利用した該当のセルをタップした場合にタップ時のindexPathを返す
+        tutorialCollectionView.rx.itemSelected
+            .asSignal()
+            .emit(
+                onNext: { [weak self] indexPath in
+                   print(indexPath.section)
+                   print(indexPath.row)
+                }
+            )
+            .disposed(by: disposeBag)
+        /*
+        // 参考: タップ時にセルに紐づいているModelを返す場合の記述例
+        tutorialCollectionView.rx.modelSelected(TutorialModel.self)
+            .asSignal()
+            .emit(
+                onNext: { model in
+                    print(model)
+                }
+            )
+            .disposed(by: disposeBag)
+        */
     }
 }
 
 // MARK: - UICollectionViewDelegateFlowLayout
 
 extension TutorialViewController: UICollectionViewDelegateFlowLayout {
-    
+
     // セルのサイズを設定する
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
 

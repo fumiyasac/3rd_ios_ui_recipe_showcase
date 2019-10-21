@@ -8,6 +8,10 @@
 
 /* Begin PBXBuildFile section */
 		12826158A6166D805B314B4A /* Pods_SearchMediaSampleByRxSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A4AB30B7D2FFB696EA409015 /* Pods_SearchMediaSampleByRxSwift.framework */; };
+		DE2E66F623545CC2001567A2 /* Article.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DE2E66F423545CC2001567A2 /* Article.storyboard */; };
+		DE2E66F923545CF1001567A2 /* Gallery.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DE2E66F723545CF1001567A2 /* Gallery.storyboard */; };
+		DE2E66FB23545D1F001567A2 /* ArticleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE2E66FA23545D1F001567A2 /* ArticleViewController.swift */; };
+		DE2E66FD23545D2D001567A2 /* GalleryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE2E66FC23545D2D001567A2 /* GalleryViewController.swift */; };
 		DE705FE722D9812100281033 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE705FE622D9812100281033 /* AppDelegate.swift */; };
 		DE705FE922D9812100281033 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE705FE822D9812100281033 /* MainViewController.swift */; };
 		DE705FEC22D9812100281033 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DE705FEA22D9812100281033 /* Main.storyboard */; };
@@ -54,6 +58,10 @@
 		0753EF4346BE937BEE9D3E27 /* Pods-SearchMediaSampleByRxSwift.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SearchMediaSampleByRxSwift.release.xcconfig"; path = "Target Support Files/Pods-SearchMediaSampleByRxSwift/Pods-SearchMediaSampleByRxSwift.release.xcconfig"; sourceTree = "<group>"; };
 		762E4E2910DF2BC21727617D /* Pods-SearchMediaSampleByRxSwift.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SearchMediaSampleByRxSwift.debug.xcconfig"; path = "Target Support Files/Pods-SearchMediaSampleByRxSwift/Pods-SearchMediaSampleByRxSwift.debug.xcconfig"; sourceTree = "<group>"; };
 		A4AB30B7D2FFB696EA409015 /* Pods_SearchMediaSampleByRxSwift.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SearchMediaSampleByRxSwift.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		DE2E66F523545CC2001567A2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Article.storyboard; sourceTree = "<group>"; };
+		DE2E66F823545CF1001567A2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Gallery.storyboard; sourceTree = "<group>"; };
+		DE2E66FA23545D1F001567A2 /* ArticleViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArticleViewController.swift; sourceTree = "<group>"; };
+		DE2E66FC23545D2D001567A2 /* GalleryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GalleryViewController.swift; sourceTree = "<group>"; };
 		DE705FE322D9812100281033 /* SearchMediaSampleByRxSwift.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SearchMediaSampleByRxSwift.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DE705FE622D9812100281033 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		DE705FE822D9812100281033 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
@@ -221,6 +229,8 @@
 				DE705FEF22D9812300281033 /* LaunchScreen.storyboard */,
 				DE705FEA22D9812100281033 /* Main.storyboard */,
 				DECDB95522E445CD0057185C /* Tutorial.storyboard */,
+				DE2E66F423545CC2001567A2 /* Article.storyboard */,
+				DE2E66F723545CF1001567A2 /* Gallery.storyboard */,
 			);
 			path = Storyboard;
 			sourceTree = "<group>";
@@ -271,6 +281,8 @@
 			isa = PBXGroup;
 			children = (
 				DE705FE822D9812100281033 /* MainViewController.swift */,
+				DE2E66FA23545D1F001567A2 /* ArticleViewController.swift */,
+				DE2E66FC23545D2D001567A2 /* GalleryViewController.swift */,
 			);
 			path = Main;
 			sourceTree = "<group>";
@@ -420,7 +432,9 @@
 				DE705FEE22D9812300281033 /* Assets.xcassets in Resources */,
 				DECDB95722E445CD0057185C /* Tutorial.storyboard in Resources */,
 				DEFEF14E23486745001CBDBF /* tutorial_datasources.json in Resources */,
+				DE2E66F623545CC2001567A2 /* Article.storyboard in Resources */,
 				DE705FEC22D9812100281033 /* Main.storyboard in Resources */,
+				DE2E66F923545CF1001567A2 /* Gallery.storyboard in Resources */,
 				DECDB96422E448420057185C /* TutorialCollectionViewCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -493,8 +507,10 @@
 				DE70605A22DC51BA00281033 /* UICollectionViewExtension.swift in Sources */,
 				DE70605822DC519800281033 /* NSObjectProtocolExtension.swift in Sources */,
 				DECDB96A22E459EF0057185C /* TutorialDescriptionView.swift in Sources */,
+				DE2E66FD23545D2D001567A2 /* GalleryViewController.swift in Sources */,
 				DEFEF151234867C2001CBDBF /* TutorialModel.swift in Sources */,
 				DECDB95922E446100057185C /* TutorialViewController.swift in Sources */,
+				DE2E66FB23545D1F001567A2 /* ArticleViewController.swift in Sources */,
 				DE70605C22DC51F000281033 /* UIColorExtension.swift in Sources */,
 				DE70605E22DC521E00281033 /* UITableViewExtension.swift in Sources */,
 				DE705FE922D9812100281033 /* MainViewController.swift in Sources */,
@@ -537,6 +553,22 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
+		DE2E66F423545CC2001567A2 /* Article.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				DE2E66F523545CC2001567A2 /* Base */,
+			);
+			name = Article.storyboard;
+			sourceTree = "<group>";
+		};
+		DE2E66F723545CF1001567A2 /* Gallery.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				DE2E66F823545CF1001567A2 /* Base */,
+			);
+			name = Gallery.storyboard;
+			sourceTree = "<group>";
+		};
 		DE705FEA22D9812100281033 /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (

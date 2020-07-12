@@ -13,6 +13,16 @@
 		DE3680A424BAFB19004A7070 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DE3680A324BAFB19004A7070 /* Preview Assets.xcassets */; };
 		DE3680AF24BAFB19004A7070 /* MediaReaderUiExampleTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE3680AE24BAFB19004A7070 /* MediaReaderUiExampleTests.swift */; };
 		DE3680BA24BAFB19004A7070 /* MediaReaderUiExampleUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE3680B924BAFB19004A7070 /* MediaReaderUiExampleUITests.swift */; };
+		DEBCABCA24BB0D240095D966 /* TimelineScreenView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEBCABC924BB0D240095D966 /* TimelineScreenView.swift */; };
+		DEBCABCC24BB0D320095D966 /* FeaturedScreenView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEBCABCB24BB0D320095D966 /* FeaturedScreenView.swift */; };
+		DEBCABD024BB0F9F0095D966 /* AnimationTabBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEBCABCF24BB0F9F0095D966 /* AnimationTabBar.swift */; };
+		DEBCABD224BB14290095D966 /* BookScreenView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEBCABD124BB14290095D966 /* BookScreenView.swift */; };
+		DEBCABD624BB1B310095D966 /* ColorExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEBCABD524BB1B310095D966 /* ColorExtension.swift */; };
+		DEBCABD924BB38550095D966 /* AnimationTabBarIndex.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEBCABD824BB38550095D966 /* AnimationTabBarIndex.swift */; };
+		DEBCABDE24BB3CC70095D966 /* TimelineButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEBCABDD24BB3CC70095D966 /* TimelineButton.swift */; };
+		DEBCABE024BB3D800095D966 /* FeaturedButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEBCABDF24BB3D800095D966 /* FeaturedButton.swift */; };
+		DEBCABE324BB3EB30095D966 /* TabBarButtonDesign.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEBCABE224BB3EB30095D966 /* TabBarButtonDesign.swift */; };
+		DEBCABE524BB49740095D966 /* BookButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEBCABE424BB49730095D966 /* BookButton.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -45,6 +55,16 @@
 		DE3680B524BAFB19004A7070 /* MediaReaderUiExampleUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MediaReaderUiExampleUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		DE3680B924BAFB19004A7070 /* MediaReaderUiExampleUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MediaReaderUiExampleUITests.swift; sourceTree = "<group>"; };
 		DE3680BB24BAFB19004A7070 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DEBCABC924BB0D240095D966 /* TimelineScreenView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimelineScreenView.swift; sourceTree = "<group>"; };
+		DEBCABCB24BB0D320095D966 /* FeaturedScreenView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeaturedScreenView.swift; sourceTree = "<group>"; };
+		DEBCABCF24BB0F9F0095D966 /* AnimationTabBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimationTabBar.swift; sourceTree = "<group>"; };
+		DEBCABD124BB14290095D966 /* BookScreenView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookScreenView.swift; sourceTree = "<group>"; };
+		DEBCABD524BB1B310095D966 /* ColorExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorExtension.swift; sourceTree = "<group>"; };
+		DEBCABD824BB38550095D966 /* AnimationTabBarIndex.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimationTabBarIndex.swift; sourceTree = "<group>"; };
+		DEBCABDD24BB3CC70095D966 /* TimelineButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimelineButton.swift; sourceTree = "<group>"; };
+		DEBCABDF24BB3D800095D966 /* FeaturedButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeaturedButton.swift; sourceTree = "<group>"; };
+		DEBCABE224BB3EB30095D966 /* TabBarButtonDesign.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarButtonDesign.swift; sourceTree = "<group>"; };
+		DEBCABE424BB49730095D966 /* BookButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookButton.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -95,10 +115,13 @@
 		DE36809B24BAFB18004A7070 /* MediaReaderUiExample */ = {
 			isa = PBXGroup;
 			children = (
-				DE36809C24BAFB18004A7070 /* MediaReaderUiExampleApp.swift */,
-				DE36809E24BAFB18004A7070 /* ContentView.swift */,
-				DE3680A024BAFB19004A7070 /* Assets.xcassets */,
+				DEBCABE124BB3E9D0095D966 /* Design */,
+				DEBCABD724BB382A0095D966 /* Enum */,
+				DEBCABD424BB1AE00095D966 /* Extension */,
+				DEBCABC624BB0AB40095D966 /* View */,
 				DE3680A524BAFB19004A7070 /* Info.plist */,
+				DE36809C24BAFB18004A7070 /* MediaReaderUiExampleApp.swift */,
+				DE3680A024BAFB19004A7070 /* Assets.xcassets */,
 				DE3680A224BAFB19004A7070 /* Preview Content */,
 			);
 			path = MediaReaderUiExample;
@@ -128,6 +151,69 @@
 				DE3680BB24BAFB19004A7070 /* Info.plist */,
 			);
 			path = MediaReaderUiExampleUITests;
+			sourceTree = "<group>";
+		};
+		DEBCABC324BB05E50095D966 /* Component */ = {
+			isa = PBXGroup;
+			children = (
+				DEBCABDA24BB3B970095D966 /* TabBar */,
+			);
+			path = Component;
+			sourceTree = "<group>";
+		};
+		DEBCABC424BB05F10095D966 /* Screen */ = {
+			isa = PBXGroup;
+			children = (
+				DEBCABC924BB0D240095D966 /* TimelineScreenView.swift */,
+				DEBCABCB24BB0D320095D966 /* FeaturedScreenView.swift */,
+				DEBCABD124BB14290095D966 /* BookScreenView.swift */,
+			);
+			path = Screen;
+			sourceTree = "<group>";
+		};
+		DEBCABC624BB0AB40095D966 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				DE36809E24BAFB18004A7070 /* ContentView.swift */,
+				DEBCABC324BB05E50095D966 /* Component */,
+				DEBCABC424BB05F10095D966 /* Screen */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		DEBCABD424BB1AE00095D966 /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				DEBCABD524BB1B310095D966 /* ColorExtension.swift */,
+			);
+			path = Extension;
+			sourceTree = "<group>";
+		};
+		DEBCABD724BB382A0095D966 /* Enum */ = {
+			isa = PBXGroup;
+			children = (
+				DEBCABD824BB38550095D966 /* AnimationTabBarIndex.swift */,
+			);
+			path = Enum;
+			sourceTree = "<group>";
+		};
+		DEBCABDA24BB3B970095D966 /* TabBar */ = {
+			isa = PBXGroup;
+			children = (
+				DEBCABCF24BB0F9F0095D966 /* AnimationTabBar.swift */,
+				DEBCABDD24BB3CC70095D966 /* TimelineButton.swift */,
+				DEBCABDF24BB3D800095D966 /* FeaturedButton.swift */,
+				DEBCABE424BB49730095D966 /* BookButton.swift */,
+			);
+			path = TabBar;
+			sourceTree = "<group>";
+		};
+		DEBCABE124BB3E9D0095D966 /* Design */ = {
+			isa = PBXGroup;
+			children = (
+				DEBCABE224BB3EB30095D966 /* TabBarButtonDesign.swift */,
+			);
+			path = Design;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -259,7 +345,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DEBCABD024BB0F9F0095D966 /* AnimationTabBar.swift in Sources */,
+				DEBCABD924BB38550095D966 /* AnimationTabBarIndex.swift in Sources */,
+				DEBCABE324BB3EB30095D966 /* TabBarButtonDesign.swift in Sources */,
+				DEBCABD624BB1B310095D966 /* ColorExtension.swift in Sources */,
+				DEBCABD224BB14290095D966 /* BookScreenView.swift in Sources */,
+				DEBCABCA24BB0D240095D966 /* TimelineScreenView.swift in Sources */,
 				DE36809F24BAFB18004A7070 /* ContentView.swift in Sources */,
+				DEBCABCC24BB0D320095D966 /* FeaturedScreenView.swift in Sources */,
+				DEBCABE024BB3D800095D966 /* FeaturedButton.swift in Sources */,
+				DEBCABDE24BB3CC70095D966 /* TimelineButton.swift in Sources */,
+				DEBCABE524BB49740095D966 /* BookButton.swift in Sources */,
 				DE36809D24BAFB18004A7070 /* MediaReaderUiExampleApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

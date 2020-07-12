@@ -22,11 +22,8 @@ DerivedData
 .DS_Store
 
 # CocoaPod
-/01_SearchMediaSampleByRxSwift/SearchMediaSampleByRxSwift/Pods/*
-/02_FavoriteSpotSampleByReSwift/FavoriteSpotSampleByReSwift/Pods/*
-/03_PhotoGalleryContentsByReSwiftAndRxSwift/PhotoGalleryContentsByReSwiftAndRxSwift/Pods/*
+/01_LayeredArchitectureAndUiExample/LayeredArchitectureAndUiExample/Pods/*
+/03_FoodDeliveryUiExample/FoodDeliveryUiExample/Pods/*
+/04_NewCollectionViewUiExample/Pods/*
 
 # Server
-/01_SearchMediaSampleByRxSwift/server_mock/*
-/02_FavoriteSpotSampleByReSwift/server_mock/*
-/03_PhotoGalleryContentsByReSwiftAndRxSwift/server_mock/*

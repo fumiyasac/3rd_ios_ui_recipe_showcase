@@ -2,7 +2,7 @@
 //  LayeredArchitectureAndUiExampleUITests.swift
 //  LayeredArchitectureAndUiExampleUITests
 //
-//  Created by 酒井文也 on 2020/07/12.
+//  Created by 酒井文也 on 2020/10/16.
 //
 
 import XCTest

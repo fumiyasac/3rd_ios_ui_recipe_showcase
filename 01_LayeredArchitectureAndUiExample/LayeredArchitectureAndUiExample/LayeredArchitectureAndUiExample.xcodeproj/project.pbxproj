@@ -118,11 +118,11 @@
 			path = Presenter;
 			sourceTree = "<group>";
 		};
-		DEA3A1C8253AA7E4004A5103 /* Repository */ = {
+		DEA3A1C8253AA7E4004A5103 /* MVVM */ = {
 			isa = PBXGroup;
 			children = (
 			);
-			path = Repository;
+			path = MVVM;
 			sourceTree = "<group>";
 		};
 		DEA3A1C9253AA815004A5103 /* Coodinator */ = {
@@ -197,7 +197,7 @@
 				DEA3A1C3253AA79F004A5103 /* LayoutClass */,
 				DEA3A1C5253AA7AF004A5103 /* Modules */,
 				DEA3A1C7253AA7C2004A5103 /* Presenter */,
-				DEA3A1C8253AA7E4004A5103 /* Repository */,
+				DEA3A1C8253AA7E4004A5103 /* MVVM */,
 				DEA3A1CB253AA864004A5103 /* Storyboard */,
 				DEA3A1C6253AA7BA004A5103 /* UseCase */,
 				DEA3A1CC253AA86C004A5103 /* View */,

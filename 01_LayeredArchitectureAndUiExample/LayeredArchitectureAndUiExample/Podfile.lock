@@ -1,0 +1,48 @@
+PODS:
+  - BouncyLayout (2.2.0)
+  - Kingfisher (5.14.0):
+    - Kingfisher/Core (= 5.14.0)
+  - Kingfisher/Core (5.14.0)
+  - Panels (2.1.0)
+  - ParallaxHeader (3.0.0)
+  - Realm (5.0.0):
+    - Realm/Headers (= 5.0.0)
+  - Realm/Headers (5.0.0)
+  - RealmSwift (5.0.0):
+    - Realm (= 5.0.0)
+  - RxSwift (5.1.1)
+  - YNDropDownMenu (3.1.0)
+
+DEPENDENCIES:
+  - BouncyLayout
+  - Kingfisher
+  - Panels
+  - ParallaxHeader (~> 3.0.0)
+  - RealmSwift
+  - RxSwift
+  - YNDropDownMenu
+
+SPEC REPOS:
+  trunk:
+    - BouncyLayout
+    - Kingfisher
+    - Panels
+    - ParallaxHeader
+    - Realm
+    - RealmSwift
+    - RxSwift
+    - YNDropDownMenu
+
+SPEC CHECKSUMS:
+  BouncyLayout: b8be605d6c729086d0fc83f180f71e804abeaf04
+  Kingfisher: 7b64389a43139c903ec434788344c288217c792d
+  Panels: cfafe2d0f92387f393a3b5e827af9ffffe46b073
+  ParallaxHeader: a343f55eb38f52a89c5820a77e14cf975b84e6aa
+  Realm: 76066d333de26f97e9caedaa85ee3ff4a62ca265
+  RealmSwift: c1bdff09b422569dc6881410d9ccf712bcdb79b0
+  RxSwift: 81470a2074fa8780320ea5fe4102807cb7118178
+  YNDropDownMenu: 9c88e36c5f913bc614aaf0f3d0a7968f6251268b
+
+PODFILE CHECKSUM: 1bb99b60504f5be18ddc6d2ac3759db278f99b7f
+
+COCOAPODS: 1.9.1

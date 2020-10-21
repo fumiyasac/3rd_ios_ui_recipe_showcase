@@ -15,6 +15,7 @@
 		DEDE5D032539CF110028BEA4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DEDE5D012539CF110028BEA4 /* LaunchScreen.storyboard */; };
 		DEDE5D0E2539CF120028BEA4 /* LayeredArchitectureAndUiExampleTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEDE5D0D2539CF120028BEA4 /* LayeredArchitectureAndUiExampleTests.swift */; };
 		DEDE5D192539CF120028BEA4 /* LayeredArchitectureAndUiExampleUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEDE5D182539CF120028BEA4 /* LayeredArchitectureAndUiExampleUITests.swift */; };
+		FDFB23323063F59A4DEB84AC /* Pods_LayeredArchitectureAndUiExample.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0F11869D5EF9726076405D45 /* Pods_LayeredArchitectureAndUiExample.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,6 +36,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0F11869D5EF9726076405D45 /* Pods_LayeredArchitectureAndUiExample.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_LayeredArchitectureAndUiExample.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		446D201F74123673F3B86205 /* Pods-LayeredArchitectureAndUiExample.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LayeredArchitectureAndUiExample.release.xcconfig"; path = "Target Support Files/Pods-LayeredArchitectureAndUiExample/Pods-LayeredArchitectureAndUiExample.release.xcconfig"; sourceTree = "<group>"; };
 		DEDE5CF32539CF100028BEA4 /* LayeredArchitectureAndUiExample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LayeredArchitectureAndUiExample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DEDE5CF62539CF100028BEA4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		DEDE5CF82539CF100028BEA4 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -49,6 +52,7 @@
 		DEDE5D142539CF120028BEA4 /* LayeredArchitectureAndUiExampleUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LayeredArchitectureAndUiExampleUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		DEDE5D182539CF120028BEA4 /* LayeredArchitectureAndUiExampleUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LayeredArchitectureAndUiExampleUITests.swift; sourceTree = "<group>"; };
 		DEDE5D1A2539CF120028BEA4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E2785D197E933D9621ACC3AB /* Pods-LayeredArchitectureAndUiExample.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LayeredArchitectureAndUiExample.debug.xcconfig"; path = "Target Support Files/Pods-LayeredArchitectureAndUiExample/Pods-LayeredArchitectureAndUiExample.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +60,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FDFB23323063F59A4DEB84AC /* Pods_LayeredArchitectureAndUiExample.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -76,6 +81,16 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		7877F5889DB336F642A9B29B /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				E2785D197E933D9621ACC3AB /* Pods-LayeredArchitectureAndUiExample.debug.xcconfig */,
+				446D201F74123673F3B86205 /* Pods-LayeredArchitectureAndUiExample.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		DEA3A1C2253AA790004A5103 /* Extension */ = {
 			isa = PBXGroup;
 			children = (
@@ -170,6 +185,8 @@
 				DEDE5D0C2539CF120028BEA4 /* LayeredArchitectureAndUiExampleTests */,
 				DEDE5D172539CF120028BEA4 /* LayeredArchitectureAndUiExampleUITests */,
 				DEDE5CF42539CF100028BEA4 /* Products */,
+				7877F5889DB336F642A9B29B /* Pods */,
+				FF90AE5C030B726166161609 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -224,6 +241,14 @@
 			path = LayeredArchitectureAndUiExampleUITests;
 			sourceTree = "<group>";
 		};
+		FF90AE5C030B726166161609 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				0F11869D5EF9726076405D45 /* Pods_LayeredArchitectureAndUiExample.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -231,9 +256,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = DEDE5D1D2539CF120028BEA4 /* Build configuration list for PBXNativeTarget "LayeredArchitectureAndUiExample" */;
 			buildPhases = (
+				BCBA5FA9029C4DEC28EFF741 /* [CP] Check Pods Manifest.lock */,
 				DEDE5CEF2539CF100028BEA4 /* Sources */,
 				DEDE5CF02539CF100028BEA4 /* Frameworks */,
 				DEDE5CF12539CF100028BEA4 /* Resources */,
+				6AF6787CB287BD6BC41EEF05 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -348,6 +375,48 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		6AF6787CB287BD6BC41EEF05 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-LayeredArchitectureAndUiExample/Pods-LayeredArchitectureAndUiExample-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-LayeredArchitectureAndUiExample/Pods-LayeredArchitectureAndUiExample-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-LayeredArchitectureAndUiExample/Pods-LayeredArchitectureAndUiExample-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		BCBA5FA9029C4DEC28EFF741 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-LayeredArchitectureAndUiExample-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		DEDE5CEF2539CF100028BEA4 /* Sources */ = {
@@ -529,6 +598,7 @@
 		};
 		DEDE5D1E2539CF120028BEA4 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = E2785D197E933D9621ACC3AB /* Pods-LayeredArchitectureAndUiExample.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -548,6 +618,7 @@
 		};
 		DEDE5D1F2539CF120028BEA4 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 446D201F74123673F3B86205 /* Pods-LayeredArchitectureAndUiExample.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;

@@ -23,6 +23,7 @@ DerivedData
 
 # CocoaPod
 /01_LayeredArchitectureAndUiExample/LayeredArchitectureAndUiExample/Pods/*
+/02_MediaReaderUiExample/MediaReaderUiExample/Pods/*
 /03_FoodDeliveryUiExample/FoodDeliveryUiExample/Pods/*
 /04_NewCollectionViewUiExample/Pods/*
 

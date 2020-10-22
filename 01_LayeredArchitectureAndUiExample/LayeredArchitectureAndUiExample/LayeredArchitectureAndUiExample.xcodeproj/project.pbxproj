@@ -3,10 +3,11 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		DE89C4602541C3920099E67C /* NSObjectProtocolExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE89C45F2541C3920099E67C /* NSObjectProtocolExtension.swift */; };
 		DEDE5CF72539CF100028BEA4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEDE5CF62539CF100028BEA4 /* AppDelegate.swift */; };
 		DEDE5CF92539CF100028BEA4 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEDE5CF82539CF100028BEA4 /* SceneDelegate.swift */; };
 		DEDE5CFB2539CF100028BEA4 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEDE5CFA2539CF100028BEA4 /* MainViewController.swift */; };
@@ -38,6 +39,7 @@
 /* Begin PBXFileReference section */
 		0F11869D5EF9726076405D45 /* Pods_LayeredArchitectureAndUiExample.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_LayeredArchitectureAndUiExample.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		446D201F74123673F3B86205 /* Pods-LayeredArchitectureAndUiExample.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LayeredArchitectureAndUiExample.release.xcconfig"; path = "Target Support Files/Pods-LayeredArchitectureAndUiExample/Pods-LayeredArchitectureAndUiExample.release.xcconfig"; sourceTree = "<group>"; };
+		DE89C45F2541C3920099E67C /* NSObjectProtocolExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NSObjectProtocolExtension.swift; sourceTree = "<group>"; };
 		DEDE5CF32539CF100028BEA4 /* LayeredArchitectureAndUiExample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LayeredArchitectureAndUiExample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DEDE5CF62539CF100028BEA4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		DEDE5CF82539CF100028BEA4 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -87,13 +89,13 @@
 				E2785D197E933D9621ACC3AB /* Pods-LayeredArchitectureAndUiExample.debug.xcconfig */,
 				446D201F74123673F3B86205 /* Pods-LayeredArchitectureAndUiExample.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
 		DEA3A1C2253AA790004A5103 /* Extension */ = {
 			isa = PBXGroup;
 			children = (
+				DE89C45F2541C3920099E67C /* NSObjectProtocolExtension.swift */,
 			);
 			path = Extension;
 			sourceTree = "<group>";
@@ -424,6 +426,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				DEDE5CFB2539CF100028BEA4 /* MainViewController.swift in Sources */,
+				DE89C4602541C3920099E67C /* NSObjectProtocolExtension.swift in Sources */,
 				DEDE5CF72539CF100028BEA4 /* AppDelegate.swift in Sources */,
 				DEDE5CF92539CF100028BEA4 /* SceneDelegate.swift in Sources */,
 			);

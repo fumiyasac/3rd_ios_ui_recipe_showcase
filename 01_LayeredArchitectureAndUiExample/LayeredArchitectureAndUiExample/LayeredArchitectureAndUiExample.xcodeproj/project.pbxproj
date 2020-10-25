@@ -14,6 +14,7 @@
 		DE7E865C2545C2FF00D1AFDC /* UITableViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE7E865B2545C2FF00D1AFDC /* UITableViewExtension.swift */; };
 		DE7E86642545C34F00D1AFDC /* UIViewControllerExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE7E86632545C34F00D1AFDC /* UIViewControllerExtension.swift */; };
 		DE7E866C2545C38100D1AFDC /* Dependencies.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE7E866B2545C38100D1AFDC /* Dependencies.swift */; };
+		DE7E86712545C43700D1AFDC /* UILabelDecorator.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE7E86702545C43700D1AFDC /* UILabelDecorator.swift */; };
 		DE89C4602541C3920099E67C /* NSObjectProtocolExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE89C45F2541C3920099E67C /* NSObjectProtocolExtension.swift */; };
 		DEDE5CF72539CF100028BEA4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEDE5CF62539CF100028BEA4 /* AppDelegate.swift */; };
 		DEDE5CF92539CF100028BEA4 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEDE5CF82539CF100028BEA4 /* SceneDelegate.swift */; };
@@ -53,6 +54,7 @@
 		DE7E865B2545C2FF00D1AFDC /* UITableViewExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UITableViewExtension.swift; sourceTree = "<group>"; };
 		DE7E86632545C34F00D1AFDC /* UIViewControllerExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewControllerExtension.swift; sourceTree = "<group>"; };
 		DE7E866B2545C38100D1AFDC /* Dependencies.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Dependencies.swift; sourceTree = "<group>"; };
+		DE7E86702545C43700D1AFDC /* UILabelDecorator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UILabelDecorator.swift; sourceTree = "<group>"; };
 		DE89C45F2541C3920099E67C /* NSObjectProtocolExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NSObjectProtocolExtension.swift; sourceTree = "<group>"; };
 		DEDE5CF32539CF100028BEA4 /* LayeredArchitectureAndUiExample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LayeredArchitectureAndUiExample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DEDE5CF62539CF100028BEA4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -144,6 +146,7 @@
 		DEA3A1C5253AA7AF004A5103 /* Modules */ = {
 			isa = PBXGroup;
 			children = (
+				DE7E86702545C43700D1AFDC /* UILabelDecorator.swift */,
 			);
 			path = Modules;
 			sourceTree = "<group>";
@@ -460,6 +463,7 @@
 				DEDE5CFB2539CF100028BEA4 /* MainViewController.swift in Sources */,
 				DE7E86522545C1E400D1AFDC /* UICollectionViewExtension.swift in Sources */,
 				DE7E86572545C22100D1AFDC /* UIColorExtension.swift in Sources */,
+				DE7E86712545C43700D1AFDC /* UILabelDecorator.swift in Sources */,
 				DE7E866C2545C38100D1AFDC /* Dependencies.swift in Sources */,
 				DE89C4602541C3920099E67C /* NSObjectProtocolExtension.swift in Sources */,
 				DE7E864A2545C1CE00D1AFDC /* StoryboardInstantiatable.swift in Sources */,

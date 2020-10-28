@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		DE34FE752549BFB800D781BC /* RealmAccessManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE34FE742549BFB800D781BC /* RealmAccessManager.swift */; };
+		DE34FE802549C00A00D781BC /* APIRequestManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE34FE7F2549C00A00D781BC /* APIRequestManager.swift */; };
 		DE7E86442545C15400D1AFDC /* CustomViewBase.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE7E86432545C15400D1AFDC /* CustomViewBase.swift */; };
 		DE7E864A2545C1CE00D1AFDC /* StoryboardInstantiatable.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE7E86492545C1CE00D1AFDC /* StoryboardInstantiatable.swift */; };
 		DE7E86522545C1E400D1AFDC /* UICollectionViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE7E86512545C1E400D1AFDC /* UICollectionViewExtension.swift */; };
@@ -47,6 +49,8 @@
 /* Begin PBXFileReference section */
 		0F11869D5EF9726076405D45 /* Pods_LayeredArchitectureAndUiExample.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_LayeredArchitectureAndUiExample.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		446D201F74123673F3B86205 /* Pods-LayeredArchitectureAndUiExample.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LayeredArchitectureAndUiExample.release.xcconfig"; path = "Target Support Files/Pods-LayeredArchitectureAndUiExample/Pods-LayeredArchitectureAndUiExample.release.xcconfig"; sourceTree = "<group>"; };
+		DE34FE742549BFB800D781BC /* RealmAccessManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RealmAccessManager.swift; sourceTree = "<group>"; };
+		DE34FE7F2549C00A00D781BC /* APIRequestManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIRequestManager.swift; sourceTree = "<group>"; };
 		DE7E86432545C15400D1AFDC /* CustomViewBase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomViewBase.swift; sourceTree = "<group>"; };
 		DE7E86492545C1CE00D1AFDC /* StoryboardInstantiatable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoryboardInstantiatable.swift; sourceTree = "<group>"; };
 		DE7E86512545C1E400D1AFDC /* UICollectionViewExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UICollectionViewExtension.swift; sourceTree = "<group>"; };
@@ -106,6 +110,22 @@
 				446D201F74123673F3B86205 /* Pods-LayeredArchitectureAndUiExample.release.xcconfig */,
 			);
 			path = Pods;
+			sourceTree = "<group>";
+		};
+		DE34FE722549BF8C00D781BC /* APIManager */ = {
+			isa = PBXGroup;
+			children = (
+				DE34FE7F2549C00A00D781BC /* APIRequestManager.swift */,
+			);
+			path = APIManager;
+			sourceTree = "<group>";
+		};
+		DE34FE732549BF9600D781BC /* RealmManager */ = {
+			isa = PBXGroup;
+			children = (
+				DE34FE742549BFB800D781BC /* RealmAccessManager.swift */,
+			);
+			path = RealmManager;
 			sourceTree = "<group>";
 		};
 		DE7E86482545C19000D1AFDC /* DIContainer */ = {
@@ -182,6 +202,8 @@
 		DEA3A1CA253AA847004A5103 /* Infrastructure */ = {
 			isa = PBXGroup;
 			children = (
+				DE34FE732549BF9600D781BC /* RealmManager */,
+				DE34FE722549BF8C00D781BC /* APIManager */,
 			);
 			path = Infrastructure;
 			sourceTree = "<group>";
@@ -457,6 +479,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DE34FE752549BFB800D781BC /* RealmAccessManager.swift in Sources */,
 				DE7E865C2545C2FF00D1AFDC /* UITableViewExtension.swift in Sources */,
 				DE7E86442545C15400D1AFDC /* CustomViewBase.swift in Sources */,
 				DE7E86642545C34F00D1AFDC /* UIViewControllerExtension.swift in Sources */,
@@ -466,6 +489,7 @@
 				DE7E86712545C43700D1AFDC /* UILabelDecorator.swift in Sources */,
 				DE7E866C2545C38100D1AFDC /* Dependencies.swift in Sources */,
 				DE89C4602541C3920099E67C /* NSObjectProtocolExtension.swift in Sources */,
+				DE34FE802549C00A00D781BC /* APIRequestManager.swift in Sources */,
 				DE7E864A2545C1CE00D1AFDC /* StoryboardInstantiatable.swift in Sources */,
 				DEDE5CF72539CF100028BEA4 /* AppDelegate.swift in Sources */,
 				DEDE5CF92539CF100028BEA4 /* SceneDelegate.swift in Sources */,

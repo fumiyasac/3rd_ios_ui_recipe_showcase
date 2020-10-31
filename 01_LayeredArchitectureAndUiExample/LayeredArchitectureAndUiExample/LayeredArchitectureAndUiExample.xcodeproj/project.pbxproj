@@ -128,6 +128,20 @@
 			path = RealmManager;
 			sourceTree = "<group>";
 		};
+		DE504527254DA6FE00C7B97A /* DataTransfer */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = DataTransfer;
+			sourceTree = "<group>";
+		};
+		DE504528254DA76300C7B97A /* TransitionClass */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = TransitionClass;
+			sourceTree = "<group>";
+		};
 		DE7E86482545C19000D1AFDC /* DIContainer */ = {
 			isa = PBXGroup;
 			children = (
@@ -190,13 +204,6 @@
 			children = (
 			);
 			path = Repository;
-			sourceTree = "<group>";
-		};
-		DEA3A1C9253AA815004A5103 /* Coodinator */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Coodinator;
 			sourceTree = "<group>";
 		};
 		DEA3A1CA253AA847004A5103 /* Infrastructure */ = {
@@ -262,7 +269,7 @@
 				DEDE5CF62539CF100028BEA4 /* AppDelegate.swift */,
 				DEDE5CF82539CF100028BEA4 /* SceneDelegate.swift */,
 				DEDE5CFF2539CF110028BEA4 /* Assets.xcassets */,
-				DEA3A1C9253AA815004A5103 /* Coodinator */,
+				DE504527254DA6FE00C7B97A /* DataTransfer */,
 				DE7E86482545C19000D1AFDC /* DIContainer */,
 				DEA3A1C4253AA7A9004A5103 /* Entity */,
 				DEA3A1C2253AA790004A5103 /* Extension */,
@@ -271,6 +278,7 @@
 				DEA3A1C5253AA7AF004A5103 /* Modules */,
 				DEA3A1C8253AA7E4004A5103 /* Repository */,
 				DEA3A1CB253AA864004A5103 /* Storyboard */,
+				DE504528254DA76300C7B97A /* TransitionClass */,
 				DEA3A1C6253AA7BA004A5103 /* UseCase */,
 				DEA3A1CC253AA86C004A5103 /* View */,
 				DEA3A1CD253AA871004A5103 /* ViewController */,

@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		DE2D4C612560CB0500E3F2C0 /* TutorialSceneView.xib in Resources */ = {isa = PBXBuildFile; fileRef = DE2D4C602560CB0500E3F2C0 /* TutorialSceneView.xib */; };
+		DE2D4C662560CB2600E3F2C0 /* TutorialSceneView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE2D4C652560CB2600E3F2C0 /* TutorialSceneView.swift */; };
 		DE34FE752549BFB800D781BC /* RealmAccessManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE34FE742549BFB800D781BC /* RealmAccessManager.swift */; };
 		DE34FE802549C00A00D781BC /* APIRequestManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE34FE7F2549C00A00D781BC /* APIRequestManager.swift */; };
 		DE6625BA255709EB00A415E6 /* TutorialViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE6625B9255709EB00A415E6 /* TutorialViewController.swift */; };
@@ -57,6 +59,8 @@
 /* Begin PBXFileReference section */
 		0F11869D5EF9726076405D45 /* Pods_LayeredArchitectureAndUiExample.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_LayeredArchitectureAndUiExample.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		446D201F74123673F3B86205 /* Pods-LayeredArchitectureAndUiExample.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LayeredArchitectureAndUiExample.release.xcconfig"; path = "Target Support Files/Pods-LayeredArchitectureAndUiExample/Pods-LayeredArchitectureAndUiExample.release.xcconfig"; sourceTree = "<group>"; };
+		DE2D4C602560CB0500E3F2C0 /* TutorialSceneView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TutorialSceneView.xib; sourceTree = "<group>"; };
+		DE2D4C652560CB2600E3F2C0 /* TutorialSceneView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TutorialSceneView.swift; sourceTree = "<group>"; };
 		DE34FE742549BFB800D781BC /* RealmAccessManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RealmAccessManager.swift; sourceTree = "<group>"; };
 		DE34FE7F2549C00A00D781BC /* APIRequestManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIRequestManager.swift; sourceTree = "<group>"; };
 		DE6625B9255709EB00A415E6 /* TutorialViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TutorialViewController.swift; sourceTree = "<group>"; };
@@ -126,6 +130,15 @@
 				446D201F74123673F3B86205 /* Pods-LayeredArchitectureAndUiExample.release.xcconfig */,
 			);
 			path = Pods;
+			sourceTree = "<group>";
+		};
+		DE2D4C5F2560CADD00E3F2C0 /* TutorialSceneView */ = {
+			isa = PBXGroup;
+			children = (
+				DE2D4C602560CB0500E3F2C0 /* TutorialSceneView.xib */,
+				DE2D4C652560CB2600E3F2C0 /* TutorialSceneView.swift */,
+			);
+			path = TutorialSceneView;
 			sourceTree = "<group>";
 		};
 		DE34FE722549BF8C00D781BC /* APIManager */ = {
@@ -335,6 +348,7 @@
 			isa = PBXGroup;
 			children = (
 				DE7E86432545C15400D1AFDC /* CustomViewBase.swift */,
+				DE2D4C5F2560CADD00E3F2C0 /* TutorialSceneView */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -533,6 +547,7 @@
 				DE6625E325578A6A00A415E6 /* Home.storyboard in Resources */,
 				DEDE5D032539CF110028BEA4 /* LaunchScreen.storyboard in Resources */,
 				DE6625CC25570ACF00A415E6 /* GlobalTabBar.storyboard in Resources */,
+				DE2D4C612560CB0500E3F2C0 /* TutorialSceneView.xib in Resources */,
 				DE6625D9255732B700A415E6 /* Survay.storyboard in Resources */,
 				DEDE5D002539CF110028BEA4 /* Assets.xcassets in Resources */,
 				DE6625C2255709FF00A415E6 /* Tutorial.storyboard in Resources */,
@@ -606,6 +621,7 @@
 				DE34FE752549BFB800D781BC /* RealmAccessManager.swift in Sources */,
 				DE7E865C2545C2FF00D1AFDC /* UITableViewExtension.swift in Sources */,
 				DE7E86442545C15400D1AFDC /* CustomViewBase.swift in Sources */,
+				DE2D4C662560CB2600E3F2C0 /* TutorialSceneView.swift in Sources */,
 				DE7E86642545C34F00D1AFDC /* UIViewControllerExtension.swift in Sources */,
 				DEDE5CFB2539CF100028BEA4 /* MainViewController.swift in Sources */,
 				DE6625E825578A7A00A415E6 /* HomeViewController.swift in Sources */,

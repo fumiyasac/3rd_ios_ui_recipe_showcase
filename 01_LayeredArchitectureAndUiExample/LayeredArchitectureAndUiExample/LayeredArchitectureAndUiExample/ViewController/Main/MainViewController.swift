@@ -9,6 +9,8 @@ import UIKit
 
 final class MainViewController: UIViewController {
 
+    // MARK: - Properties
+
     // MARK: - Override
 
     override func viewDidLoad() {

@@ -1,5 +1,6 @@
 PODS:
   - BouncyLayout (2.3.0)
+  - KeychainAccess (4.2.1)
   - Kingfisher (5.15.7):
     - Kingfisher/Core (= 5.15.7)
   - Kingfisher/Core (5.15.7)
@@ -20,6 +21,7 @@ PODS:
 
 DEPENDENCIES:
   - BouncyLayout
+  - KeychainAccess
   - Kingfisher
   - Panels
   - ParallaxHeader (~> 3.0.0)
@@ -31,6 +33,7 @@ DEPENDENCIES:
 SPEC REPOS:
   trunk:
     - BouncyLayout
+    - KeychainAccess
     - Kingfisher
     - Panels
     - ParallaxHeader
@@ -43,6 +46,7 @@ SPEC REPOS:
 
 SPEC CHECKSUMS:
   BouncyLayout: 946047ef4987959bc107731c665ca4fdcdef5e17
+  KeychainAccess: 9b07f665298d13c3a85881bd3171f6f49b8151c1
   Kingfisher: 6e1a13523fcb1c86924ce53affe4ac957e544d59
   Panels: cfafe2d0f92387f393a3b5e827af9ffffe46b073
   ParallaxHeader: a343f55eb38f52a89c5820a77e14cf975b84e6aa
@@ -53,6 +57,6 @@ SPEC CHECKSUMS:
   RxSwift: 81470a2074fa8780320ea5fe4102807cb7118178
   YNDropDownMenu: 9c88e36c5f913bc614aaf0f3d0a7968f6251268b
 
-PODFILE CHECKSUM: 64eec65ed1362ff38134f5c2af87cfdec3cfb9be
+PODFILE CHECKSUM: 6583c34266b7abd9ff36b9417cd8f7f3ed10aba8
 
 COCOAPODS: 1.10.0

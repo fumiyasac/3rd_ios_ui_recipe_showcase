@@ -8,8 +8,8 @@ target 'LayeredArchitectureAndUiExample' do
   # Pods for LayeredArchitectureAndUiExample
 
   # 1. アーキテクチャに関するライブラリ
-  pod 'RxSwift'
-  pod 'RxCocoa'
+  pod 'RxSwift', '6.0.0-rc.1'
+  pod 'RxCocoa', '6.0.0-rc.1'
   pod 'RealmSwift'
   pod 'KeychainAccess'
   pod 'Kingfisher'

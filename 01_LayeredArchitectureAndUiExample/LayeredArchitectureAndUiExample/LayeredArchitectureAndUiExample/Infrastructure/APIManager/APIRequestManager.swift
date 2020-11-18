@@ -77,7 +77,7 @@ class APIRequestManager {
             let task = self.session.dataTask(with: request) { data, response, error in
                 // MEMO: 通信状態等に起因するエラー発生時のエラーハンドリング
                 if let error = error {
-                    singleEvent(.error(error))
+                    singleEvent(.failure(error))
                     return
                 }
 
@@ -86,23 +86,23 @@ class APIRequestManager {
 
                 // MEMO: ステータスコードの精査及びエラーハンドリング
                 if let response = response as? HTTPURLResponse, case 400...500 = response.statusCode {
-                    // MEMO: ステータスコードが403(Access Denied)の場合にはサインイン画面へ強制的に表示させるようにする
-                    if response.statusCode == 403 {
+
+                    // MEMO: ステータスコードが401(Unauthorized)の場合にはサインイン画面へ強制的に表示させるようにする
+                    if response.statusCode == 401 {
                         DispatchQueue.main.async {
-                            // TODO: サインイン画面へ遷移する処理を入れる
-                            //let signinCoodinator = SigninScreenCoordinator()
-                            //signinCoodinator.start()
+                            // MEMO: Coodinatorを利用して強制的にサインイン画面へ戻す
+                            // TODO:
                         }
-                        singleEvent(.error(APIError.error("Error: StatusCodeが403です。")))
+                        singleEvent(.failure(APIError.error("Error: StatusCodeが403です。")))
                     } else {
-                        singleEvent(.error(APIError.error("Error: StatusCodeが200~399以外です。")))
+                        singleEvent(.failure(APIError.error("Error: StatusCodeが200~399以外です。")))
                     }
                     return
                 }
 
                 // MEMO: 取得データの内容の精査及びエラーハンドリング
                 guard let data = data else {
-                    singleEvent(.error(APIError.error("Error: レスポンスが空でした。")))
+                    singleEvent(.failure(APIError.error("Error: レスポンスが空でした。")))
                     return
                 }
                 // MEMO: 取得できたレスポンスを引数で指定した型の配列に変換して受け取る
@@ -110,7 +110,7 @@ class APIRequestManager {
                     let hashableObjects = try JSONDecoder().decode(T.self, from: data)
                     singleEvent(.success(hashableObjects))
                 } catch {
-                    singleEvent(.error(APIError.error("Error: JSONからのマッピングに失敗しました。")))
+                    singleEvent(.failure(APIError.error("Error: JSONからのマッピングに失敗しました。")))
                 }
             }
             task.resume()

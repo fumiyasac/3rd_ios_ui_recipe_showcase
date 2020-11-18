@@ -11,12 +11,12 @@ PODS:
   - Realm/Headers (10.1.3)
   - RealmSwift (10.1.3):
     - Realm (= 10.1.3)
-  - RxCocoa (5.1.1):
-    - RxRelay (~> 5)
-    - RxSwift (~> 5)
-  - RxRelay (5.1.1):
-    - RxSwift (~> 5)
-  - RxSwift (5.1.1)
+  - RxCocoa (6.0.0-rc.1):
+    - RxRelay (= 6.0.0-rc.1)
+    - RxSwift (= 6.0.0-rc.1)
+  - RxRelay (6.0.0-rc.1):
+    - RxSwift (= 6.0.0-rc.1)
+  - RxSwift (6.0.0-rc.1)
   - YNDropDownMenu (3.1.0)
 
 DEPENDENCIES:
@@ -26,8 +26,8 @@ DEPENDENCIES:
   - Panels
   - ParallaxHeader (~> 3.0.0)
   - RealmSwift
-  - RxCocoa
-  - RxSwift
+  - RxCocoa (= 6.0.0-rc.1)
+  - RxSwift (= 6.0.0-rc.1)
   - YNDropDownMenu
 
 SPEC REPOS:
@@ -52,11 +52,11 @@ SPEC CHECKSUMS:
   ParallaxHeader: a343f55eb38f52a89c5820a77e14cf975b84e6aa
   Realm: 072f4060c99150cb1d35e35ce1dd4dda7d9ddfed
   RealmSwift: 96f96feafee63186789419235d14857dae9004ae
-  RxCocoa: 32065309a38d29b5b0db858819b5bf9ef038b601
-  RxRelay: d77f7d771495f43c556cbc43eebd1bb54d01e8e9
-  RxSwift: 81470a2074fa8780320ea5fe4102807cb7118178
+  RxCocoa: a28d75145c07b7547b85faf1e1ad8b25af88a752
+  RxRelay: 56abad6d32f73567858506d08735fdb341935b9a
+  RxSwift: dae1a32c48148897494b9e2a6b00a68b40694236
   YNDropDownMenu: 9c88e36c5f913bc614aaf0f3d0a7968f6251268b
 
-PODFILE CHECKSUM: 6583c34266b7abd9ff36b9417cd8f7f3ed10aba8
+PODFILE CHECKSUM: f85772554496acfac083faade8ac4ba9a214f4a8
 
 COCOAPODS: 1.10.0

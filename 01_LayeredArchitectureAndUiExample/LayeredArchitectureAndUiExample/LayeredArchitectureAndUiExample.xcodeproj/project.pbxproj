@@ -38,6 +38,10 @@
 		DEDE5D192539CF120028BEA4 /* LayeredArchitectureAndUiExampleUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEDE5D182539CF120028BEA4 /* LayeredArchitectureAndUiExampleUITests.swift */; };
 		DEECECD625655D23004DCDDD /* AppConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEECECD525655D23004DCDDD /* AppConstants.swift */; };
 		DEECECDE25655D5D004DCDDD /* KeychainAccessManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEECECDD25655D5D004DCDDD /* KeychainAccessManager.swift */; };
+		DEECED37256A9959004DCDDD /* ApplicationUserStatus.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEECED36256A9959004DCDDD /* ApplicationUserStatus.swift */; };
+		DEECED3C256A99B6004DCDDD /* TypeScanner.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEECED3B256A99B6004DCDDD /* TypeScanner.swift */; };
+		DEECED41256A9A59004DCDDD /* DateLabelFormatter.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEECED40256A9A59004DCDDD /* DateLabelFormatter.swift */; };
+		DEECED46256A9A81004DCDDD /* UIWindowScanner.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEECED45256A9A81004DCDDD /* UIWindowScanner.swift */; };
 		FDFB23323063F59A4DEB84AC /* Pods_LayeredArchitectureAndUiExample.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0F11869D5EF9726076405D45 /* Pods_LayeredArchitectureAndUiExample.framework */; };
 /* End PBXBuildFile section */
 
@@ -98,6 +102,10 @@
 		DEDE5D1A2539CF120028BEA4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		DEECECD525655D23004DCDDD /* AppConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppConstants.swift; sourceTree = "<group>"; };
 		DEECECDD25655D5D004DCDDD /* KeychainAccessManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeychainAccessManager.swift; sourceTree = "<group>"; };
+		DEECED36256A9959004DCDDD /* ApplicationUserStatus.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApplicationUserStatus.swift; sourceTree = "<group>"; };
+		DEECED3B256A99B6004DCDDD /* TypeScanner.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TypeScanner.swift; sourceTree = "<group>"; };
+		DEECED40256A9A59004DCDDD /* DateLabelFormatter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateLabelFormatter.swift; sourceTree = "<group>"; };
+		DEECED45256A9A81004DCDDD /* UIWindowScanner.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIWindowScanner.swift; sourceTree = "<group>"; };
 		E2785D197E933D9621ACC3AB /* Pods-LayeredArchitectureAndUiExample.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LayeredArchitectureAndUiExample.debug.xcconfig"; path = "Target Support Files/Pods-LayeredArchitectureAndUiExample/Pods-LayeredArchitectureAndUiExample.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -262,12 +270,12 @@
 			path = Tutorial;
 			sourceTree = "<group>";
 		};
-		DE7E86482545C19000D1AFDC /* DIContainer */ = {
+		DE7E86482545C19000D1AFDC /* DependencyInjection */ = {
 			isa = PBXGroup;
 			children = (
 				DE7E866B2545C38100D1AFDC /* Dependencies.swift */,
 			);
-			path = DIContainer;
+			path = DependencyInjection;
 			sourceTree = "<group>";
 		};
 		DEA3A1C2253AA790004A5103 /* Extension */ = {
@@ -300,7 +308,10 @@
 		DEA3A1C5253AA7AF004A5103 /* Modules */ = {
 			isa = PBXGroup;
 			children = (
+				DEECED40256A9A59004DCDDD /* DateLabelFormatter.swift */,
+				DEECED3B256A99B6004DCDDD /* TypeScanner.swift */,
 				DE7E86702545C43700D1AFDC /* UILabelDecorator.swift */,
+				DEECED45256A9A81004DCDDD /* UIWindowScanner.swift */,
 			);
 			path = Modules;
 			sourceTree = "<group>";
@@ -402,11 +413,12 @@
 				DEDE5CFF2539CF110028BEA4 /* Assets.xcassets */,
 				DE6625B12556E4CE00A415E6 /* Contract */,
 				DE504527254DA6FE00C7B97A /* DataTransfer */,
-				DE7E86482545C19000D1AFDC /* DIContainer */,
+				DE7E86482545C19000D1AFDC /* DependencyInjection */,
 				DEA3A1C4253AA7A9004A5103 /* Entity */,
 				DEECECD325655CBB004DCDDD /* Enum */,
 				DEA3A1C2253AA790004A5103 /* Extension */,
 				DEA3A1CA253AA847004A5103 /* Infrastructure */,
+				DEECED4A256A9AD0004DCDDD /* Json */,
 				DEA3A1C3253AA79F004A5103 /* LayoutClass */,
 				DEA3A1C5253AA7AF004A5103 /* Modules */,
 				DEA3A1C7253AA7C2004A5103 /* Presenter */,
@@ -441,6 +453,7 @@
 		DEECECD325655CBB004DCDDD /* Enum */ = {
 			isa = PBXGroup;
 			children = (
+				DEECED36256A9959004DCDDD /* ApplicationUserStatus.swift */,
 			);
 			path = Enum;
 			sourceTree = "<group>";
@@ -451,6 +464,13 @@
 				DEECECDD25655D5D004DCDDD /* KeychainAccessManager.swift */,
 			);
 			path = KeychainManager;
+			sourceTree = "<group>";
+		};
+		DEECED4A256A9AD0004DCDDD /* Json */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Json;
 			sourceTree = "<group>";
 		};
 		FF90AE5C030B726166161609 /* Frameworks */ = {
@@ -649,9 +669,13 @@
 				DEDE5CFB2539CF100028BEA4 /* MainViewController.swift in Sources */,
 				DE6625E825578A7A00A415E6 /* HomeViewController.swift in Sources */,
 				DE7E86522545C1E400D1AFDC /* UICollectionViewExtension.swift in Sources */,
+				DEECED37256A9959004DCDDD /* ApplicationUserStatus.swift in Sources */,
+				DEECED3C256A99B6004DCDDD /* TypeScanner.swift in Sources */,
 				DE7E86572545C22100D1AFDC /* UIColorExtension.swift in Sources */,
 				DE6625BA255709EB00A415E6 /* TutorialViewController.swift in Sources */,
+				DEECED41256A9A59004DCDDD /* DateLabelFormatter.swift in Sources */,
 				DE6625C725570A9F00A415E6 /* GlobalTabBarController.swift in Sources */,
+				DEECED46256A9A81004DCDDD /* UIWindowScanner.swift in Sources */,
 				DE7E86712545C43700D1AFDC /* UILabelDecorator.swift in Sources */,
 				DE7E866C2545C38100D1AFDC /* Dependencies.swift in Sources */,
 				DE89C4602541C3920099E67C /* NSObjectProtocolExtension.swift in Sources */,

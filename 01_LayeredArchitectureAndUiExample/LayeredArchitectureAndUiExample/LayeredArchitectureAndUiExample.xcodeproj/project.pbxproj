@@ -169,11 +169,11 @@
 			path = RealmManager;
 			sourceTree = "<group>";
 		};
-		DE504527254DA6FE00C7B97A /* DataTransfer */ = {
+		DE504527254DA6FE00C7B97A /* Coodinator */ = {
 			isa = PBXGroup;
 			children = (
 			);
-			path = DataTransfer;
+			path = Coodinator;
 			sourceTree = "<group>";
 		};
 		DE504528254DA76300C7B97A /* TransitionClass */ = {
@@ -181,13 +181,6 @@
 			children = (
 			);
 			path = TransitionClass;
-			sourceTree = "<group>";
-		};
-		DE6625B12556E4CE00A415E6 /* Contract */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Contract;
 			sourceTree = "<group>";
 		};
 		DE6625B52557093900A415E6 /* Main */ = {
@@ -323,11 +316,11 @@
 			path = UseCase;
 			sourceTree = "<group>";
 		};
-		DEA3A1C7253AA7C2004A5103 /* Presenter */ = {
+		DEA3A1C7253AA7C2004A5103 /* ViewModel */ = {
 			isa = PBXGroup;
 			children = (
 			);
-			path = Presenter;
+			path = ViewModel;
 			sourceTree = "<group>";
 		};
 		DEA3A1C8253AA7E4004A5103 /* Repository */ = {
@@ -411,23 +404,19 @@
 				DEECECD525655D23004DCDDD /* AppConstants.swift */,
 				DEDE5CF82539CF100028BEA4 /* SceneDelegate.swift */,
 				DEDE5CFF2539CF110028BEA4 /* Assets.xcassets */,
-				DE6625B12556E4CE00A415E6 /* Contract */,
-				DE504527254DA6FE00C7B97A /* DataTransfer */,
+				DE504527254DA6FE00C7B97A /* Coodinator */,
 				DE7E86482545C19000D1AFDC /* DependencyInjection */,
+				DEECED4B256BFD14004DCDDD /* Domain */,
 				DEA3A1C4253AA7A9004A5103 /* Entity */,
 				DEECECD325655CBB004DCDDD /* Enum */,
 				DEA3A1C2253AA790004A5103 /* Extension */,
 				DEA3A1CA253AA847004A5103 /* Infrastructure */,
-				DEECED4A256A9AD0004DCDDD /* Json */,
-				DEA3A1C3253AA79F004A5103 /* LayoutClass */,
 				DEA3A1C5253AA7AF004A5103 /* Modules */,
-				DEA3A1C7253AA7C2004A5103 /* Presenter */,
-				DEA3A1C8253AA7E4004A5103 /* Repository */,
 				DEA3A1CB253AA864004A5103 /* Storyboard */,
-				DE504528254DA76300C7B97A /* TransitionClass */,
-				DEA3A1C6253AA7BA004A5103 /* UseCase */,
 				DEA3A1CC253AA86C004A5103 /* View */,
+				DEECED4D256BFD9A004DCDDD /* ViewObject */,
 				DEA3A1CD253AA871004A5103 /* ViewController */,
+				DEA3A1C7253AA7C2004A5103 /* ViewModel */,
 			);
 			path = LayeredArchitectureAndUiExample;
 			sourceTree = "<group>";
@@ -471,6 +460,33 @@
 			children = (
 			);
 			path = Json;
+			sourceTree = "<group>";
+		};
+		DEECED4B256BFD14004DCDDD /* Domain */ = {
+			isa = PBXGroup;
+			children = (
+				DEECED4C256BFD2A004DCDDD /* DataTransfer */,
+				DEECED4A256A9AD0004DCDDD /* Json */,
+				DEA3A1C8253AA7E4004A5103 /* Repository */,
+				DEA3A1C6253AA7BA004A5103 /* UseCase */,
+			);
+			path = Domain;
+			sourceTree = "<group>";
+		};
+		DEECED4C256BFD2A004DCDDD /* DataTransfer */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = DataTransfer;
+			sourceTree = "<group>";
+		};
+		DEECED4D256BFD9A004DCDDD /* ViewObject */ = {
+			isa = PBXGroup;
+			children = (
+				DE504528254DA76300C7B97A /* TransitionClass */,
+				DEA3A1C3253AA79F004A5103 /* LayoutClass */,
+			);
+			path = ViewObject;
 			sourceTree = "<group>";
 		};
 		FF90AE5C030B726166161609 /* Frameworks */ = {

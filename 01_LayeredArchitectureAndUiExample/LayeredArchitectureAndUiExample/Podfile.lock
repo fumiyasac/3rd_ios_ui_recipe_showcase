@@ -1,22 +1,20 @@
 PODS:
   - BouncyLayout (2.3.0)
   - KeychainAccess (4.2.1)
-  - Kingfisher (5.15.7):
-    - Kingfisher/Core (= 5.15.7)
-  - Kingfisher/Core (5.15.7)
+  - Kingfisher (6.0.0)
   - Panels (2.1.0)
   - ParallaxHeader (3.0.0)
-  - Realm (10.1.3):
-    - Realm/Headers (= 10.1.3)
-  - Realm/Headers (10.1.3)
-  - RealmSwift (10.1.3):
-    - Realm (= 10.1.3)
-  - RxCocoa (6.0.0-rc.1):
-    - RxRelay (= 6.0.0-rc.1)
-    - RxSwift (= 6.0.0-rc.1)
-  - RxRelay (6.0.0-rc.1):
-    - RxSwift (= 6.0.0-rc.1)
-  - RxSwift (6.0.0-rc.1)
+  - Realm (10.5.0):
+    - Realm/Headers (= 10.5.0)
+  - Realm/Headers (10.5.0)
+  - RealmSwift (10.5.0):
+    - Realm (= 10.5.0)
+  - RxCocoa (6.0.0):
+    - RxRelay (= 6.0.0)
+    - RxSwift (= 6.0.0)
+  - RxRelay (6.0.0):
+    - RxSwift (= 6.0.0)
+  - RxSwift (6.0.0)
   - YNDropDownMenu (3.1.0)
 
 DEPENDENCIES:
@@ -26,8 +24,8 @@ DEPENDENCIES:
   - Panels
   - ParallaxHeader (~> 3.0.0)
   - RealmSwift
-  - RxCocoa (= 6.0.0-rc.1)
-  - RxSwift (= 6.0.0-rc.1)
+  - RxCocoa
+  - RxSwift
   - YNDropDownMenu
 
 SPEC REPOS:
@@ -47,16 +45,16 @@ SPEC REPOS:
 SPEC CHECKSUMS:
   BouncyLayout: 946047ef4987959bc107731c665ca4fdcdef5e17
   KeychainAccess: 9b07f665298d13c3a85881bd3171f6f49b8151c1
-  Kingfisher: 6e1a13523fcb1c86924ce53affe4ac957e544d59
+  Kingfisher: 13f6e68c928eb50439b5cb2ea75d6035018438ea
   Panels: cfafe2d0f92387f393a3b5e827af9ffffe46b073
   ParallaxHeader: a343f55eb38f52a89c5820a77e14cf975b84e6aa
-  Realm: 072f4060c99150cb1d35e35ce1dd4dda7d9ddfed
-  RealmSwift: 96f96feafee63186789419235d14857dae9004ae
-  RxCocoa: a28d75145c07b7547b85faf1e1ad8b25af88a752
-  RxRelay: 56abad6d32f73567858506d08735fdb341935b9a
-  RxSwift: dae1a32c48148897494b9e2a6b00a68b40694236
+  Realm: e1c22c3d83b229afb70ebc10e1771c91e9542d12
+  RealmSwift: 6fc078d9d3fd7e58c71bfdbb694e252462f112a5
+  RxCocoa: 3f79328fafa3645b34600f37c31e64c73ae3a80e
+  RxRelay: 8d593be109c06ea850df027351beba614b012ffb
+  RxSwift: c14e798c59b9f6e9a2df8fd235602e85cc044295
   YNDropDownMenu: 9c88e36c5f913bc614aaf0f3d0a7968f6251268b
 
-PODFILE CHECKSUM: f85772554496acfac083faade8ac4ba9a214f4a8
+PODFILE CHECKSUM: 6583c34266b7abd9ff36b9417cd8f7f3ed10aba8
 
 COCOAPODS: 1.10.0

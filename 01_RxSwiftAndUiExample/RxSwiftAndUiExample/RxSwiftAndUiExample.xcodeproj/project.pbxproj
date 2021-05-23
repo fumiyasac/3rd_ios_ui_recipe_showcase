@@ -18,6 +18,10 @@
 		DED4C391265A558200398C3E /* RootViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DED4C38F265A558200398C3E /* RootViewController.storyboard */; };
 		DED4C393265A563600398C3E /* RootViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DED4C392265A563600398C3E /* RootViewController.swift */; };
 		DED4C395265A5F5600398C3E /* CustomViewBase.swift in Sources */ = {isa = PBXBuildFile; fileRef = DED4C394265A5F5600398C3E /* CustomViewBase.swift */; };
+		DEFCBAEE265AA02C00CE3F97 /* NSObjectProtocolExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEFCBAED265AA02C00CE3F97 /* NSObjectProtocolExtension.swift */; };
+		DEFCBAF0265AA04F00CE3F97 /* UICollectionViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEFCBAEF265AA04F00CE3F97 /* UICollectionViewExtension.swift */; };
+		DEFCBAF2265AA06D00CE3F97 /* UIColorExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEFCBAF1265AA06D00CE3F97 /* UIColorExtension.swift */; };
+		DEFCBAF4265AA0A700CE3F97 /* UIViewControllerExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEFCBAF3265AA0A700CE3F97 /* UIViewControllerExtension.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -55,6 +59,10 @@
 		DED4C390265A558200398C3E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/RootViewController.storyboard; sourceTree = "<group>"; };
 		DED4C392265A563600398C3E /* RootViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootViewController.swift; sourceTree = "<group>"; };
 		DED4C394265A5F5600398C3E /* CustomViewBase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomViewBase.swift; sourceTree = "<group>"; };
+		DEFCBAED265AA02C00CE3F97 /* NSObjectProtocolExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NSObjectProtocolExtension.swift; sourceTree = "<group>"; };
+		DEFCBAEF265AA04F00CE3F97 /* UICollectionViewExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UICollectionViewExtension.swift; sourceTree = "<group>"; };
+		DEFCBAF1265AA06D00CE3F97 /* UIColorExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIColorExtension.swift; sourceTree = "<group>"; };
+		DEFCBAF3265AA0A700CE3F97 /* UIViewControllerExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewControllerExtension.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -189,6 +197,10 @@
 		DED4C38B2659408E00398C3E /* Extension */ = {
 			isa = PBXGroup;
 			children = (
+				DEFCBAED265AA02C00CE3F97 /* NSObjectProtocolExtension.swift */,
+				DEFCBAEF265AA04F00CE3F97 /* UICollectionViewExtension.swift */,
+				DEFCBAF1265AA06D00CE3F97 /* UIColorExtension.swift */,
+				DEFCBAF3265AA0A700CE3F97 /* UIViewControllerExtension.swift */,
 			);
 			path = Extension;
 			sourceTree = "<group>";
@@ -350,7 +362,11 @@
 			files = (
 				DED4C395265A5F5600398C3E /* CustomViewBase.swift in Sources */,
 				DEB15196265395140082E632 /* MainViewController.swift in Sources */,
+				DEFCBAF4265AA0A700CE3F97 /* UIViewControllerExtension.swift in Sources */,
+				DEFCBAF0265AA04F00CE3F97 /* UICollectionViewExtension.swift in Sources */,
+				DEFCBAF2265AA06D00CE3F97 /* UIColorExtension.swift in Sources */,
 				DEB15192265395140082E632 /* AppDelegate.swift in Sources */,
+				DEFCBAEE265AA02C00CE3F97 /* NSObjectProtocolExtension.swift in Sources */,
 				DED4C393265A563600398C3E /* RootViewController.swift in Sources */,
 				DEB15194265395140082E632 /* SceneDelegate.swift in Sources */,
 			);

@@ -1,0 +1,64 @@
+PODS:
+  - BulletinBoard (5.0.0)
+  - DropDown (2.3.13)
+  - GRDB.swift (5.7.4):
+    - GRDB.swift/standard (= 5.7.4)
+  - GRDB.swift/standard (5.7.4)
+  - GrowingTextView (0.7.2)
+  - RxBlocking (6.1.0):
+    - RxSwift (= 6.1.0)
+  - RxCocoa (6.1.0):
+    - RxRelay (= 6.1.0)
+    - RxSwift (= 6.1.0)
+  - RxRelay (6.1.0):
+    - RxSwift (= 6.1.0)
+  - RxSwift (6.1.0)
+  - RxTest (6.1.0):
+    - RxSwift (= 6.1.0)
+  - SDWebImage (5.11.1):
+    - SDWebImage/Core (= 5.11.1)
+  - SDWebImage/Core (5.11.1)
+  - SwiftyUserDefaults (5.3.0)
+
+DEPENDENCIES:
+  - BulletinBoard
+  - DropDown
+  - GRDB.swift
+  - GrowingTextView (= 0.7.2)
+  - RxBlocking
+  - RxCocoa
+  - RxSwift
+  - RxTest
+  - SDWebImage (~> 5.0)
+  - SwiftyUserDefaults (~> 5.0)
+
+SPEC REPOS:
+  trunk:
+    - BulletinBoard
+    - DropDown
+    - GRDB.swift
+    - GrowingTextView
+    - RxBlocking
+    - RxCocoa
+    - RxRelay
+    - RxSwift
+    - RxTest
+    - SDWebImage
+    - SwiftyUserDefaults
+
+SPEC CHECKSUMS:
+  BulletinBoard: dba77053c2a7b64953f63073f7534165af2edd21
+  DropDown: 8a2116376c1981888557f72ec2ffc9a5e0e456ec
+  GRDB.swift: 2064e726141f130d0b8bd819b29086f2b1157597
+  GrowingTextView: 876bf42005b5e4a4fd740597db12caaf41f0fe6c
+  RxBlocking: 602095fba0bce7b16b56ccec89edf780c248b7d9
+  RxCocoa: 5c51f02d562cbd94629f6c26cf0c80fe4ab8d343
+  RxRelay: 483e1a19fad961b41f0b0c0bee506f46c1ae14fe
+  RxSwift: a834e5c538e89eca0cae86f403f4fbf0336786ce
+  RxTest: 9d26616eaff4a7e75f4ecae9b2c24840f2e8218d
+  SDWebImage: a7f831e1a65eb5e285e3fb046a23fcfbf08e696d
+  SwiftyUserDefaults: 63f80248cf5bfb3458825d9a78f2eb7e1293a040
+
+PODFILE CHECKSUM: a6c4172bf9c41e5ddda5c1044601b6e76ec7158a
+
+COCOAPODS: 1.10.1

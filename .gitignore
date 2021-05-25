@@ -22,8 +22,13 @@ DerivedData
 .DS_Store
 
 # CocoaPods
-/01_LayeredArchitectureAndUiExample/LayeredArchitectureAndUiExample/Pods/*
-/02_MediaReaderUiExample/MediaReaderUiExample/Pods/*
-/03_FoodDeliveryUiExample/FoodDeliveryUiExample/Pods/*
+/01_RxSwiftAndUiExample/RxSwiftAndUiExample/Pods/*
+/02_MiniMoviePlayerExample/MiniMoviePlayerExample/Pods/*
+/03_SlidableTabScrollMediaExample/SlidableTabScrollMediaExample/Pods/*
+/04_MiniSwiftUIAppExample/MiniSwiftUIAppExample/Pods/*
 
 # Server
+/01_RxSwiftAndUiExample/server_mock/node_modules/
+/02_MiniMoviePlayerExample/server_mock/node_modules/
+/03_SlidableTabScrollMediaExample/server_mock/node_modules/
+/04_MiniSwiftUIAppExample/server_mock/node_modules/

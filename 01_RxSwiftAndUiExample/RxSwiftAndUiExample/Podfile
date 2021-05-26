@@ -17,6 +17,8 @@ target 'RxSwiftAndUiExample' do
 
   target 'RxSwiftAndUiExampleTests' do
     inherit! :search_paths
+    pod 'Quick'
+    pod 'Nimble'
     pod 'RxBlocking'
     pod 'RxTest'
   end

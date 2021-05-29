@@ -12,6 +12,7 @@ target 'RxSwiftAndUiExample' do
   pod 'SwiftyUserDefaults', '~> 5.0'
   pod 'GrowingTextView', '0.7.2'
   pod 'BulletinBoard'
+  pod 'EasyTipView', '~> 2.1'
   pod 'DropDown'
   pod 'GRDB.swift'
 

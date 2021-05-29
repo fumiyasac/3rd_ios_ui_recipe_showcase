@@ -1,6 +1,7 @@
 PODS:
   - BulletinBoard (5.0.0)
   - DropDown (2.3.13)
+  - EasyTipView (2.1.0)
   - GRDB.swift (5.7.4):
     - GRDB.swift/standard (= 5.7.4)
   - GRDB.swift/standard (5.7.4)
@@ -25,6 +26,7 @@ PODS:
 DEPENDENCIES:
   - BulletinBoard
   - DropDown
+  - EasyTipView (~> 2.1)
   - GRDB.swift
   - GrowingTextView (= 0.7.2)
   - Nimble
@@ -40,6 +42,7 @@ SPEC REPOS:
   trunk:
     - BulletinBoard
     - DropDown
+    - EasyTipView
     - GRDB.swift
     - GrowingTextView
     - Nimble
@@ -55,6 +58,7 @@ SPEC REPOS:
 SPEC CHECKSUMS:
   BulletinBoard: dba77053c2a7b64953f63073f7534165af2edd21
   DropDown: 8a2116376c1981888557f72ec2ffc9a5e0e456ec
+  EasyTipView: a92b6edc377b81c5ac18e9fd35d5ee78e9409488
   GRDB.swift: 2064e726141f130d0b8bd819b29086f2b1157597
   GrowingTextView: 876bf42005b5e4a4fd740597db12caaf41f0fe6c
   Nimble: 4f4a345c80b503b3ea13606a4f98405974ee4d0b
@@ -67,6 +71,6 @@ SPEC CHECKSUMS:
   SDWebImage: a7f831e1a65eb5e285e3fb046a23fcfbf08e696d
   SwiftyUserDefaults: 63f80248cf5bfb3458825d9a78f2eb7e1293a040
 
-PODFILE CHECKSUM: 208765b7d3b98b69e1be1d27f9ce9aaf3255f29d
+PODFILE CHECKSUM: 73d4d30ab2203126cde15ecf28b25c3f2e2ced58
 
 COCOAPODS: 1.10.1

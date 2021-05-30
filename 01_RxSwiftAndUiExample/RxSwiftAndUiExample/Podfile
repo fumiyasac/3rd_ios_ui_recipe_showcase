@@ -15,6 +15,7 @@ target 'RxSwiftAndUiExample' do
   pod 'EasyTipView', '~> 2.1'
   pod 'DropDown'
   pod 'GRDB.swift'
+  pod 'lottie-ios'
 
   target 'RxSwiftAndUiExampleTests' do
     inherit! :search_paths

@@ -6,6 +6,7 @@ PODS:
     - GRDB.swift/standard (= 5.7.4)
   - GRDB.swift/standard (5.7.4)
   - GrowingTextView (0.7.2)
+  - lottie-ios (3.2.3)
   - Nimble (9.2.0)
   - Quick (4.0.0)
   - RxBlocking (6.1.0):
@@ -29,6 +30,7 @@ DEPENDENCIES:
   - EasyTipView (~> 2.1)
   - GRDB.swift
   - GrowingTextView (= 0.7.2)
+  - lottie-ios
   - Nimble
   - Quick
   - RxBlocking
@@ -45,6 +47,7 @@ SPEC REPOS:
     - EasyTipView
     - GRDB.swift
     - GrowingTextView
+    - lottie-ios
     - Nimble
     - Quick
     - RxBlocking
@@ -61,6 +64,7 @@ SPEC CHECKSUMS:
   EasyTipView: a92b6edc377b81c5ac18e9fd35d5ee78e9409488
   GRDB.swift: 2064e726141f130d0b8bd819b29086f2b1157597
   GrowingTextView: 876bf42005b5e4a4fd740597db12caaf41f0fe6c
+  lottie-ios: c058aeafa76daa4cf64d773554bccc8385d0150e
   Nimble: 4f4a345c80b503b3ea13606a4f98405974ee4d0b
   Quick: 6473349e43b9271a8d43839d9ba1c442ed1b7ac4
   RxBlocking: 602095fba0bce7b16b56ccec89edf780c248b7d9
@@ -71,6 +75,6 @@ SPEC CHECKSUMS:
   SDWebImage: a7f831e1a65eb5e285e3fb046a23fcfbf08e696d
   SwiftyUserDefaults: 63f80248cf5bfb3458825d9a78f2eb7e1293a040
 
-PODFILE CHECKSUM: 73d4d30ab2203126cde15ecf28b25c3f2e2ced58
+PODFILE CHECKSUM: 58d518379890f84070e9b801955f249a080a9736
 
 COCOAPODS: 1.10.1

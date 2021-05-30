@@ -55,6 +55,7 @@
 		943B69F71544612607E6C4C9 /* Pods_RxSwiftAndUiExample.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RxSwiftAndUiExample.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		DE6AFECC26639E65002D52DA /* DependeciesContainer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DependeciesContainer.swift; sourceTree = "<group>"; };
 		DE6AFECE26639E7A002D52DA /* DependenciesDefinition.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DependenciesDefinition.swift; sourceTree = "<group>"; };
+		DE6AFED52663DFD3002D52DA /* RxSwiftAndUiExample-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "RxSwiftAndUiExample-Bridging-Header.h"; sourceTree = "<group>"; };
 		DEB1518E265395140082E632 /* RxSwiftAndUiExample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RxSwiftAndUiExample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DEB15191265395140082E632 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		DEB15193265395140082E632 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -204,6 +205,7 @@
 				DEB1519F265395150082E632 /* Info.plist */,
 				DEB15191265395140082E632 /* AppDelegate.swift */,
 				DEB15193265395140082E632 /* SceneDelegate.swift */,
+				DE6AFED52663DFD3002D52DA /* RxSwiftAndUiExample-Bridging-Header.h */,
 				DEB1519C265395150082E632 /* LaunchScreen.storyboard */,
 				DEB1519A265395150082E632 /* Assets.xcassets */,
 				DE6AFECB26639D06002D52DA /* Dependencies */,

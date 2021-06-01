@@ -150,11 +150,11 @@
 			path = Ropository;
 			sourceTree = "<group>";
 		};
-		DE6AFED22663A13D002D52DA /* Usecase */ = {
+		DE6AFED22663A13D002D52DA /* UseCase */ = {
 			isa = PBXGroup;
 			children = (
 			);
-			path = Usecase;
+			path = UseCase;
 			sourceTree = "<group>";
 		};
 		DE6AFED32663A154002D52DA /* Layer */ = {
@@ -163,7 +163,7 @@
 				DE6AFED02663A0F5002D52DA /* Infra */,
 				DE6AFED12663A0FC002D52DA /* Ropository */,
 				DED4C3882659406E00398C3E /* Presenter */,
-				DE6AFED22663A13D002D52DA /* Usecase */,
+				DE6AFED22663A13D002D52DA /* UseCase */,
 			);
 			path = Layer;
 			sourceTree = "<group>";
@@ -210,6 +210,7 @@
 				DEB1519A265395150082E632 /* Assets.xcassets */,
 				DE6AFECB26639D06002D52DA /* Dependencies */,
 				DED4C38B2659408E00398C3E /* Extension */,
+				DEFD16CE2666698E00378209 /* Enum */,
 				DE6AFED32663A154002D52DA /* Layer */,
 				DED4C3862659405F00398C3E /* LayoutClass */,
 				DED4C3872659406800398C3E /* Model */,
@@ -318,6 +319,13 @@
 				DED4C394265A5F5600398C3E /* CustomViewBase.swift */,
 			);
 			path = View;
+			sourceTree = "<group>";
+		};
+		DEFD16CE2666698E00378209 /* Enum */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Enum;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */

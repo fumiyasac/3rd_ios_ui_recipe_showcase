@@ -27,6 +27,7 @@
 		DEFCBAF2265AA06D00CE3F97 /* UIColorExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEFCBAF1265AA06D00CE3F97 /* UIColorExtension.swift */; };
 		DEFCBAF4265AA0A700CE3F97 /* UIViewControllerExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEFCBAF3265AA0A700CE3F97 /* UIViewControllerExtension.swift */; };
 		DEFCBAF6265AA55100CE3F97 /* UILabelDecorator.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEFCBAF5265AA55100CE3F97 /* UILabelDecorator.swift */; };
+		DEFD16D0266672F000378209 /* DefaultsKeysExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEFD16CF266672F000378209 /* DefaultsKeysExtension.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -78,6 +79,7 @@
 		DEFCBAF1265AA06D00CE3F97 /* UIColorExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIColorExtension.swift; sourceTree = "<group>"; };
 		DEFCBAF3265AA0A700CE3F97 /* UIViewControllerExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewControllerExtension.swift; sourceTree = "<group>"; };
 		DEFCBAF5265AA55100CE3F97 /* UILabelDecorator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UILabelDecorator.swift; sourceTree = "<group>"; };
+		DEFD16CF266672F000378209 /* DefaultsKeysExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DefaultsKeysExtension.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -292,6 +294,7 @@
 				DEFCBAEF265AA04F00CE3F97 /* UICollectionViewExtension.swift */,
 				DEFCBAF1265AA06D00CE3F97 /* UIColorExtension.swift */,
 				DEFCBAF3265AA0A700CE3F97 /* UIViewControllerExtension.swift */,
+				DEFD16CF266672F000378209 /* DefaultsKeysExtension.swift */,
 			);
 			path = Extension;
 			sourceTree = "<group>";
@@ -551,6 +554,7 @@
 				DEFCBAF2265AA06D00CE3F97 /* UIColorExtension.swift in Sources */,
 				DE6AFECD26639E65002D52DA /* DependeciesContainer.swift in Sources */,
 				DEB15192265395140082E632 /* AppDelegate.swift in Sources */,
+				DEFD16D0266672F000378209 /* DefaultsKeysExtension.swift in Sources */,
 				DE6AFECF26639E7A002D52DA /* DependenciesDefinition.swift in Sources */,
 				DEFCBAEE265AA02C00CE3F97 /* NSObjectProtocolExtension.swift in Sources */,
 				DED4C393265A563600398C3E /* RootViewController.swift in Sources */,

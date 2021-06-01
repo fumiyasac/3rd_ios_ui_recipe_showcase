@@ -23,4 +23,9 @@ extension DefaultsKeys {
     var isQuestionnaireFinished: DefaultsKey<Bool> {
         .init("isQuestionnaireFinished", defaultValue: false)
     }
+
+    // MEMO: 初めてメイン画面を開いたか
+    var isMainOpenFirstTime: DefaultsKey<Bool> {
+        .init("isMainOpenFirstTime", defaultValue: false)
+    }
 }

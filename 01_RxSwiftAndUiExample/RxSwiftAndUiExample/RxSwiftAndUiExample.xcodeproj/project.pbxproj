@@ -11,6 +11,7 @@
 		AE30E79D7051FAA7AD8FA598 /* Pods_RxSwiftAndUiExample.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 943B69F71544612607E6C4C9 /* Pods_RxSwiftAndUiExample.framework */; };
 		DE6AFECD26639E65002D52DA /* DependeciesContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE6AFECC26639E65002D52DA /* DependeciesContainer.swift */; };
 		DE6AFECF26639E7A002D52DA /* DependenciesDefinition.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE6AFECE26639E7A002D52DA /* DependenciesDefinition.swift */; };
+		DEAE28772667A2A000EB26A3 /* APIRequestManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEAE28762667A2A000EB26A3 /* APIRequestManager.swift */; };
 		DEB15192265395140082E632 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEB15191265395140082E632 /* AppDelegate.swift */; };
 		DEB15194265395140082E632 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEB15193265395140082E632 /* SceneDelegate.swift */; };
 		DEB15196265395140082E632 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEB15195265395140082E632 /* MainViewController.swift */; };
@@ -27,7 +28,7 @@
 		DEFCBAF2265AA06D00CE3F97 /* UIColorExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEFCBAF1265AA06D00CE3F97 /* UIColorExtension.swift */; };
 		DEFCBAF4265AA0A700CE3F97 /* UIViewControllerExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEFCBAF3265AA0A700CE3F97 /* UIViewControllerExtension.swift */; };
 		DEFCBAF6265AA55100CE3F97 /* UILabelDecorator.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEFCBAF5265AA55100CE3F97 /* UILabelDecorator.swift */; };
-		DEFD16D0266672F000378209 /* DefaultsKeysExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEFD16CF266672F000378209 /* DefaultsKeysExtension.swift */; };
+		DEFD16D0266672F000378209 /* UserDefaultManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEFD16CF266672F000378209 /* UserDefaultManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -57,6 +58,7 @@
 		DE6AFECC26639E65002D52DA /* DependeciesContainer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DependeciesContainer.swift; sourceTree = "<group>"; };
 		DE6AFECE26639E7A002D52DA /* DependenciesDefinition.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DependenciesDefinition.swift; sourceTree = "<group>"; };
 		DE6AFED52663DFD3002D52DA /* RxSwiftAndUiExample-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "RxSwiftAndUiExample-Bridging-Header.h"; sourceTree = "<group>"; };
+		DEAE28762667A2A000EB26A3 /* APIRequestManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIRequestManager.swift; sourceTree = "<group>"; };
 		DEB1518E265395140082E632 /* RxSwiftAndUiExample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RxSwiftAndUiExample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DEB15191265395140082E632 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		DEB15193265395140082E632 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -79,7 +81,7 @@
 		DEFCBAF1265AA06D00CE3F97 /* UIColorExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIColorExtension.swift; sourceTree = "<group>"; };
 		DEFCBAF3265AA0A700CE3F97 /* UIViewControllerExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewControllerExtension.swift; sourceTree = "<group>"; };
 		DEFCBAF5265AA55100CE3F97 /* UILabelDecorator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UILabelDecorator.swift; sourceTree = "<group>"; };
-		DEFD16CF266672F000378209 /* DefaultsKeysExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DefaultsKeysExtension.swift; sourceTree = "<group>"; };
+		DEFD16CF266672F000378209 /* UserDefaultManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDefaultManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -129,6 +131,15 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		DE1B387A2667A90B00420A67 /* Manager */ = {
+			isa = PBXGroup;
+			children = (
+				DEFD16CF266672F000378209 /* UserDefaultManager.swift */,
+				DEAE28762667A2A000EB26A3 /* APIRequestManager.swift */,
+			);
+			path = Manager;
+			sourceTree = "<group>";
+		};
 		DE6AFECB26639D06002D52DA /* Dependencies */ = {
 			isa = PBXGroup;
 			children = (
@@ -138,11 +149,11 @@
 			path = Dependencies;
 			sourceTree = "<group>";
 		};
-		DE6AFED02663A0F5002D52DA /* Infra */ = {
+		DE6AFED02663A0F5002D52DA /* InfraStructure */ = {
 			isa = PBXGroup;
 			children = (
 			);
-			path = Infra;
+			path = InfraStructure;
 			sourceTree = "<group>";
 		};
 		DE6AFED12663A0FC002D52DA /* Ropository */ = {
@@ -162,7 +173,8 @@
 		DE6AFED32663A154002D52DA /* Layer */ = {
 			isa = PBXGroup;
 			children = (
-				DE6AFED02663A0F5002D52DA /* Infra */,
+				DE1B387A2667A90B00420A67 /* Manager */,
+				DE6AFED02663A0F5002D52DA /* InfraStructure */,
 				DE6AFED12663A0FC002D52DA /* Ropository */,
 				DED4C3882659406E00398C3E /* Presenter */,
 				DE6AFED22663A13D002D52DA /* UseCase */,
@@ -294,7 +306,6 @@
 				DEFCBAEF265AA04F00CE3F97 /* UICollectionViewExtension.swift */,
 				DEFCBAF1265AA06D00CE3F97 /* UIColorExtension.swift */,
 				DEFCBAF3265AA0A700CE3F97 /* UIViewControllerExtension.swift */,
-				DEFD16CF266672F000378209 /* DefaultsKeysExtension.swift */,
 			);
 			path = Extension;
 			sourceTree = "<group>";
@@ -554,9 +565,10 @@
 				DEFCBAF2265AA06D00CE3F97 /* UIColorExtension.swift in Sources */,
 				DE6AFECD26639E65002D52DA /* DependeciesContainer.swift in Sources */,
 				DEB15192265395140082E632 /* AppDelegate.swift in Sources */,
-				DEFD16D0266672F000378209 /* DefaultsKeysExtension.swift in Sources */,
+				DEFD16D0266672F000378209 /* UserDefaultManager.swift in Sources */,
 				DE6AFECF26639E7A002D52DA /* DependenciesDefinition.swift in Sources */,
 				DEFCBAEE265AA02C00CE3F97 /* NSObjectProtocolExtension.swift in Sources */,
+				DEAE28772667A2A000EB26A3 /* APIRequestManager.swift in Sources */,
 				DED4C393265A563600398C3E /* RootViewController.swift in Sources */,
 				DEFCBAF6265AA55100CE3F97 /* UILabelDecorator.swift in Sources */,
 				DEB15194265395140082E632 /* SceneDelegate.swift in Sources */,

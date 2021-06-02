@@ -28,4 +28,9 @@ extension DefaultsKeys {
     var isMainOpenFirstTime: DefaultsKey<Bool> {
         .init("isMainOpenFirstTime", defaultValue: false)
     }
+
+    // MEMO: APIリクエスト用の認証トークン
+    var apiAuthenticatedToken: DefaultsKey<String> {
+        .init("apiAuthenticatedToken", defaultValue: "")
+    }
 }

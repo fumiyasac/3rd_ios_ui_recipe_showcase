@@ -19,12 +19,19 @@ final class DependeciesContainer {
 
     private var dependecies: [DependencyKey: Any] = [:]
 
-    func register<T>(_ type: T.Type, impl: Any, name: String? = nil) {
+    func register<T>(
+        _ type: T.Type,
+        impl: Any,
+        name: String? = nil
+    ) {
         let dependencyKey = DependencyKey(type: type, name: name)
         dependecies[dependencyKey] = impl
     }
 
-    func resolve<T>(_ type: T.Type, name: String? = nil) -> T {
+    func resolve<T>(
+        _ type: T.Type,
+        name: String? = nil
+    ) -> T {
         let dependencyKey = DependencyKey(type: type, name: name)
         if let dep = dependecies[dependencyKey] as? T {
             return dep

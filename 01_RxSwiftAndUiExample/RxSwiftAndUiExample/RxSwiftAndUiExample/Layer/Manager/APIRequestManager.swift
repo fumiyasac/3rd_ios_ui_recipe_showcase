@@ -49,14 +49,21 @@ class APIRequestManager {
 
     // MARK: - Function
 
-    func executeAPIRequest<T: Decodable>(endpointUrl: String, withParameters: [String : Any] = [:], httpMethod: HTTPMethod = .GET, responseFormat: T.Type) -> Single<T> {
+    func executeAPIRequest<T: Decodable>(
+        endpointUrl: String,
+        withParameters: [String : Any] = [:],
+        httpMethod: HTTPMethod = .GET,
+        responseFormat: T.Type
+    ) -> Single<T> {
 
         var urlRequest: URLRequest
         switch httpMethod {
         case .GET:
             urlRequest = makeGetRequest(endpointUrl)
         case .POST:
-            urlRequest = makePostRequest(endpointUrl, withParameters: withParameters)
+            urlRequest = makePostRequest(
+                endpointUrl,
+                withParameters: withParameters)
         default:
             fatalError()
         }
@@ -65,7 +72,10 @@ class APIRequestManager {
 
     // MARK: - Private Function
 
-    private func handleDataTask<T: Decodable>(_ dataType: T.Type, request: URLRequest) -> Single<T> {
+    private func handleDataTask<T: Decodable>(
+        _ dataType: T.Type,
+        request: URLRequest
+    ) -> Single<T> {
 
         return Single<T>.create(subscribe: { singleEvent in
 
@@ -115,6 +125,7 @@ class APIRequestManager {
 
     // API Mock ServerへのGETリクエストを作成する
     private func makeGetRequest(_ urlString: String) -> URLRequest {
+
         guard let url = URL(string: urlString) else {
             fatalError()
         }
@@ -126,7 +137,11 @@ class APIRequestManager {
     }
 
     // API Mock ServerへのPOSTリクエストを作成する
-    private func makePostRequest(_ urlString: String, withParameters: [String : Any] = [:]) -> URLRequest {
+    private func makePostRequest(
+        _ urlString: String,
+        withParameters: [String : Any] = [:]
+    ) -> URLRequest {
+
         guard let url = URL(string: urlString) else {
             fatalError()
         }

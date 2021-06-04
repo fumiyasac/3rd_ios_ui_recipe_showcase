@@ -13,11 +13,14 @@ import Foundation
 final class DependeciesContainer {
 
     // MARK: - DIコンテナ自体はSingletonとして保持する
+
     static let shared = DependeciesContainer()
 
     private init() {}
 
     private var dependecies: [DependencyKey: Any] = [:]
+
+    // MARK: - Function
 
     func register<T>(
         _ type: T.Type,

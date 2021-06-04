@@ -11,6 +11,9 @@
 		AE30E79D7051FAA7AD8FA598 /* Pods_RxSwiftAndUiExample.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 943B69F71544612607E6C4C9 /* Pods_RxSwiftAndUiExample.framework */; };
 		DE6AFECD26639E65002D52DA /* DependeciesContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE6AFECC26639E65002D52DA /* DependeciesContainer.swift */; };
 		DE6AFECF26639E7A002D52DA /* DependenciesDefinition.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE6AFECE26639E7A002D52DA /* DependenciesDefinition.swift */; };
+		DE847AFD266A727E001A6E25 /* GlobalTabBarController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DE847AFB266A727E001A6E25 /* GlobalTabBarController.storyboard */; };
+		DE847AFF266A72E4001A6E25 /* GlobalTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE847AFE266A72E4001A6E25 /* GlobalTabBarController.swift */; };
+		DE847B01266A7361001A6E25 /* GlobalTabBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE847B00266A7361001A6E25 /* GlobalTabBar.swift */; };
 		DEAE28772667A2A000EB26A3 /* APIRequestManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEAE28762667A2A000EB26A3 /* APIRequestManager.swift */; };
 		DEB15192265395140082E632 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEB15191265395140082E632 /* AppDelegate.swift */; };
 		DEB15194265395140082E632 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEB15193265395140082E632 /* SceneDelegate.swift */; };
@@ -58,6 +61,9 @@
 		DE6AFECC26639E65002D52DA /* DependeciesContainer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DependeciesContainer.swift; sourceTree = "<group>"; };
 		DE6AFECE26639E7A002D52DA /* DependenciesDefinition.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DependenciesDefinition.swift; sourceTree = "<group>"; };
 		DE6AFED52663DFD3002D52DA /* RxSwiftAndUiExample-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "RxSwiftAndUiExample-Bridging-Header.h"; sourceTree = "<group>"; };
+		DE847AFC266A727E001A6E25 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/GlobalTabBarController.storyboard; sourceTree = "<group>"; };
+		DE847AFE266A72E4001A6E25 /* GlobalTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GlobalTabBarController.swift; sourceTree = "<group>"; };
+		DE847B00266A7361001A6E25 /* GlobalTabBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GlobalTabBar.swift; sourceTree = "<group>"; };
 		DEAE28762667A2A000EB26A3 /* APIRequestManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIRequestManager.swift; sourceTree = "<group>"; };
 		DEB1518E265395140082E632 /* RxSwiftAndUiExample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RxSwiftAndUiExample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DEB15191265395140082E632 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -258,6 +264,7 @@
 		DED4C3852659405600398C3E /* Storyboard */ = {
 			isa = PBXGroup;
 			children = (
+				DE847AFB266A727E001A6E25 /* GlobalTabBarController.storyboard */,
 				DEB15197265395140082E632 /* MainViewController.storyboard */,
 				DED4C38F265A558200398C3E /* RootViewController.storyboard */,
 			);
@@ -321,6 +328,7 @@
 		DED4C38D265940BA00398C3E /* ViewController */ = {
 			isa = PBXGroup;
 			children = (
+				DE847AFE266A72E4001A6E25 /* GlobalTabBarController.swift */,
 				DEB15195265395140082E632 /* MainViewController.swift */,
 				DED4C392265A563600398C3E /* RootViewController.swift */,
 			);
@@ -338,6 +346,7 @@
 		DEFD16CE2666698E00378209 /* Enum */ = {
 			isa = PBXGroup;
 			children = (
+				DE847B00266A7361001A6E25 /* GlobalTabBar.swift */,
 			);
 			path = Enum;
 			sourceTree = "<group>";
@@ -452,6 +461,7 @@
 				DEB1519E265395150082E632 /* LaunchScreen.storyboard in Resources */,
 				DEB1519B265395150082E632 /* Assets.xcassets in Resources */,
 				DEB15199265395140082E632 /* MainViewController.storyboard in Resources */,
+				DE847AFD266A727E001A6E25 /* GlobalTabBarController.storyboard in Resources */,
 				DED4C391265A558200398C3E /* RootViewController.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -564,9 +574,11 @@
 				DEFCBAF0265AA04F00CE3F97 /* UICollectionViewExtension.swift in Sources */,
 				DEFCBAF2265AA06D00CE3F97 /* UIColorExtension.swift in Sources */,
 				DE6AFECD26639E65002D52DA /* DependeciesContainer.swift in Sources */,
+				DE847AFF266A72E4001A6E25 /* GlobalTabBarController.swift in Sources */,
 				DEB15192265395140082E632 /* AppDelegate.swift in Sources */,
 				DEFD16D0266672F000378209 /* UserDefaultManager.swift in Sources */,
 				DE6AFECF26639E7A002D52DA /* DependenciesDefinition.swift in Sources */,
+				DE847B01266A7361001A6E25 /* GlobalTabBar.swift in Sources */,
 				DEFCBAEE265AA02C00CE3F97 /* NSObjectProtocolExtension.swift in Sources */,
 				DEAE28772667A2A000EB26A3 /* APIRequestManager.swift in Sources */,
 				DED4C393265A563600398C3E /* RootViewController.swift in Sources */,
@@ -607,6 +619,14 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
+		DE847AFB266A727E001A6E25 /* GlobalTabBarController.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				DE847AFC266A727E001A6E25 /* Base */,
+			);
+			name = GlobalTabBarController.storyboard;
+			sourceTree = "<group>";
+		};
 		DEB15197265395140082E632 /* MainViewController.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (

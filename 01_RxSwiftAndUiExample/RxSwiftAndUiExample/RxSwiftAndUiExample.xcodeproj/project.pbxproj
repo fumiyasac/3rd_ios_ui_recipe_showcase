@@ -14,6 +14,7 @@
 		DE847AFD266A727E001A6E25 /* GlobalTabBarController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DE847AFB266A727E001A6E25 /* GlobalTabBarController.storyboard */; };
 		DE847AFF266A72E4001A6E25 /* GlobalTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE847AFE266A72E4001A6E25 /* GlobalTabBarController.swift */; };
 		DE847B01266A7361001A6E25 /* GlobalTabBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE847B00266A7361001A6E25 /* GlobalTabBar.swift */; };
+		DE847B03266B6FBA001A6E25 /* SQLiteManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE847B02266B6FBA001A6E25 /* SQLiteManager.swift */; };
 		DEAE28772667A2A000EB26A3 /* APIRequestManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEAE28762667A2A000EB26A3 /* APIRequestManager.swift */; };
 		DEB15192265395140082E632 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEB15191265395140082E632 /* AppDelegate.swift */; };
 		DEB15194265395140082E632 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEB15193265395140082E632 /* SceneDelegate.swift */; };
@@ -64,6 +65,7 @@
 		DE847AFC266A727E001A6E25 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/GlobalTabBarController.storyboard; sourceTree = "<group>"; };
 		DE847AFE266A72E4001A6E25 /* GlobalTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GlobalTabBarController.swift; sourceTree = "<group>"; };
 		DE847B00266A7361001A6E25 /* GlobalTabBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GlobalTabBar.swift; sourceTree = "<group>"; };
+		DE847B02266B6FBA001A6E25 /* SQLiteManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SQLiteManager.swift; sourceTree = "<group>"; };
 		DEAE28762667A2A000EB26A3 /* APIRequestManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIRequestManager.swift; sourceTree = "<group>"; };
 		DEB1518E265395140082E632 /* RxSwiftAndUiExample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RxSwiftAndUiExample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DEB15191265395140082E632 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -142,6 +144,7 @@
 			children = (
 				DEFD16CF266672F000378209 /* UserDefaultManager.swift */,
 				DEAE28762667A2A000EB26A3 /* APIRequestManager.swift */,
+				DE847B02266B6FBA001A6E25 /* SQLiteManager.swift */,
 			);
 			path = Manager;
 			sourceTree = "<group>";
@@ -574,6 +577,7 @@
 				DEFCBAF0265AA04F00CE3F97 /* UICollectionViewExtension.swift in Sources */,
 				DEFCBAF2265AA06D00CE3F97 /* UIColorExtension.swift in Sources */,
 				DE6AFECD26639E65002D52DA /* DependeciesContainer.swift in Sources */,
+				DE847B03266B6FBA001A6E25 /* SQLiteManager.swift in Sources */,
 				DE847AFF266A72E4001A6E25 /* GlobalTabBarController.swift in Sources */,
 				DEB15192265395140082E632 /* AppDelegate.swift in Sources */,
 				DEFD16D0266672F000378209 /* UserDefaultManager.swift in Sources */,

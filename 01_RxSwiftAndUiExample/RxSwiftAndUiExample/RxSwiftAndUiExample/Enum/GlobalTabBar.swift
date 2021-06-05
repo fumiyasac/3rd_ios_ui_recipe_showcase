@@ -11,6 +11,7 @@ enum GlobalTabBar: CaseIterable {
     case main
     case featured
     case profile
+    case question
 
     // MARK: - Function
 
@@ -23,6 +24,8 @@ enum GlobalTabBar: CaseIterable {
             return "Featured Contents"
         case .profile:
             return "User Profile"
+        case .question:
+            return "Q & A"
         }
     }
 
@@ -35,6 +38,8 @@ enum GlobalTabBar: CaseIterable {
             return "book.fill"
         case .profile:
             return "person.circle.fill"
+        case .question:
+            return "questionmark.folder.fill"
         }
     }
 }

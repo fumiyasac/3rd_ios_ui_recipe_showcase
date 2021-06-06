@@ -1,13 +1,13 @@
 //
-//  GlobalTabBarController.swift
+//  ProfileViewController.swift
 //  RxSwiftAndUiExample
 //
-//  Created by 酒井文也 on 2021/06/04.
+//  Created by 酒井文也 on 2021/06/06.
 //
 
 import UIKit
 
-final class GlobalTabBarController: UITabBarController {
+class ProfileViewController: UIViewController {
 
     // MARK: - Override
 

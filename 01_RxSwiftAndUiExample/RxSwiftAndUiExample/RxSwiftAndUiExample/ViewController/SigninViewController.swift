@@ -1,13 +1,13 @@
 //
-//  GlobalTabBarController.swift
+//  SigninViewController.swift
 //  RxSwiftAndUiExample
 //
-//  Created by 酒井文也 on 2021/06/04.
+//  Created by 酒井文也 on 2021/06/06.
 //
 
 import UIKit
 
-final class GlobalTabBarController: UITabBarController {
+final class SigninViewController: UIViewController {
 
     // MARK: - Override
 

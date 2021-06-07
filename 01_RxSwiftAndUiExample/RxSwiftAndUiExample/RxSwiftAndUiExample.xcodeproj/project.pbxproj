@@ -14,7 +14,7 @@
 		DE847AFD266A727E001A6E25 /* GlobalTabBarController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DE847AFB266A727E001A6E25 /* GlobalTabBarController.storyboard */; };
 		DE847AFF266A72E4001A6E25 /* GlobalTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE847AFE266A72E4001A6E25 /* GlobalTabBarController.swift */; };
 		DE847B01266A7361001A6E25 /* GlobalTabBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE847B00266A7361001A6E25 /* GlobalTabBar.swift */; };
-		DE847B03266B6FBA001A6E25 /* SQLiteManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE847B02266B6FBA001A6E25 /* SQLiteManager.swift */; };
+		DE847B03266B6FBA001A6E25 /* SQLiteAccessManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE847B02266B6FBA001A6E25 /* SQLiteAccessManager.swift */; };
 		DE847B3D266CE943001A6E25 /* SigninViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DE847B3B266CE943001A6E25 /* SigninViewController.storyboard */; };
 		DE847B3F266CE963001A6E25 /* SigninViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE847B3E266CE963001A6E25 /* SigninViewController.swift */; };
 		DE847B42266CE9D8001A6E25 /* QuestionarrieViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DE847B40266CE9D8001A6E25 /* QuestionarrieViewController.storyboard */; };
@@ -27,7 +27,8 @@
 		DE847B53266CF036001A6E25 /* FeaturedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE847B52266CF036001A6E25 /* FeaturedViewController.swift */; };
 		DE847B56266CF0EA001A6E25 /* DetailViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DE847B54266CF0EA001A6E25 /* DetailViewController.storyboard */; };
 		DE847B58266CF106001A6E25 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE847B57266CF106001A6E25 /* DetailViewController.swift */; };
-		DEAE28772667A2A000EB26A3 /* APIRequestManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEAE28762667A2A000EB26A3 /* APIRequestManager.swift */; };
+		DE847B5A266E3651001A6E25 /* APIRequestManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE847B59266E3651001A6E25 /* APIRequestManager.swift */; };
+		DEAE28772667A2A000EB26A3 /* APIManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEAE28762667A2A000EB26A3 /* APIManager.swift */; };
 		DEB15192265395140082E632 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEB15191265395140082E632 /* AppDelegate.swift */; };
 		DEB15194265395140082E632 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEB15193265395140082E632 /* SceneDelegate.swift */; };
 		DEB15196265395140082E632 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEB15195265395140082E632 /* MainViewController.swift */; };
@@ -77,7 +78,7 @@
 		DE847AFC266A727E001A6E25 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/GlobalTabBarController.storyboard; sourceTree = "<group>"; };
 		DE847AFE266A72E4001A6E25 /* GlobalTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GlobalTabBarController.swift; sourceTree = "<group>"; };
 		DE847B00266A7361001A6E25 /* GlobalTabBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GlobalTabBar.swift; sourceTree = "<group>"; };
-		DE847B02266B6FBA001A6E25 /* SQLiteManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SQLiteManager.swift; sourceTree = "<group>"; };
+		DE847B02266B6FBA001A6E25 /* SQLiteAccessManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SQLiteAccessManager.swift; sourceTree = "<group>"; };
 		DE847B3C266CE943001A6E25 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/SigninViewController.storyboard; sourceTree = "<group>"; };
 		DE847B3E266CE963001A6E25 /* SigninViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SigninViewController.swift; sourceTree = "<group>"; };
 		DE847B41266CE9D8001A6E25 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/QuestionarrieViewController.storyboard; sourceTree = "<group>"; };
@@ -90,7 +91,8 @@
 		DE847B52266CF036001A6E25 /* FeaturedViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeaturedViewController.swift; sourceTree = "<group>"; };
 		DE847B55266CF0EA001A6E25 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/DetailViewController.storyboard; sourceTree = "<group>"; };
 		DE847B57266CF106001A6E25 /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
-		DEAE28762667A2A000EB26A3 /* APIRequestManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIRequestManager.swift; sourceTree = "<group>"; };
+		DE847B59266E3651001A6E25 /* APIRequestManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIRequestManager.swift; sourceTree = "<group>"; };
+		DEAE28762667A2A000EB26A3 /* APIManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIManager.swift; sourceTree = "<group>"; };
 		DEB1518E265395140082E632 /* RxSwiftAndUiExample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RxSwiftAndUiExample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DEB15191265395140082E632 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		DEB15193265395140082E632 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -167,8 +169,9 @@
 			isa = PBXGroup;
 			children = (
 				DEFD16CF266672F000378209 /* UserDefaultManager.swift */,
-				DEAE28762667A2A000EB26A3 /* APIRequestManager.swift */,
-				DE847B02266B6FBA001A6E25 /* SQLiteManager.swift */,
+				DEAE28762667A2A000EB26A3 /* APIManager.swift */,
+				DE847B59266E3651001A6E25 /* APIRequestManager.swift */,
+				DE847B02266B6FBA001A6E25 /* SQLiteAccessManager.swift */,
 			);
 			path = Manager;
 			sourceTree = "<group>";
@@ -613,6 +616,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DE847B5A266E3651001A6E25 /* APIRequestManager.swift in Sources */,
 				DED4C395265A5F5600398C3E /* CustomViewBase.swift in Sources */,
 				DEB15196265395140082E632 /* MainViewController.swift in Sources */,
 				DE847B58266CF106001A6E25 /* DetailViewController.swift in Sources */,
@@ -622,7 +626,7 @@
 				DEFCBAF2265AA06D00CE3F97 /* UIColorExtension.swift in Sources */,
 				DE6AFECD26639E65002D52DA /* DependeciesContainer.swift in Sources */,
 				DE847B49266CEC67001A6E25 /* QuestionViewController.swift in Sources */,
-				DE847B03266B6FBA001A6E25 /* SQLiteManager.swift in Sources */,
+				DE847B03266B6FBA001A6E25 /* SQLiteAccessManager.swift in Sources */,
 				DE847AFF266A72E4001A6E25 /* GlobalTabBarController.swift in Sources */,
 				DE847B44266CEBEB001A6E25 /* QuestionarrieViewController.swift in Sources */,
 				DE847B3F266CE963001A6E25 /* SigninViewController.swift in Sources */,
@@ -631,7 +635,7 @@
 				DE6AFECF26639E7A002D52DA /* DependenciesDefinition.swift in Sources */,
 				DE847B01266A7361001A6E25 /* GlobalTabBar.swift in Sources */,
 				DEFCBAEE265AA02C00CE3F97 /* NSObjectProtocolExtension.swift in Sources */,
-				DEAE28772667A2A000EB26A3 /* APIRequestManager.swift in Sources */,
+				DEAE28772667A2A000EB26A3 /* APIManager.swift in Sources */,
 				DED4C393265A563600398C3E /* RootViewController.swift in Sources */,
 				DE847B4B266CEC8B001A6E25 /* ProfileViewController.swift in Sources */,
 				DEFCBAF6265AA55100CE3F97 /* UILabelDecorator.swift in Sources */,

@@ -17,6 +17,9 @@ target 'RxSwiftAndUiExample' do
   pod 'GRDB.swift'
   pod 'lottie-ios'
 
+  # Pods for Mock generate
+  pod 'SwiftyMocky'
+
   target 'RxSwiftAndUiExampleTests' do
     inherit! :search_paths
     pod 'Quick'

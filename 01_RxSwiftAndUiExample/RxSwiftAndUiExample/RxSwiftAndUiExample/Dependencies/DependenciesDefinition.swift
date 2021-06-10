@@ -46,3 +46,15 @@ final class DependenciesDefinition {
         // MARK: - Presenter
     }
 }
+
+// MARK: - PresenterFactory
+
+final class PresenterFactory {
+    
+}
+
+// MARK: - SQLiteMigrationFactory
+
+final class SQLiteMigrationFactory {
+    
+}

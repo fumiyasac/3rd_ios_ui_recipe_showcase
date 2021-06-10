@@ -9,6 +9,9 @@
 /* Begin PBXBuildFile section */
 		9AA27DCD42C4D009CACEDB06 /* Pods_RxSwiftAndUiExampleTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 300532544F44970A29DB7001 /* Pods_RxSwiftAndUiExampleTests.framework */; };
 		AE30E79D7051FAA7AD8FA598 /* Pods_RxSwiftAndUiExample.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 943B69F71544612607E6C4C9 /* Pods_RxSwiftAndUiExample.framework */; };
+		DE589B4826722E05009FFE1D /* RootContract.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE589B4726722E05009FFE1D /* RootContract.swift */; };
+		DE589B4A26722E79009FFE1D /* RootPresenterImpl.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE589B4926722E79009FFE1D /* RootPresenterImpl.swift */; };
+		DE589B4C26724006009FFE1D /* QuestionnaireStatusUserDefault.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE589B4B26724006009FFE1D /* QuestionnaireStatusUserDefault.swift */; };
 		DE6AFECD26639E65002D52DA /* DependeciesContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE6AFECC26639E65002D52DA /* DependeciesContainer.swift */; };
 		DE6AFECF26639E7A002D52DA /* DependenciesDefinition.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE6AFECE26639E7A002D52DA /* DependenciesDefinition.swift */; };
 		DE847AFD266A727E001A6E25 /* GlobalTabBarController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DE847AFB266A727E001A6E25 /* GlobalTabBarController.storyboard */; };
@@ -72,6 +75,9 @@
 		38514304E857889027E97F13 /* Pods-RxSwiftAndUiExample.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RxSwiftAndUiExample.release.xcconfig"; path = "Target Support Files/Pods-RxSwiftAndUiExample/Pods-RxSwiftAndUiExample.release.xcconfig"; sourceTree = "<group>"; };
 		5DD13B853D3ABEC70B676EE4 /* Pods-RxSwiftAndUiExampleTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RxSwiftAndUiExampleTests.release.xcconfig"; path = "Target Support Files/Pods-RxSwiftAndUiExampleTests/Pods-RxSwiftAndUiExampleTests.release.xcconfig"; sourceTree = "<group>"; };
 		943B69F71544612607E6C4C9 /* Pods_RxSwiftAndUiExample.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RxSwiftAndUiExample.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		DE589B4726722E05009FFE1D /* RootContract.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootContract.swift; sourceTree = "<group>"; };
+		DE589B4926722E79009FFE1D /* RootPresenterImpl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootPresenterImpl.swift; sourceTree = "<group>"; };
+		DE589B4B26724006009FFE1D /* QuestionnaireStatusUserDefault.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestionnaireStatusUserDefault.swift; sourceTree = "<group>"; };
 		DE6AFECC26639E65002D52DA /* DependeciesContainer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DependeciesContainer.swift; sourceTree = "<group>"; };
 		DE6AFECE26639E7A002D52DA /* DependenciesDefinition.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DependenciesDefinition.swift; sourceTree = "<group>"; };
 		DE6AFED52663DFD3002D52DA /* RxSwiftAndUiExample-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "RxSwiftAndUiExample-Bridging-Header.h"; sourceTree = "<group>"; };
@@ -188,6 +194,7 @@
 		DE6AFED02663A0F5002D52DA /* InfraStructure */ = {
 			isa = PBXGroup;
 			children = (
+				DE589B4B26724006009FFE1D /* QuestionnaireStatusUserDefault.swift */,
 			);
 			path = InfraStructure;
 			sourceTree = "<group>";
@@ -324,6 +331,8 @@
 		DED4C3882659406E00398C3E /* Presenter */ = {
 			isa = PBXGroup;
 			children = (
+				DE589B4726722E05009FFE1D /* RootContract.swift */,
+				DE589B4926722E79009FFE1D /* RootPresenterImpl.swift */,
 			);
 			path = Presenter;
 			sourceTree = "<group>";
@@ -620,6 +629,7 @@
 				DED4C395265A5F5600398C3E /* CustomViewBase.swift in Sources */,
 				DEB15196265395140082E632 /* MainViewController.swift in Sources */,
 				DE847B58266CF106001A6E25 /* DetailViewController.swift in Sources */,
+				DE589B4C26724006009FFE1D /* QuestionnaireStatusUserDefault.swift in Sources */,
 				DEFCBAF4265AA0A700CE3F97 /* UIViewControllerExtension.swift in Sources */,
 				DEFCBAF0265AA04F00CE3F97 /* UICollectionViewExtension.swift in Sources */,
 				DE847B53266CF036001A6E25 /* FeaturedViewController.swift in Sources */,
@@ -630,6 +640,7 @@
 				DE847AFF266A72E4001A6E25 /* GlobalTabBarController.swift in Sources */,
 				DE847B44266CEBEB001A6E25 /* QuestionarrieViewController.swift in Sources */,
 				DE847B3F266CE963001A6E25 /* SigninViewController.swift in Sources */,
+				DE589B4826722E05009FFE1D /* RootContract.swift in Sources */,
 				DEB15192265395140082E632 /* AppDelegate.swift in Sources */,
 				DEFD16D0266672F000378209 /* UserDefaultManager.swift in Sources */,
 				DE6AFECF26639E7A002D52DA /* DependenciesDefinition.swift in Sources */,
@@ -637,6 +648,7 @@
 				DEFCBAEE265AA02C00CE3F97 /* NSObjectProtocolExtension.swift in Sources */,
 				DEAE28772667A2A000EB26A3 /* APIManager.swift in Sources */,
 				DED4C393265A563600398C3E /* RootViewController.swift in Sources */,
+				DE589B4A26722E79009FFE1D /* RootPresenterImpl.swift in Sources */,
 				DE847B4B266CEC8B001A6E25 /* ProfileViewController.swift in Sources */,
 				DEFCBAF6265AA55100CE3F97 /* UILabelDecorator.swift in Sources */,
 				DEB15194265395140082E632 /* SceneDelegate.swift in Sources */,

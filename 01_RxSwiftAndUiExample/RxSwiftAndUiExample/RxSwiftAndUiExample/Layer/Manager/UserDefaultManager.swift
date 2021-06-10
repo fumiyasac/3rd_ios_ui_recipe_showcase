@@ -14,11 +14,6 @@ extension DefaultsKeys {
 
     // MARK: - Property
 
-    // MEMO: チュートリアル画面を終了しているか
-    var isTutorialFinished: DefaultsKey<Bool> {
-        .init("isTutorialFinished", defaultValue: false)
-    }
-
     // MEMO: アンケート入力画面を終了しているか
     var isQuestionnaireFinished: DefaultsKey<Bool> {
         .init("isQuestionnaireFinished", defaultValue: false)

@@ -21,7 +21,7 @@ extension DefaultsKeys {
 
     // MEMO: 初めてメイン画面を開いたか
     var isMainOpenFirstTime: DefaultsKey<Bool> {
-        .init("isMainOpenFirstTime", defaultValue: false)
+        .init("isMainOpenFirstTime", defaultValue: true)
     }
 
     // MEMO: APIリクエスト用の認証トークン

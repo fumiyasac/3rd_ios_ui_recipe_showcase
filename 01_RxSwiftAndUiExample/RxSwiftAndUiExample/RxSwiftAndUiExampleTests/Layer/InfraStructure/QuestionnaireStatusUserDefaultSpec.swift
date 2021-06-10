@@ -26,10 +26,12 @@ final class QuestionnaireStatusUserDefaultSpec: QuickSpec {
         let target = QuestionnaireStatusUserDefaultImpl()
 
         // MEMO: テスト前に実行する処理
+        // UserDefaultを空にする
         beforeEach {
             Defaults.removeAll()
         }
 
+        // MEMO: このクラスにて実行したいテスト内容
         describe("QuestionnaireStatusUserDefaultImpl") {
 
             // MARK: - getCurrentQuestionnaireStatusを実行した際のテスト

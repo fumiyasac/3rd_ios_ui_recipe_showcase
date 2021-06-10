@@ -12,6 +12,8 @@
 		DE589B4826722E05009FFE1D /* RootContract.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE589B4726722E05009FFE1D /* RootContract.swift */; };
 		DE589B4A26722E79009FFE1D /* RootPresenterImpl.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE589B4926722E79009FFE1D /* RootPresenterImpl.swift */; };
 		DE589B4C26724006009FFE1D /* QuestionnaireStatusUserDefault.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE589B4B26724006009FFE1D /* QuestionnaireStatusUserDefault.swift */; };
+		DE589B4E26724635009FFE1D /* Mock.generated.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE589B4D26724634009FFE1D /* Mock.generated.swift */; };
+		DE589B5226724820009FFE1D /* QuestionnaireStatusUserDefaultSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE589B5126724820009FFE1D /* QuestionnaireStatusUserDefaultSpec.swift */; };
 		DE6AFECD26639E65002D52DA /* DependeciesContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE6AFECC26639E65002D52DA /* DependeciesContainer.swift */; };
 		DE6AFECF26639E7A002D52DA /* DependenciesDefinition.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE6AFECE26639E7A002D52DA /* DependenciesDefinition.swift */; };
 		DE847AFD266A727E001A6E25 /* GlobalTabBarController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DE847AFB266A727E001A6E25 /* GlobalTabBarController.storyboard */; };
@@ -78,6 +80,8 @@
 		DE589B4726722E05009FFE1D /* RootContract.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootContract.swift; sourceTree = "<group>"; };
 		DE589B4926722E79009FFE1D /* RootPresenterImpl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootPresenterImpl.swift; sourceTree = "<group>"; };
 		DE589B4B26724006009FFE1D /* QuestionnaireStatusUserDefault.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestionnaireStatusUserDefault.swift; sourceTree = "<group>"; };
+		DE589B4D26724634009FFE1D /* Mock.generated.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Mock.generated.swift; sourceTree = "<group>"; };
+		DE589B5126724820009FFE1D /* QuestionnaireStatusUserDefaultSpec.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestionnaireStatusUserDefaultSpec.swift; sourceTree = "<group>"; };
 		DE6AFECC26639E65002D52DA /* DependeciesContainer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DependeciesContainer.swift; sourceTree = "<group>"; };
 		DE6AFECE26639E7A002D52DA /* DependenciesDefinition.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DependenciesDefinition.swift; sourceTree = "<group>"; };
 		DE6AFED52663DFD3002D52DA /* RxSwiftAndUiExample-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "RxSwiftAndUiExample-Bridging-Header.h"; sourceTree = "<group>"; };
@@ -182,6 +186,22 @@
 			path = Manager;
 			sourceTree = "<group>";
 		};
+		DE589B4F267247C6009FFE1D /* Layer */ = {
+			isa = PBXGroup;
+			children = (
+				DE589B50267247D1009FFE1D /* InfraStructure */,
+			);
+			path = Layer;
+			sourceTree = "<group>";
+		};
+		DE589B50267247D1009FFE1D /* InfraStructure */ = {
+			isa = PBXGroup;
+			children = (
+				DE589B5126724820009FFE1D /* QuestionnaireStatusUserDefaultSpec.swift */,
+			);
+			path = InfraStructure;
+			sourceTree = "<group>";
+		};
 		DE6AFECB26639D06002D52DA /* Dependencies */ = {
 			isa = PBXGroup;
 			children = (
@@ -283,6 +303,8 @@
 		DEB151A7265395150082E632 /* RxSwiftAndUiExampleTests */ = {
 			isa = PBXGroup;
 			children = (
+				DE589B4F267247C6009FFE1D /* Layer */,
+				DE589B4D26724634009FFE1D /* Mock.generated.swift */,
 				DEB151A8265395150082E632 /* RxSwiftAndUiExampleTests.swift */,
 				DEB151AA265395150082E632 /* Info.plist */,
 			);
@@ -659,7 +681,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DE589B4E26724635009FFE1D /* Mock.generated.swift in Sources */,
 				DEB151A9265395150082E632 /* RxSwiftAndUiExampleTests.swift in Sources */,
+				DE589B5226724820009FFE1D /* QuestionnaireStatusUserDefaultSpec.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

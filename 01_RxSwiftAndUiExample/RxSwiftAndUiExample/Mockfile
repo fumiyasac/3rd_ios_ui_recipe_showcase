@@ -1,0 +1,15 @@
+sourceryCommand: null
+sourceryTemplate: null
+RxSwiftAndUiExampleTests:
+  sources:
+    include:
+    - ./RxSwiftAndUiExample
+  output: ./RxSwiftAndUiExampleTests/Mock.generated.swift
+  targets:
+  - RxSwiftAndUiExampleTests
+  testable:
+  - RxSwiftAndUiExample
+  import:
+  - Foundation
+  - RxSwift
+  - SwiftyUserDefaults

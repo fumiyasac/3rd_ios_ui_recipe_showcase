@@ -39,6 +39,20 @@ final class DependenciesDefinition {
 
         // MARK: - Infra
 
+        // MEMO: (1) UserDefault関連処理部分
+        dependecies.register(
+            ApiAuthenticatedTokenUserDefault.self,
+            impl: ApiAuthenticatedTokenUserDefaultImpl()
+        )
+        dependecies.register(
+            FirstTimeMainOpenStatusUserDefault.self,
+            impl: FirstTimeMainOpenStatusUserDefaultImpl()
+        )
+        dependecies.register(
+            QuestionnaireStatusUserDefault.self,
+            impl: QuestionnaireStatusUserDefaultImpl()
+        )
+
         // MARK: - Repository
 
         // MARK: - Scheduler

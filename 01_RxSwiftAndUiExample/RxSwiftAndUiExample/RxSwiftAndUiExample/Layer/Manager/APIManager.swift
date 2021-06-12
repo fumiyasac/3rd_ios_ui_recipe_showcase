@@ -85,7 +85,8 @@ class APIManager {
                     if response.statusCode == 403 {
                         print("403 Error Occurs in", request)
                         DispatchQueue.main.async {
-                            //
+                            // TODO: RootViewControllerへの画面遷移処理を実施する
+                            self.coodinateToRootViewController()
                         }
                         singleEvent(.failure(APIError.error("Error: StatusCodeが403です。")))
                     } else {
@@ -149,5 +150,10 @@ class APIManager {
         urlRequest.addValue("application/json", forHTTPHeaderField: "Content-Type")
         urlRequest.addValue(apiAuthenticatedToken , forHTTPHeaderField: "Authorization")
         return urlRequest
+    }
+
+    // 有効期限切れ等が原因でAPIアクセストークンの認証が失敗した場合にはおおもとのRootViewControllerを表示する
+    private func coodinateToRootViewController() {
+        
     }
 }

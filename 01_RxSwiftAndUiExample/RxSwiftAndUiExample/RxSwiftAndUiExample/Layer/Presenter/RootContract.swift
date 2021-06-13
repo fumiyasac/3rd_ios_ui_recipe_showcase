@@ -10,9 +10,11 @@ import Foundation
 // MEMO: ViewControllerとPresenterの処理をお互いに対応させるためのProtocol定義
 
 protocol RootView: AnyObject {
-
+    func moveToQuestionarrieScreen()
+    func moveToSigninScreen()
 }
 
 protocol RootPresenter: AnyObject {
-
+    func viewDidLoadTrigger()
+    func viewDidAppearTrigger()
 }

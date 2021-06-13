@@ -7,7 +7,7 @@
 
 import UIKit
 
-final class RootViewController: UIViewController {
+final class RootViewController: UIViewController, RootView {
 
     // MARK: - Properties
 
@@ -18,5 +18,15 @@ final class RootViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+    }
+
+    // MARK: - RootView
+
+    func moveToQuestionarrieScreen() {
+        
+    }
+
+    func moveToSigninScreen() {
+        
     }
 }

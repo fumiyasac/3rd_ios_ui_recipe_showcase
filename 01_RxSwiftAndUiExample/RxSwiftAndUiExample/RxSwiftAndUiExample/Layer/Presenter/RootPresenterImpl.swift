@@ -8,5 +8,14 @@
 import Foundation
 
 final class RootPresenterImpl: RootPresenter {
+
+    // MARK: - RootPresenter
+
+    func viewDidLoadTrigger() {
+        <#code#>
+    }
     
+    func viewDidAppearTrigger() {
+        <#code#>
+    }
 }

@@ -11,20 +11,22 @@ import SwiftyUserDefaults
 
 //sourcery: AutoMockable
 protocol FirstTimeMainOpenStatusUserDefault {
-    func getFirstTimeMainOpenStatus() -> Single<Bool>
-    func setFirstTimeMainOpenFalse() -> Completable
+    func get() -> Single<Bool>
+    func changeFalse() -> Completable
 }
 
 final class FirstTimeMainOpenStatusUserDefaultImpl: FirstTimeMainOpenStatusUserDefault {
 
+    // MARK: - FirstTimeMainOpenStatusUserDefault
+
     // MEMO: Main画面を初めて開いたかの状態を取得する
-    func getFirstTimeMainOpenStatus() -> Single<Bool> {
+    func get() -> Single<Bool> {
         let isMainOpenFirstTime = Defaults[\.isMainOpenFirstTime]
         return Single.just(isMainOpenFirstTime)
     }
 
     // MEMO: Main画面を初めて開いた状態をfalseへ更新する
-    func setFirstTimeMainOpenFalse() -> Completable {
+    func changeFalse() -> Completable {
         return Completable.create { completable in
             Defaults[\.isMainOpenFirstTime] = false
             completable(.completed)

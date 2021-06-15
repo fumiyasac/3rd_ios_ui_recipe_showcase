@@ -34,29 +34,29 @@ final class QuestionnaireStatusUserDefaultSpec: QuickSpec {
         // MEMO: このクラスにて実行したいテスト内容
         describe("QuestionnaireStatusUserDefaultImpl") {
 
-            // MARK: - getCurrentQuestionnaireStatusを実行した際のテスト
+            // MARK: - getを実行した際のテスト
 
-            describe("#getCurrentQuestionnaireStatus") {
+            describe("#get") {
                 context("アンケート回答済の場合") {
                     beforeEach {
                         Defaults[\.isQuestionnaireFinished] = true
                     }
                     it("trueを返す") {
-                        expect(try! target.getCurrentQuestionnaireStatus().toBlocking().first()).to(equal(true))
+                        expect(try! target.get().toBlocking().first()).to(equal(true))
                     }
                 }
                 context("アンケート未回答の場合") {
                     it("falseを返す") {
-                        expect(try! target.getCurrentQuestionnaireStatus().toBlocking().first()).to(equal(false))
+                        expect(try! target.get().toBlocking().first()).to(equal(false))
                     }
                 }
             }
 
-            // MARK: - setQuestionnaireStatusTrueを実行した際のテスト
+            // MARK: - changeTrueを実行した際のテスト
 
-            describe("#setQuestionnaireStatusTrue") {
-                it("Completableを返却かつ値はtrueとなる") {
-                    expect(try! target.setQuestionnaireStatusTrue().toBlocking().first()).to(beNil())
+            describe("#changeTrue") {
+                it("Completable & 値はtrueとなる") {
+                    expect(try! target.changeTrue().toBlocking().first()).to(beNil())
                     expect(Defaults[\.isQuestionnaireFinished]).to(equal(true))
                 }
             }

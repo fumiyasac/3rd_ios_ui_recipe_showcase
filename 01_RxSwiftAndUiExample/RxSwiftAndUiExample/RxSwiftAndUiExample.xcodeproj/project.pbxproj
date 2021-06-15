@@ -55,6 +55,9 @@
 		DEFCBAF4265AA0A700CE3F97 /* UIViewControllerExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEFCBAF3265AA0A700CE3F97 /* UIViewControllerExtension.swift */; };
 		DEFCBAF6265AA55100CE3F97 /* UILabelDecorator.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEFCBAF5265AA55100CE3F97 /* UILabelDecorator.swift */; };
 		DEFD16D0266672F000378209 /* UserDefaultManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEFD16CF266672F000378209 /* UserDefaultManager.swift */; };
+		DEFD29682678F05A00FD1583 /* ApiAuthenticatedTokenRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEFD29672678F05A00FD1583 /* ApiAuthenticatedTokenRepository.swift */; };
+		DEFD296A2678F24500FD1583 /* ApiAuthenticatedToken.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEFD29692678F24500FD1583 /* ApiAuthenticatedToken.swift */; };
+		DEFD296C2678F26300FD1583 /* ValueObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEFD296B2678F26300FD1583 /* ValueObject.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -134,6 +137,9 @@
 		DEFCBAF3265AA0A700CE3F97 /* UIViewControllerExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewControllerExtension.swift; sourceTree = "<group>"; };
 		DEFCBAF5265AA55100CE3F97 /* UILabelDecorator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UILabelDecorator.swift; sourceTree = "<group>"; };
 		DEFD16CF266672F000378209 /* UserDefaultManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDefaultManager.swift; sourceTree = "<group>"; };
+		DEFD29672678F05A00FD1583 /* ApiAuthenticatedTokenRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiAuthenticatedTokenRepository.swift; sourceTree = "<group>"; };
+		DEFD29692678F24500FD1583 /* ApiAuthenticatedToken.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiAuthenticatedToken.swift; sourceTree = "<group>"; };
+		DEFD296B2678F26300FD1583 /* ValueObject.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ValueObject.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -234,6 +240,7 @@
 		DE6AFED12663A0FC002D52DA /* Ropository */ = {
 			isa = PBXGroup;
 			children = (
+				DEFD296E2678F40A00FD1583 /* ApiAuthenticatedToken */,
 			);
 			path = Ropository;
 			sourceTree = "<group>";
@@ -297,6 +304,7 @@
 				DE6AFED52663DFD3002D52DA /* RxSwiftAndUiExample-Bridging-Header.h */,
 				DEB1519C265395150082E632 /* LaunchScreen.storyboard */,
 				DEB1519A265395150082E632 /* Assets.xcassets */,
+				DEFD296D2678F28D00FD1583 /* Common */,
 				DE6AFECB26639D06002D52DA /* Dependencies */,
 				DED4C38B2659408E00398C3E /* Extension */,
 				DEFD16CE2666698E00378209 /* Enum */,
@@ -434,6 +442,23 @@
 				DE847B00266A7361001A6E25 /* GlobalTabBar.swift */,
 			);
 			path = Enum;
+			sourceTree = "<group>";
+		};
+		DEFD296D2678F28D00FD1583 /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				DEFD296B2678F26300FD1583 /* ValueObject.swift */,
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
+		DEFD296E2678F40A00FD1583 /* ApiAuthenticatedToken */ = {
+			isa = PBXGroup;
+			children = (
+				DEFD29672678F05A00FD1583 /* ApiAuthenticatedTokenRepository.swift */,
+				DEFD29692678F24500FD1583 /* ApiAuthenticatedToken.swift */,
+			);
+			path = ApiAuthenticatedToken;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -659,7 +684,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DEFD296C2678F26300FD1583 /* ValueObject.swift in Sources */,
 				DE847B5A266E3651001A6E25 /* APIRequestManager.swift in Sources */,
+				DEFD29682678F05A00FD1583 /* ApiAuthenticatedTokenRepository.swift in Sources */,
 				DED4C395265A5F5600398C3E /* CustomViewBase.swift in Sources */,
 				DEB15196265395140082E632 /* MainViewController.swift in Sources */,
 				DE847B58266CF106001A6E25 /* DetailViewController.swift in Sources */,
@@ -674,6 +701,7 @@
 				DE847B03266B6FBA001A6E25 /* SQLiteAccessManager.swift in Sources */,
 				DE847AFF266A72E4001A6E25 /* GlobalTabBarController.swift in Sources */,
 				DE847B44266CEBEB001A6E25 /* QuestionarrieViewController.swift in Sources */,
+				DEFD296A2678F24500FD1583 /* ApiAuthenticatedToken.swift in Sources */,
 				DE847B3F266CE963001A6E25 /* SigninViewController.swift in Sources */,
 				DE589B4826722E05009FFE1D /* RootContract.swift in Sources */,
 				DEB15192265395140082E632 /* AppDelegate.swift in Sources */,

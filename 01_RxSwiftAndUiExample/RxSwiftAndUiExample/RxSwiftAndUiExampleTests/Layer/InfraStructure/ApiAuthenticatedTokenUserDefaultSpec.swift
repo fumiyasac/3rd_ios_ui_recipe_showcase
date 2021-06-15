@@ -34,24 +34,48 @@ final class ApiAuthenticatedTokenUserDefaultSpec: QuickSpec {
         // MEMO: このクラスにて実行したいテスト内容
         describe("ApiAuthenticatedTokenUserDefaultImpl") {
 
-            // MARK: - setApiAuthenticatedTokenを実行した際のテスト
+            // MARK: - findを実行した際のテスト
 
-            describe("#setApiAuthenticatedToken") {
-
-                // MEMO: 仮で定めたToken文字列
-                let sampleToken = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIxMjkwNDg5MSIsIm5hbWUiOiJGdW1peWEgU2FrYWkiLCJpYXQiOjE1MTYyMzkwMjJ9.HXQnb2yoMqVfCXYBxMx24bYN04U5q2IC4nG30cxywhM"
-                it("Completableを返却かつ受け取った文字列が保存されている") {
-                    expect(try! target.setApiAuthenticatedToken(sampleToken).toBlocking().first()).to(beNil())
-                    expect(Defaults[\.apiAuthenticatedToken]).to(equal(sampleToken))
+            describe("#find") {
+                context("Token値が存在する場合") {
+                    // MEMO: 仮で定めたToken文字列
+                    let tokenString = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIxMjkwNDg5MSIsIm5hbWUiOiJGdW1peWEgU2FrYWkiLCJpYXQiOjE1MTYyMzkwMjJ9.HXQnb2yoMqVfCXYBxMx24bYN04U5q2IC4nG30cxywhM"
+                    beforeEach {
+                        Defaults[\.apiAuthenticatedToken] = tokenString
+                    }
+                    it("Token値を返す") {
+                        expect(try! target.find().toBlocking().first()).to(equal(tokenString))
+                    }
+                }
+                context("Token値が存在しない場合") {
+                    it("何も返さない") {
+                        expect(try! target.find().toBlocking().first()).to(beNil())
+                    }
                 }
             }
 
-            // MARK: - clearApiAuthenticatedTokenを実行した際のテスト
+            // MARK: - storeを実行した際のテスト
 
-            describe("#clearApiAuthenticatedToken") {
-                it("Completableを返却かつ空文字列が保存されている") {
-                    expect(try! target.clearApiAuthenticatedToken().toBlocking().first()).to(beNil())
-                    expect(Defaults[\.apiAuthenticatedToken]).to(equal(""))
+            describe("#store") {
+                context("Token値を保存する場合") {
+                    // MEMO: 仮で定めたToken文字列
+                    let tokenString = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIxMjkwNDg5MSIsIm5hbWUiOiJGdW1peWEgU2FrYWkiLCJpYXQiOjE1MTYyMzkwMjJ9.HXQnb2yoMqVfCXYBxMx24bYN04U5q2IC4nG30cxywhM"
+                    let apiAuthenticatedToken = ApiAuthenticatedToken(value: tokenString)
+                    it("Completable & Token文字列が保存されている") {
+                        expect(try! target.store(token: apiAuthenticatedToken).toBlocking().first()).to(beNil())
+                        expect(Defaults[\.apiAuthenticatedToken]).to(equal(tokenString))
+                    }
+                }
+            }
+
+            // MARK: - clearを実行した際のテスト
+
+            describe("#clear") {
+                context("Token値をクリアする場合") {
+                    it("Completable & 空文字列が保存されている") {
+                        expect(try! target.clear().toBlocking().first()).to(beNil())
+                        expect(Defaults[\.apiAuthenticatedToken]).to(equal(""))
+                    }
                 }
             }
         }

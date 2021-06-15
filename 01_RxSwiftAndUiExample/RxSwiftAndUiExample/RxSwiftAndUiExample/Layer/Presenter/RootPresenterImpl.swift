@@ -11,11 +11,7 @@ final class RootPresenterImpl: RootPresenter {
 
     // MARK: - RootPresenter
 
-    func viewDidLoadTrigger() {
-        <#code#>
-    }
+    func viewDidLoadTrigger() {}
     
-    func viewDidAppearTrigger() {
-        <#code#>
-    }
+    func viewDidAppearTrigger() {}
 }

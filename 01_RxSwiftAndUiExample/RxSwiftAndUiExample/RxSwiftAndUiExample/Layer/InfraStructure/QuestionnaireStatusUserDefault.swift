@@ -11,20 +11,22 @@ import SwiftyUserDefaults
 
 //sourcery: AutoMockable
 protocol QuestionnaireStatusUserDefault {
-    func getCurrentQuestionnaireStatus() -> Single<Bool>
-    func setQuestionnaireStatusTrue() -> Completable
+    func get() -> Single<Bool>
+    func changeTrue() -> Completable
 }
 
 final class QuestionnaireStatusUserDefaultImpl: QuestionnaireStatusUserDefault {
 
+    // MARK: - QuestionnaireStatusUserDefault
+
     // MEMO: UserDefault内の現在のアンケート回答状況を取得する
-    func getCurrentQuestionnaireStatus() -> Single<Bool> {
+    func get() -> Single<Bool> {
         let isQuestionnaireFinished = Defaults[\.isQuestionnaireFinished]
         return Single.just(isQuestionnaireFinished)
     }
 
     // MEMO: UserDefault内のアンケート回答状況を回答済みに更新する
-    func setQuestionnaireStatusTrue() -> Completable {
+    func changeTrue() -> Completable {
         return Completable.create { completable in
             Defaults[\.isQuestionnaireFinished] = true
             completable(.completed)

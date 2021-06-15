@@ -34,29 +34,29 @@ final class FirstTimeMainOpenStatusUserDefaultSpec: QuickSpec {
         // MEMO: このクラスにて実行したいテスト内容
         describe("FirstTimeMainOpenStatusUserDefaultImpl") {
 
-            // MARK: - getFirstTimeMainOpenStatusを実行した際のテスト
+            // MARK: - getを実行した際のテスト
 
-            describe("#getFirstTimeMainOpenStatus") {
+            describe("#get") {
                 context("Main画面起動が初回ではない場合") {
                     beforeEach {
                         Defaults[\.isMainOpenFirstTime] = false
                     }
                     it("falseを返す") {
-                        expect(try! target.getFirstTimeMainOpenStatus().toBlocking().first()).to(equal(false))
+                        expect(try! target.get().toBlocking().first()).to(equal(false))
                     }
                 }
                 context("Main画面起動が初回の場合") {
                     it("trueを返す") {
-                        expect(try! target.getFirstTimeMainOpenStatus().toBlocking().first()).to(equal(true))
+                        expect(try! target.get().toBlocking().first()).to(equal(true))
                     }
                 }
             }
 
-            // MARK: - setFirstTimeMainOpenFalseを実行した際のテスト
+            // MARK: - changeFalseを実行した際のテスト
 
             describe("#setFirstTimeMainOpenFalse") {
-                it("Completableを返却かつ値はfalseとなる") {
-                    expect(try! target.setFirstTimeMainOpenFalse().toBlocking().first()).to(beNil())
+                it("Completable & 値はfalseとなる") {
+                    expect(try! target.changeFalse().toBlocking().first()).to(beNil())
                     expect(Defaults[\.isMainOpenFirstTime]).to(equal(false))
                 }
             }

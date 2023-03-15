@@ -328,11 +328,8 @@
 				DED4C38B2659408E00398C3E /* Extension */,
 				DEFD16CE2666698E00378209 /* Enum */,
 				DE6AFED32663A154002D52DA /* Layer */,
-				DED4C3862659405F00398C3E /* LayoutClass */,
-				DED4C3872659406800398C3E /* Model */,
 				DED4C38C265940A900398C3E /* Modules */,
 				DED4C3852659405600398C3E /* Storyboard */,
-				DED4C38A2659408400398C3E /* Transition */,
 				DED4C38D265940BA00398C3E /* ViewController */,
 				DE6AFED42663A17D002D52DA /* ViewParts */,
 			);
@@ -375,20 +372,6 @@
 			path = Storyboard;
 			sourceTree = "<group>";
 		};
-		DED4C3862659405F00398C3E /* LayoutClass */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = LayoutClass;
-			sourceTree = "<group>";
-		};
-		DED4C3872659406800398C3E /* Model */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Model;
-			sourceTree = "<group>";
-		};
 		DED4C3882659406E00398C3E /* Presenter */ = {
 			isa = PBXGroup;
 			children = (
@@ -403,13 +386,6 @@
 			children = (
 			);
 			path = ViewObject;
-			sourceTree = "<group>";
-		};
-		DED4C38A2659408400398C3E /* Transition */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Transition;
 			sourceTree = "<group>";
 		};
 		DED4C38B2659408E00398C3E /* Extension */ = {

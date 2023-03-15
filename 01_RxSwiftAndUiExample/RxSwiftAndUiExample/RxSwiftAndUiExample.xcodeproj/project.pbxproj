@@ -3,13 +3,19 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 51;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
 		9AA27DCD42C4D009CACEDB06 /* Pods_RxSwiftAndUiExampleTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 300532544F44970A29DB7001 /* Pods_RxSwiftAndUiExampleTests.framework */; };
 		AE30E79D7051FAA7AD8FA598 /* Pods_RxSwiftAndUiExample.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 943B69F71544612607E6C4C9 /* Pods_RxSwiftAndUiExample.framework */; };
 		DE0F95DD267E25B500585105 /* ApiAuthenticatedTokenRepositorySpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE0F95DC267E25B500585105 /* ApiAuthenticatedTokenRepositorySpec.swift */; };
+		DE2EC12629C2135300C52028 /* RxSwift in Frameworks */ = {isa = PBXBuildFile; productRef = DE2EC12529C2135300C52028 /* RxSwift */; };
+		DE2EC12929C2137F00C52028 /* SDWebImage in Frameworks */ = {isa = PBXBuildFile; productRef = DE2EC12829C2137F00C52028 /* SDWebImage */; };
+		DE2EC12C29C213CD00C52028 /* SwiftyUserDefaults in Frameworks */ = {isa = PBXBuildFile; productRef = DE2EC12B29C213CD00C52028 /* SwiftyUserDefaults */; };
+		DE2EC12F29C2140A00C52028 /* Quick in Frameworks */ = {isa = PBXBuildFile; productRef = DE2EC12E29C2140A00C52028 /* Quick */; };
+		DE2EC13229C2145900C52028 /* Nimble in Frameworks */ = {isa = PBXBuildFile; productRef = DE2EC13129C2145900C52028 /* Nimble */; };
+		DE2EC13529C2156700C52028 /* SwiftyMocky in Frameworks */ = {isa = PBXBuildFile; productRef = DE2EC13429C2156700C52028 /* SwiftyMocky */; };
 		DE589B4826722E05009FFE1D /* RootContract.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE589B4726722E05009FFE1D /* RootContract.swift */; };
 		DE589B4A26722E79009FFE1D /* RootPresenterImpl.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE589B4926722E79009FFE1D /* RootPresenterImpl.swift */; };
 		DE589B4C26724006009FFE1D /* QuestionnaireStatusUserDefault.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE589B4B26724006009FFE1D /* QuestionnaireStatusUserDefault.swift */; };
@@ -149,7 +155,10 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DE2EC12929C2137F00C52028 /* SDWebImage in Frameworks */,
+				DE2EC12629C2135300C52028 /* RxSwift in Frameworks */,
 				AE30E79D7051FAA7AD8FA598 /* Pods_RxSwiftAndUiExample.framework in Frameworks */,
+				DE2EC12C29C213CD00C52028 /* SwiftyUserDefaults in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -157,6 +166,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DE2EC13529C2156700C52028 /* SwiftyMocky in Frameworks */,
+				DE2EC13229C2145900C52028 /* Nimble in Frameworks */,
+				DE2EC12F29C2140A00C52028 /* Quick in Frameworks */,
 				9AA27DCD42C4D009CACEDB06 /* Pods_RxSwiftAndUiExampleTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -466,6 +478,11 @@
 			dependencies = (
 			);
 			name = RxSwiftAndUiExample;
+			packageProductDependencies = (
+				DE2EC12529C2135300C52028 /* RxSwift */,
+				DE2EC12829C2137F00C52028 /* SDWebImage */,
+				DE2EC12B29C213CD00C52028 /* SwiftyUserDefaults */,
+			);
 			productName = RxSwiftAndUiExample;
 			productReference = DEB1518E265395140082E632 /* RxSwiftAndUiExample.app */;
 			productType = "com.apple.product-type.application";
@@ -486,6 +503,11 @@
 				DEB151A6265395150082E632 /* PBXTargetDependency */,
 			);
 			name = RxSwiftAndUiExampleTests;
+			packageProductDependencies = (
+				DE2EC12E29C2140A00C52028 /* Quick */,
+				DE2EC13129C2145900C52028 /* Nimble */,
+				DE2EC13429C2156700C52028 /* SwiftyMocky */,
+			);
 			productName = RxSwiftAndUiExampleTests;
 			productReference = DEB151A4265395150082E632 /* RxSwiftAndUiExampleTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
@@ -539,6 +561,14 @@
 				Base,
 			);
 			mainGroup = DEB15185265395140082E632;
+			packageReferences = (
+				DE2EC12429C2135300C52028 /* XCRemoteSwiftPackageReference "RxSwift" */,
+				DE2EC12729C2137F00C52028 /* XCRemoteSwiftPackageReference "SDWebImage" */,
+				DE2EC12A29C213CD00C52028 /* XCRemoteSwiftPackageReference "SwiftyUserDefaults" */,
+				DE2EC12D29C2140A00C52028 /* XCRemoteSwiftPackageReference "Quick" */,
+				DE2EC13029C2145900C52028 /* XCRemoteSwiftPackageReference "Nimble" */,
+				DE2EC13329C2156700C52028 /* XCRemoteSwiftPackageReference "SwiftyMocky" */,
+			);
 			productRefGroup = DEB1518F265395140082E632 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -1110,6 +1140,90 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		DE2EC12429C2135300C52028 /* XCRemoteSwiftPackageReference "RxSwift" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/ReactiveX/RxSwift.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 6.0.0;
+			};
+		};
+		DE2EC12729C2137F00C52028 /* XCRemoteSwiftPackageReference "SDWebImage" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SDWebImage/SDWebImage.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.0.0;
+			};
+		};
+		DE2EC12A29C213CD00C52028 /* XCRemoteSwiftPackageReference "SwiftyUserDefaults" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/sunshinejr/SwiftyUserDefaults.git";
+			requirement = {
+				kind = upToNextMinorVersion;
+				minimumVersion = 5.3.0;
+			};
+		};
+		DE2EC12D29C2140A00C52028 /* XCRemoteSwiftPackageReference "Quick" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Quick/Quick.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 6.1.0;
+			};
+		};
+		DE2EC13029C2145900C52028 /* XCRemoteSwiftPackageReference "Nimble" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Quick/Nimble.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 11.2.0;
+			};
+		};
+		DE2EC13329C2156700C52028 /* XCRemoteSwiftPackageReference "SwiftyMocky" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/MakeAWishFoundation/SwiftyMocky.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 4.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		DE2EC12529C2135300C52028 /* RxSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = DE2EC12429C2135300C52028 /* XCRemoteSwiftPackageReference "RxSwift" */;
+			productName = RxSwift;
+		};
+		DE2EC12829C2137F00C52028 /* SDWebImage */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = DE2EC12729C2137F00C52028 /* XCRemoteSwiftPackageReference "SDWebImage" */;
+			productName = SDWebImage;
+		};
+		DE2EC12B29C213CD00C52028 /* SwiftyUserDefaults */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = DE2EC12A29C213CD00C52028 /* XCRemoteSwiftPackageReference "SwiftyUserDefaults" */;
+			productName = SwiftyUserDefaults;
+		};
+		DE2EC12E29C2140A00C52028 /* Quick */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = DE2EC12D29C2140A00C52028 /* XCRemoteSwiftPackageReference "Quick" */;
+			productName = Quick;
+		};
+		DE2EC13129C2145900C52028 /* Nimble */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = DE2EC13029C2145900C52028 /* XCRemoteSwiftPackageReference "Nimble" */;
+			productName = Nimble;
+		};
+		DE2EC13429C2156700C52028 /* SwiftyMocky */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = DE2EC13329C2156700C52028 /* XCRemoteSwiftPackageReference "SwiftyMocky" */;
+			productName = SwiftyMocky;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = DEB15186265395140082E632 /* Project object */;
 }

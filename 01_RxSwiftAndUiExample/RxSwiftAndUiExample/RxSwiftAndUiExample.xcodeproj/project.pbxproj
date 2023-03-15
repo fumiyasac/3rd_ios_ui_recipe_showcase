@@ -287,7 +287,6 @@
 			isa = PBXGroup;
 			children = (
 				DED4C38E265940C200398C3E /* View */,
-				DED4C3892659407900398C3E /* ViewObject */,
 			);
 			path = ViewParts;
 			sourceTree = "<group>";
@@ -379,13 +378,6 @@
 				DE589B4926722E79009FFE1D /* RootPresenterImpl.swift */,
 			);
 			path = Presenter;
-			sourceTree = "<group>";
-		};
-		DED4C3892659407900398C3E /* ViewObject */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = ViewObject;
 			sourceTree = "<group>";
 		};
 		DED4C38B2659408E00398C3E /* Extension */ = {

@@ -1,17 +1,16 @@
 {
-  "name": "3rd_ios_ui_recipe_showcase_chapter01_mock_server",
-  "version": "1.0.0",
-  "description": "mock server of sample app RxSwiftAndUiExample.",
-  "main": "index.js",
-  "dependencies": {
-    "lodash": ">=4.17.21"
-  },
-  "devDependencies": {
-    "json-server": "^0.16.3"
-  },
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "author": "fumiyasac",
-  "license": "ISC"
-}
+    "name": "chapter01-mock-server-example",
+    "version": "1.0.0",
+    "main": "server.ts",
+    "license": "MIT",
+    "dependencies": {
+      "json-server": "^0.17.0",
+      "typescript": "^4.7.4"
+    },
+    "scripts": {
+      "start": "npx ts-node server.ts"
+    },
+    "devDependencies": {
+      "@types/json-server": "^0.14.4"
+    }
+  }
